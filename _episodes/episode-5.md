@@ -3,7 +3,8 @@ title: "마감"
 number: 5
 pov: "박영선"
 summary: "술집 단말기가 멈췄다. 고칠 수 있는 넷은 취해 있었다."
-illustration: ep5.svg
+illustration: ep5.webp
+illustration_alt: "승인 오류가 뜬 카드 단말기를 앞에 둔 영선과 술집 테이블의 걱정스러운 네 손님"
 layout: episode
 ---
 

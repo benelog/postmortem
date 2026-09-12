@@ -3,7 +3,8 @@ title: "429"
 number: 4
 pov: "한유리"
 summary: "벤더 쪽에서 본 옛 회사의 장애. 원인은 고객이고, 벤더도 느렸다."
-illustration: ep4.svg
+illustration: ep4.webp
+illustration_alt: "유리 회의실에서 트래픽 대시보드를 열어 둔 채 옛 동료에게 전화하는 유리"
 layout: episode
 ---
 

@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" prefix="og: https://ogp.me/ns#">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-<meta name="description" content="{{ page.summary | default: site.description }}">
+<meta name="description" content="{{ page.summary | default: site.description | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:type" content="{% if page.number %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}">
+<meta property="og:description" content="{{ page.summary | default: site.description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/illustrations/share.jpg' | absolute_url }}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="비 오는 밤 술집에 마주 앉은 두 사람과 포스트모템 제목, 장애의 뒤에는 사람이 있다">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">

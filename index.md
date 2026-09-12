@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<figure class="illustration cover">{% include illustrations/cover.svg %}</figure>
+<figure class="illustration cover"><img src="{{ '/assets/illustrations/cover.webp' | relative_url }}" alt="비 내리는 밤 골목, 불 켜진 술집 유리문 너머 마주 앉은 지안과 도현" width="1672" height="941" decoding="async" fetchpriority="high"></figure>
 <section class="intro">
   <h1 class="series-title">포스트모템</h1>
   <p class="series-tagline">IT 회사의 장애를 둘러싼 연작 추리 단편</p>

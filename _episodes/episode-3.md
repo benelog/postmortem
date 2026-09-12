@@ -3,7 +3,8 @@ title: "오프보딩"
 number: 3
 pov: "강민석"
 summary: "새해 첫날 자정, 퇴사자의 이름으로 정산 원장에 8만 건이 들어갔다."
-illustration: ep3.svg
+illustration: ep3.webp
+illustration_alt: "사무실에서 지안과 도현 곁에 앉아 로그를 확인하는 민석과 뒤편의 빈 자리"
 layout: episode
 ---
 

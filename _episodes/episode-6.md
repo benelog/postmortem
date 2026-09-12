@@ -3,7 +3,8 @@ title: "헬스체크"
 number: 6
 pov: "정하늘"
 summary: "사람이 안 나오는 장애를 찾던 신입이 자기 첫 PR을 찾았다."
-illustration: ep6.svg
+illustration: ep6.webp
+illustration_alt: "비 오는 밤 술집에서 동료들이 지켜보는 가운데 하늘의 잔에 사이다를 먼저 따르는 지안"
 layout: episode
 ---
 

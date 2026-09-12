@@ -14,7 +14,7 @@ layout: default
     <h1>{{ page.title }}</h1>
     <p class="episode-meta">{{ page.pov }} 시점</p>
   </header>
-  {% if page.illustration %}<figure class="illustration">{% include illustrations/{{ page.illustration }} %}</figure>{% endif %}
+  {% if page.illustration %}<figure class="illustration"><img src="{{ '/assets/illustrations/' | append: page.illustration | relative_url }}" alt="{{ page.illustration_alt | escape }}" width="1672" height="941" decoding="async" fetchpriority="high"></figure>{% endif %}
   {{ content }}
 </article>
 <nav class="episode-nav">

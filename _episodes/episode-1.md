@@ -3,7 +3,8 @@ title: "블레임리스"
 number: 1
 pov: "서지안"
 summary: "새벽 두 시, 결제 장애의 감사 로그에 찍힌 이름은 그 자리에 없던 사람이었다."
-illustration: ep1.svg
+illustration: ep1.webp
+illustration_alt: "새벽 술집에서 울리는 두 대의 휴대폰을 바라보는 지안과 도현, 테이블 위의 빈 소주병"
 layout: episode
 ---
 
