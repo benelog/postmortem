@@ -217,6 +217,19 @@
    "final_source": "/home/benelog/.codex/generated_images/01a097ee-fd59-79d3-bf06-1783a2a1a3a7/exec-e7353db6-1197-41b7-aee6-e400f392a256.png"
   },
   {
+   "name": "ep9",
+   "output": "ep9.webp",
+   "alt": "겨울 해질녘 텅 빈 시외버스 뒷자리에서 이어폰을 끼고 휴대폰을 입가에 가린 채 조용히 장애를 지휘하는 지안",
+   "note": "7·8화와 같은 방식. 극화체 레시피에 겨울 해질녘 시외버스 실내 팔레트(청회색 좌석 #8A929B, 차가운 저녁빛 창밖 #5B6E7A, 휴대폰 화면의 작은 따뜻한 글로우만 강조)를 담아 codex exec image_gen으로 직접 생성. 노트북은 화면이 안 보이게 뒤로 돌림(3화 관찰 시점 규칙과 동일). 1672x941 그대로 webp 변환.",
+   "steps": [
+    {
+     "purpose": "극화체 시외버스 화상 지휘 장면 직접 생성 (codex exec image_gen)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라.\n\n이 그림은 한국어 연작 추리 만화 「포스트모템」 9화 삽화다. 기존 1~8화 삽화와 같은 극화체(劇畵體) 스타일을 정확히 따라야 한다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no skin pores, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute caricature. Absolutely NO text, NO lettering, NO speech bubbles, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin (her face, ear, neck, hands): very light warm porcelain-beige with a tiny hint of peach. Base approximately #F5E1D4, highlights #FAEDE4, minimal flat shadows #E8CBBB. Light fair flesh, NOT orange, yellow, bronze or tan.\n\n[배경 팔레트 — 겨울 해질녘 시외버스 실내]\nInterior of a quiet intercity coach bus at winter dusk. Muted, cool, restrained palette: gray-blue upholstered seats (#8A929B), dark charcoal seat frames, off-white ceiling. Through the large side window, a COLD BLUE winter dusk over empty fields (#5B6E7A), low sun almost gone. The only warm accent is a small soft glow from her phone screen faintly lighting her face — tiny, not a global cast. Overall mood cold, dim, hushed.\n\n[장면]\nA woman in her early 40s — a sharp, composed engineering team lead — sits alone in the BACK window seat of a nearly empty intercity bus, seen in 3/4 view. She has an ANGULAR narrow face, sharp eyes, and a CHIN-LENGTH black bob. She wears a dark winter coat. One earbud in her ear (a thin cord or wireless bud). She holds a phone close to her mouth, speaking very quietly, her other hand slightly shielding it — the posture of someone running a crisis call as quietly as possible so as not to disturb others. On her lap or the tray, a laptop is angled AWAY so we see its dark back/edge, not its screen. Ahead of her, a few empty gray seatbacks recede down the aisle; one or two other passengers' heads are slumped asleep in the distance. Tension in a silent space: she is composed but her brow is tight. 16:9 landscape.\n\n이 여자(지안)는 연작에 이미 나온 인물이니, 위의 각진 좁은 얼굴·날카로운 눈매·턱 길이 검은 단발 묘사대로 각진 극화체로 그려라. 특정 실제 인물을 베끼지 마라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    }
+   ],
+   "final_source": "/home/benelog/.codex/generated_images/01a09803-c9e9-7cf2-9e36-3057284c0419/exec-a3c56c12-a340-420c-833c-e3cc0a068b13.png"
+  },
+  {
    "name": "share",
    "output": "share.jpg",
    "steps": [

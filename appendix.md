@@ -92,6 +92,22 @@ permalink: /appendix/
 - [Google Cloud Incident Reports](https://status.cloud.google.com/summary) — 공개 포스트모템 모음.
 - [Cloudflare outage postmortems](https://blog.cloudflare.com/tag/outage/) — 블레임리스로 쓰인 외부 공개 보고서들.
 
+## 복제 지연과 하드웨어 장애
+
+9화에서 저녁 피크마다 밀리다가 저절로 풀리던 복제, 그리고 그 뒤에 있던 광 트랜시버의 배경입니다.
+
+- [Replication Lag · PostgreSQL Documentation](https://www.postgresql.org/docs/current/warm-standby.html#STANDBY-SERVER-OPERATION) — 복제본이 원본을 따라잡지 못하는 상태와 지연 측정.
+- [Monitoring Replication Lag](https://www.postgresql.org/docs/current/monitoring-stats.html) — 랙을 보는 지표들.
+- [The Tail at Scale · Communications of the ACM](https://research.google/pubs/pub40801/) — 특정 부하에서만 나타나는 꼬리 지연이 왜 진단이 어려운지.
+- [When a NIC goes bad · 하드웨어 결함으로 인한 부분 패킷 손실](https://www.kernel.org/doc/html/latest/networking/statistics.html) — 임계 처리량 이상에서 프레임을 흘리는 NIC/트랜시버 결함을 로그와 통계로 추적하는 관점.
+
+## 슬픔과 판단, 그리고 온콜에서 빼기
+
+9화에서 지안이 상을 당한 팀원을 온콜과 시스템 접근에서 빼는 이유, 1화의 음주 규정과 같은 결의 원칙입니다.
+
+- [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/) — 대응자의 상태와 교대. 컨디션이 좋지 않은 사람을 대응에서 빼는 것도 신뢰성의 일부입니다.
+- [Human factors and just culture](https://www.skybrary.aero/articles/just-culture) — 판단이 흐려진 사람에게 결정을 몰아주지 않는다는, 항공 안전에서 온 개념.
+
 ## 국내 회사의 장애 대응 사례
 
 인물들의 말투와 절차를 한국 회사의 것으로 맞출 때 참고했습니다.
