@@ -14,6 +14,7 @@ https://benelog.github.io/postmortem/
 | 6 | 헬스체크 | 정하늘 |
 
 각 화는 `_episodes/` 아래 마크다운 파일이며, GitHub Pages(Jekyll)로 빌드됩니다.
+부록 `appendix.md`는 각 화의 소재가 된 장애 대응 문서와 국내 사례 링크를 모은 참고 자료 페이지입니다.
 
 삽화는 `assets/illustrations/`의 `cover.webp`, `ep1.webp`–`ep6.webp`를 사용합니다.
 굵은 먹선, 단순화한 인물, 평면 채색과 밝고 옅은 살색 피부톤을 사용한 극화체로 표지와 각 화의 장면을 통일했습니다.

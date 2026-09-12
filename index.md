@@ -20,3 +20,4 @@ layout: default
   </li>
 {% endfor %}
 </ol>
+<p class="appendix-link"><a href="{{ '/appendix/' | relative_url }}">부록 · 참고 자료</a></p>
