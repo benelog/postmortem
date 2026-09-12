@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign eps = site.episodes | sort: "number" %}
+{% assign prevn = page.number | minus: 1 %}{% assign nextn = page.number | plus: 1 %}
+{% assign prev = nil %}{% assign next = nil %}
+{% for e in eps %}
+  {% if e.number == prevn %}{% assign prev = e %}{% endif %}
+  {% if e.number == nextn %}{% assign next = e %}{% endif %}
+{% endfor %}
+<article class="episode">
+  <header class="episode-header">
+    <p class="episode-number">{{ page.number }}화</p>
+    <h1>{{ page.title }}</h1>
+    <p class="episode-meta">{{ page.pov }} 시점</p>
+  </header>
+  {{ content }}
+</article>
+<nav class="episode-nav">
+  {% if prev %}<a class="prev" href="{{ prev.url | relative_url }}">← {{ prev.number }}화 {{ prev.title }}</a>{% else %}<span></span>{% endif %}
+  <a class="index" href="{{ '/' | relative_url }}">목차</a>
+  {% if next %}<a class="next" href="{{ next.url | relative_url }}">{{ next.number }}화 {{ next.title }} →</a>{% else %}<span></span>{% endif %}
+</nav>

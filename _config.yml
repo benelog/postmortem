@@ -1,0 +1,20 @@
+title: 포스트모템
+description: IT 회사의 장애를 둘러싼 연작 추리 단편
+lang: ko
+url: "https://benelog.github.io"
+baseurl: "/postmortem"
+collections:
+  episodes:
+    output: true
+    permalink: /:name/
+defaults:
+  - scope:
+      path: ""
+      type: episodes
+    values:
+      layout: episode
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
