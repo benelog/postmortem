@@ -75,6 +75,23 @@ permalink: /appendix/
 - [Insider Threat Mitigation · CISA](https://www.cisa.gov/topics/physical-security/insider-threat-mitigation) — 권한을 가진 내부자가 만드는 사고의 성격.
 - [공용 계정을 없애야 하는 이유 · NIST SP 800-53 AC-2](https://csrc.nist.gov/projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=AC-2) — 계정을 사람에게 귀속시켜 로그의 actor가 사람을 가리키게 하는 통제. `ops-admin` 같은 공용 계정이 왜 문제인지.
 
+## DNS와 TTL
+
+8화의 제목이자, 하늘이 전화번호부에 비유하는 것입니다. 엔드포인트를 옮길 때 왜 TTL을 미리 낮춰야 하는지의 배경입니다.
+
+- [RFC 1035 · Domain Names — Implementation and Specification](https://www.rfc-editor.org/rfc/rfc1035) — DNS 레코드의 TTL을 정의한 문서.
+- [RFC 2308 · Negative Caching of DNS Queries](https://www.rfc-editor.org/rfc/rfc2308) — 없는 응답도 캐시된다는 것. 커토버가 늦게 수렴하는 또 다른 이유.
+- [Managing RFC 1918 and DNS TTL for migrations · Cloudflare Learning](https://www.cloudflare.com/learning/dns/dns-records/dns-ttl/) — 이전 전에 TTL을 낮추는 관행.
+- [Reliability, constant work, and a good cup of coffee · Amazon Builders' Library](https://aws.amazon.com/builders-library/reliability-and-constant-work/) — 부분 장애가 전면 장애보다 진단이 어려운 이유의 배경.
+
+## 외부 사업자의 포스트모템
+
+8화에서 넉 달 만에 도착하는 클라우드 사업자의 포스트모템, 그리고 6화에서 하늘이 던진 '사람이 안 나오는 장애' 질문의 답입니다.
+
+- [Summary of the Amazon S3 Service Disruption · AWS](https://aws.amazon.com/message/41926/) — 사업자가 공개하는 사후 보고서의 실제 예. 원인은 기술과 절차로 적히고, 사람 이름은 나오지 않습니다.
+- [Google Cloud Incident Reports](https://status.cloud.google.com/summary) — 공개 포스트모템 모음.
+- [Cloudflare outage postmortems](https://blog.cloudflare.com/tag/outage/) — 블레임리스로 쓰인 외부 공개 보고서들.
+
 ## 국내 회사의 장애 대응 사례
 
 인물들의 말투와 절차를 한국 회사의 것으로 맞출 때 참고했습니다.
