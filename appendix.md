@@ -57,6 +57,24 @@ permalink: /appendix/
 - [Implementing health checks · Amazon Builders' Library](https://aws.amazon.com/builders-library/implementing-health-checks/) — 얕은 헬스체크와 깊은 헬스체크, 잘못된 헬스체크가 만드는 장애.
 - [Configure Liveness, Readiness and Startup Probes · Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
 
+## 잠금과 롱 트랜잭션
+
+7화에서 임재헌이 건 배타 락과, 대기가 끝나도 풀리지 않던 거래의 배경입니다.
+
+- [Explicit Locking · PostgreSQL Documentation](https://www.postgresql.org/docs/current/explicit-locking.html) — `ACCESS EXCLUSIVE` 락이 읽기까지 막는 이유. 대기 중인 배타 락이 뒤따르는 요청을 줄 세우는 동작.
+- [pg_locks · PostgreSQL Documentation](https://www.postgresql.org/docs/current/view-pg-locks.html) — 은서가 잠금을 물고 있는 연결을 찾을 때 보는 뷰.
+- [Transactions · PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial-transactions.html) — `BEGIN`으로 연 거래는 `COMMIT`이나 `ROLLBACK` 전까지 락을 놓지 않는다는 것. 임재헌이 놓친 부분입니다.
+- [Managing Long-Running Queries and Idle-in-Transaction · PostgreSQL Wiki](https://wiki.postgresql.org/wiki/Lock_Monitoring) — 잠긴 세션을 찾아 종료하는 방법.
+
+## 감사 로그와 내부자 위협
+
+7화의, 범인이 결재한 비용으로 만든 감사 로그가 범인을 잡는 배경입니다.
+
+- [Logging Cheat Sheet · OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html) — 무엇을, 어디에, 얼마나 오래 남길지. 운영 데이터와 분리해 변조를 막는 감사 로그.
+- [CIS Control 8 · Audit Log Management](https://www.cisecurity.org/controls/audit-log-management) — 접근과 변경을 사람 단위로 추적하는 통제 항목.
+- [Insider Threat Mitigation · CISA](https://www.cisa.gov/topics/physical-security/insider-threat-mitigation) — 권한을 가진 내부자가 만드는 사고의 성격.
+- [공용 계정을 없애야 하는 이유 · NIST SP 800-53 AC-2](https://csrc.nist.gov/projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=AC-2) — 계정을 사람에게 귀속시켜 로그의 actor가 사람을 가리키게 하는 통제. `ops-admin` 같은 공용 계정이 왜 문제인지.
+
 ## 국내 회사의 장애 대응 사례
 
 인물들의 말투와 절차를 한국 회사의 것으로 맞출 때 참고했습니다.
