@@ -3,6 +3,8 @@ title: "잠금"
 number: 7
 pov: "최은서"
 summary: "결제가 죽고, 롤백이 살렸다고 했다. 테이블을 잠근 연결은 그전에 다른 일을 하고 있었다."
+illustration: ep7.webp
+illustration_alt: "아침 회의실에서 종이컵 커피를 사이에 두고 마주 앉은 은서와 재무이사 임재헌, 시선을 떨군 임재헌"
 layout: episode
 ---
 
