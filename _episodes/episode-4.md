@@ -3,6 +3,7 @@ title: "429"
 number: 4
 pov: "한유리"
 summary: "벤더 쪽에서 본 옛 회사의 장애. 원인은 고객이고, 벤더도 느렸다."
+illustration: ep4.svg
 layout: episode
 ---
 

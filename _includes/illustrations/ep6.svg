@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="정상으로 보이는 심전도 선과 반쯤 죽은 가용 영역">
+  <rect width="800" height="450" fill="#14161c"/>
+  <!-- ecg -->
+  <polyline points="60,130 200,130 215,130 225,95 235,165 245,110 255,130 400,130 415,130 425,95 435,165 445,110 455,130 600,130 615,130 625,95 635,165 645,110 655,130 740,130" fill="none" stroke="#9fc59a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="740" y="72" text-anchor="end" font-family="ui-monospace, monospace" font-size="13" fill="#9fc59a">GET /healthz → 200</text>
+  <!-- AZ boxes -->
+  <g font-family="ui-monospace, monospace" font-size="14" text-anchor="middle">
+    <rect x="140" y="250" width="200" height="130" rx="8" fill="#e07a5f" fill-opacity=".12" stroke="#e07a5f" stroke-width="2"/>
+    <text x="240" y="280" fill="#e07a5f">kr-1a</text>
+    <rect x="460" y="250" width="200" height="130" rx="8" fill="#7aa2c7" fill-opacity=".12" stroke="#7aa2c7" stroke-width="2"/>
+    <text x="560" y="280" fill="#7aa2c7">kr-1b</text>
+  </g>
+  <!-- disk in a: slow -->
+  <g transform="translate(240 330)">
+    <ellipse cx="0" cy="-14" rx="34" ry="10" fill="none" stroke="#e07a5f" stroke-width="2"/>
+    <path d="M-34 -14 v28 a34 10 0 0 0 68 0 v-28" fill="none" stroke="#e07a5f" stroke-width="2"/>
+    <text x="0" y="40" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#e07a5f">disk p99 3.8s</text>
+  </g>
+  <!-- disk in b: fine -->
+  <g transform="translate(560 330)">
+    <ellipse cx="0" cy="-14" rx="34" ry="10" fill="none" stroke="#7aa2c7" stroke-width="2"/>
+    <path d="M-34 -14 v28 a34 10 0 0 0 68 0 v-28" fill="none" stroke="#7aa2c7" stroke-width="2"/>
+    <text x="0" y="40" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#7aa2c7">disk p99 4ms</text>
+  </g>
+  <!-- traffic split -->
+  <g fill="none" stroke="#e6e2da" stroke-opacity=".5" stroke-width="2">
+    <path d="M400 190 v40"/><path d="M400 230 q0 20-20 20 H345"/><path d="M400 230 q0 20 20 20 H455"/>
+  </g>
+  <polygon points="345,244 355,250 345,256" fill="#e6e2da" fill-opacity=".5"/>
+  <polygon points="455,244 445,250 455,256" fill="#e6e2da" fill-opacity=".5"/>
+  <text x="400" y="182" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#e6e2da" fill-opacity=".6">failback 50 / 50 · 15:53:10</text>
+  <text x="400" y="430" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#e6e2da" fill-opacity=".35">#3120 health: disk-probe 제거 · reviewer: 서지안 · "첫 PR 축하 🎉"</text>
+</svg>

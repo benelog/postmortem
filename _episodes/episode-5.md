@@ -3,6 +3,7 @@ title: "마감"
 number: 5
 pov: "박영선"
 summary: "술집 단말기가 멈췄다. 고칠 수 있는 넷은 취해 있었다."
+illustration: ep5.svg
 layout: episode
 ---
 

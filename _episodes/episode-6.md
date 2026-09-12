@@ -3,6 +3,7 @@ title: "헬스체크"
 number: 6
 pov: "정하늘"
 summary: "사람이 안 나오는 장애를 찾던 신입이 자기 첫 PR을 찾았다."
+illustration: ep6.svg
 layout: episode
 ---
 

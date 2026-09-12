@@ -3,6 +3,7 @@ title: "스냅샷"
 number: 2
 pov: "유도현"
 summary: "블랙 위크 오픈 19초 전, 승인 봇이 플래그를 껐다. 봇 주인의 이름으로."
+illustration: ep2.svg
 layout: episode
 ---
 

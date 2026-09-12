@@ -47,3 +47,8 @@ main { max-width: 40rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
 .episode-nav a { color: var(--accent); text-decoration: none; }
 .episode-nav .index { color: var(--muted); }
 @media (max-width: 480px) { .episode-nav { flex-direction: column; align-items: stretch; text-align: center; } }
+
+.illustration { margin: 0 0 2.5rem; }
+.illustration svg { display: block; width: 100%; height: auto; border-radius: 8px; }
+.illustration.cover { margin-top: 1rem; }
+.episode-header + .illustration { margin-top: -1rem; }

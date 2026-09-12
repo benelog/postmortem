@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="새벽 두 시 술집 테이블, 소주잔 둘과 울리는 휴대폰">
+  <rect width="800" height="450" fill="#14161c"/>
+  <text x="740" y="60" text-anchor="end" font-family="ui-monospace, monospace" font-size="22" fill="#e6e2da" fill-opacity=".5" letter-spacing="3">02:14</text>
+  <!-- window glow -->
+  <rect x="60" y="50" width="200" height="140" rx="3" fill="#7aa2c7" fill-opacity=".06" stroke="#e6e2da" stroke-opacity=".15"/>
+  <line x1="160" y1="50" x2="160" y2="190" stroke="#e6e2da" stroke-opacity=".15"/>
+  <!-- table -->
+  <rect x="80" y="300" width="640" height="10" rx="3" fill="#e6e2da" fill-opacity=".7"/>
+  <line x1="120" y1="310" x2="110" y2="420" stroke="#e6e2da" stroke-opacity=".4" stroke-width="4"/>
+  <line x1="680" y1="310" x2="690" y2="420" stroke="#e6e2da" stroke-opacity=".4" stroke-width="4"/>
+  <!-- bottle -->
+  <g fill="none" stroke="#9fc59a" stroke-width="3">
+    <path d="M395 300 V235 q0-14 10-22 V190 h14 v23 q10 8 10 22 V300 Z"/>
+    <line x1="399" y1="270" x2="399" y2="292" stroke-opacity=".5"/>
+  </g>
+  <!-- glasses -->
+  <g fill="none" stroke="#e6e2da" stroke-width="3">
+    <path d="M290 300 l6-40 h36 l6 40 Z"/><path d="M296 290 h36" stroke="#9fc59a" stroke-opacity=".7"/>
+    <path d="M470 300 l6-40 h36 l6 40 Z"/><path d="M478 275 h32" stroke="#9fc59a" stroke-opacity=".7"/>
+  </g>
+  <!-- phone face down -->
+  <rect x="170" y="284" width="90" height="16" rx="5" fill="#0f1116" stroke="#e6e2da" stroke-opacity=".6" stroke-width="2"/>
+  <!-- phone lit -->
+  <rect x="540" y="278" width="100" height="22" rx="5" fill="#0f1116" stroke="#e6e2da" stroke-opacity=".6" stroke-width="2"/>
+  <rect x="548" y="283" width="84" height="12" rx="2" fill="#e07a5f" fill-opacity=".9"/>
+  <g stroke="#e07a5f" stroke-width="2" stroke-opacity=".7" fill="none">
+    <path d="M660 270 q14-12 28 0"/><path d="M668 258 q22-20 44 0" stroke-opacity=".4"/><path d="M676 246 q30-28 60 0" stroke-opacity=".2"/>
+  </g>
+  <text x="590" y="340" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#e07a5f">[SEV1] payments-api</text>
+  <text x="215" y="340" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#e6e2da" fill-opacity=".35">actor: 유도현</text>
+</svg>

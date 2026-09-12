@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<figure class="illustration cover">{% include illustrations/cover.svg %}</figure>
 <section class="intro">
   <h1 class="series-title">포스트모템</h1>
   <p class="series-tagline">IT 회사의 장애를 둘러싼 연작 추리 단편</p>
