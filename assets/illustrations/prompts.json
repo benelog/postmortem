@@ -91,9 +91,16 @@
         {
           "purpose": "사무실을 흰색·밝은 회색과 자연스러운 푸른 낮빛으로 보정",
           "prompt": "Use case: precise-object-edit. Recolor ONLY the OFFICE ENVIRONMENT of this existing dramatic comic illustration. The office currently has an unnatural dominant mustard-yellow color. Replace it with a natural clean WHITE and LIGHT COOL GRAY contemporary office palette. Walls, ceiling and structural pillars: neutral off-white #F3F4F2. Desktops and meeting tables: pale neutral gray #D6DADD (no yellow or golden wood); partitions: light cool gray #BBC7CD; window frames and ink outlines stay dark. Through windows show a natural PALE BLUE or white overcast daytime sky and subdued blue-gray city buildings; eliminate yellow sunset skies, yellow glass tint, amber daylight and ochre stains. Fluorescent lights are neutral white. White/gray must dominate broad surfaces, with clear black comic lines defining all objects and original cool monitor screens retained. Preserve exact scene, composition, people, facial features, hands, poses, clothes, VERY LIGHT PEACH SKIN colors, black ink shadow shapes, object placements, laptop/monitor graphics and red graph accents. Do not make skin gray or whiter. Keep original bold flat cel-colored geukhwa comic style; no photorealism, no gradients, no glossy render, no redraw of characters, no added text or objects. Do not globally desaturate the illustration: only replace yellow office surfaces and yellow daylight with whites/grays and pale blue daylight. Preserve landscape aspect ratio and dimensions."
+        },
+        {
+          "purpose": "관찰 시점에 맞게 전경 모니터를 화면 대신 후면 케이스로 수정",
+          "prompt": "Use case: precise-object-edit. Fix ONLY the large foreground monitor in this supplied comic illustration. The people are BEHIND the monitor looking toward its front, so the viewer must see the monitor's BACK, not the screen. Replace the entire viewer-facing area currently showing blue terminal rows and red lines with a convincing plain matte charcoal-black/dark-gray MONITOR REAR HOUSING: solid opaque back panel, subtle flat recessed rectangular casing seam, a small restrained row of ventilation slots, and a rear stand attachment/support where naturally visible. No display pixels, no terminal text, no blue/red screen graphics, no glowing glass, no logo on this rear panel. Keep the monitor's existing outer silhouette, size, tilted perspective and position EXACTLY unchanged. The man's pointing finger must still point toward the far hidden screen edge naturally. Do not move hands or change people. Preserve all three characters' identities, faces, pale peach skin, clothing, poses, background white/light-gray office, city window view, desks, keyboard, and every other object unchanged. Preserve the current bold black ink flat-color Korean dramatic comic style, no photorealism, no new lettering. Keep landscape 1672x941. This is a localized correction of which side of the monitor is visible.",
+          "references": [
+            "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-b5febe79-7e94-4133-9904-db0bd9ebc29b.png"
+          ]
         }
       ],
-      "final_source": "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-b5febe79-7e94-4133-9904-db0bd9ebc29b.png"
+      "final_source": "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-bedf6fa3-05e9-4c03-9997-42e30f9ea7aa.png"
     },
     {
       "name": "ep4",
