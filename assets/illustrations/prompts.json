@@ -840,6 +840,15 @@
       "/home/benelog/.codex/generated_images/01a09932-b028-7933-ba26-e08ca56d117b/exec-ffba031b-f726-41c0-97d5-101d70c79b8f.png"
      ],
      "result": "/home/benelog/.codex/generated_images/01a09934-477d-7f23-9955-e369de40badc/exec-50663d66-1829-4382-977a-2c27e037bb7d.png"
+    },
+    {
+     "review": "2026-09-13-anatomy-fix",
+     "purpose": "경민의 유선 이어폰 줄을 제거하고 무선 이어폰으로 변경",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 셸 명령은 실행하지 마라.\n\nUse case: precise-object-edit. Image 1 is the EDIT TARGET: the episode 15 illustration of the Korean dramatic comic 포스트모템 (landscape 1672x941), a night office where a young man with round glasses in a blue shirt (Gyeongmin) types at a keyboard in the foreground while a woman with a black bob (Mina) stands behind him with folded arms.\n\nPROBLEM: Gyeongmin wears a WIRED earphone; a white cable runs from his ear down and disappears into his shirt, which looks unnatural.\n\nTASK: Replace it with a small WIRELESS earbud. Keep a small white earbud in his visible ear, and REMOVE the entire white cable — every segment of it, from the ear down along the jaw, neck and chest, and where it enters the shirt collar. Where the cable was, restore the underlying skin, hair, collar and blue shirt with the same bold black ink outlines and flat cel colors as the surrounding areas. The earbud itself stays small and simple, drawn in the same style.\n\nEVERYTHING ELSE IS LOCKED: his face, glasses, hair, expression, pose, hands, keyboard, the woman behind him, monitors, desk, papers, window, city lights, lighting, palette, framing, camera angle and image dimensions 1672x941. Do not recompose. No text, lettering, logos or watermark.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n",
+     "references": [
+      "ep15.webp"
+     ],
+     "result": "/home/benelog/.codex/generated_images/01a0994b-a45b-7ac1-bfe9-e5bd35f39b05/exec-ab38e510-a0cd-4d23-9e2e-72df46b76c03.png"
     }
    ],
    "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-43c22c44-7e65-4315-bfe4-f76a1cd88749.png"
