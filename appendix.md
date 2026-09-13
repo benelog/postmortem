@@ -8,6 +8,33 @@ permalink: /appendix/
 
 이 연작의 회사와 사람과 장애는 지어낸 것이지만, 인물들이 따르는 관행과 어휘는 지어낸 것이 아닙니다. 각 화의 소재가 된 문서와, 표현을 고를 때 참고한 국내 사례를 모았습니다.
 
+## 페이브릭의 대응 규정
+
+연작의 회사 페이브릭이 따르는 역할 구분입니다. 1화에서 유현이 쓴 규정이고, 15화에서 하늘에게 넘어갑니다.
+
+| 역할 | 누가 | 순번 | 대기의 무게 | 하는 일 | 하지 않는 일 |
+|---|---|---|---|---|---|
+| 온콜 | SRE 팀원(팀장 포함), 주 단위 교대 | SRE 온콜 교대표 | 페이지를 직접 받고 몇 분 안에 ack. 노트북 상시 휴대. 술은 사이다 | 초동 대응, 손(시스템 변경) | SEV1에서 혼자 판단하고 혼자 손 쓰기 |
+| 지휘 순번(인시던트 커맨더) | SRE 팀원(팀장 포함), 주 단위 | SRE 지휘 순번 | 페이지가 오지 않음. SEV1이 선언되면 불려 나오고, 닿지 않으면 다음 순번. 술은 사이다 | 상황 파악, 역할 배정, 판단과 지시, 타임라인 | 키보드 잡기 |
+| 손 | 기본은 온콜. 커맨더가 담당 개발자에게 맡길 수 있음 | 없음(커맨더가 지정) | 지정된 동안만 | 지시받은 변경 실행, 보이는 것 보고 | 지시 없는 변경 |
+| 서비스 팀 담당 개발자(결제팀 등) | 결제팀 | 온콜도 지휘 순번도 없음 | 부르면 들어감 | 자기 코드 설명, 필요하면 손 | |
+| 배포 게이트 승인자 | 결제팀 명단, 5화 이후 주 단위 교대표 두 명 | 별개 | 승인 요청이 오면 응답 | 플래그·배포 승인 | 혼자 승인 |
+| 동결 예외 승인 | 플랫폼 본부장과 결제팀 리드의 서면 | 별개 규정 | | 동결 중 배포 허가 | |
+
+역할표 밖의 조항은 셋입니다. 음주 상태로는 프로덕션 접근도 지휘도 하지 않는다(1화). 상중인 사람은 온콜과 시스템 접근에서 뺀다(10화). 이동이나 행사가 있으면 전날까지 교대를 올리고, 받아 주는 대체 순번을 따로 둔다(12화).
+
+### 비슷한 구조를 가진 회사와 문서
+
+- [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/): 지휘(Incident Command)와 운영(Operational Work)을 나누고, "시스템을 바꾸는 건 운영 팀뿐"이라고 못 박습니다. 지휘 순번이 키보드를 잡지 않는 규정의 원형입니다.
+- [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/): 사용자 대면 서비스의 응답 기대치는 5분, 덜 급한 시스템은 30분. 많은 팀이 primary와 secondary 두 순번을 두고 secondary는 primary가 놓친 페이지를 받는 예비로 씁니다. 페이브릭의 온콜과 지휘 순번이 무게가 다른 것과 같은 구조입니다.
+- [Incident Management · GitLab Handbook](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/): 페이지를 24x7 받는 SRE의 EOC(Engineer On Call), 영향 파악과 인원 소집을 맡는 IMOC(Incident Manager On Call), 고객 대응의 CMOC를 각각 별도 순번으로 돌립니다. 온콜과 지휘 순번을 따로 두는 회사의 공개된 예입니다. [Incident Responder](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/roles/incident-responder/)와 [Incident Lead](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/roles/incident-lead/) 역할 문서가 따로 있습니다.
+- [Different Roles for Incidents · PagerDuty](https://response.pagerduty.com/before/different_roles/): "인시던트 커맨더는 해결자가 아니다. 모든 복구 작업은 위임한다." SME(Subject Matter Expert)는 보통 해당 서비스의 primary 온콜이 맡습니다. 결제팀 개발자가 손으로 불려 들어오는 구조가 여기 있습니다.
+- [Incident Commander Training · PagerDuty](https://response.pagerduty.com/training/incident_commander/): 커맨더는 그래프도 로그도 직접 보지 않고 위임합니다. 훈련을 마친 사람이 스스로 커맨더 순번표에 이름을 올리는 것으로 정식 커맨더가 됩니다. 피로해서 계속할 수 없으면 인계하라는 조항이 있는데, 음주를 명시한 조항은 이 문서에도 없습니다. 페이브릭의 음주 조항은 그 자리를 채운 자기 규정입니다.
+- [Being On-Call · PagerDuty](https://response.pagerduty.com/oncall/being_oncall/): 에스컬레이션 5분, 여행이나 일정이 있으면 미리 교대를 잡을 것. 12화 다섯 번째 재발 방지가 이 조항입니다.
+- [Escalation Policies · PagerDuty](https://support.pagerduty.com/main/docs/escalation-policies): 정해진 시간 안에 ack가 없으면 다음 단계로 넘어가는 규칙. 1화와 9화에서 지휘 순번이 닿지 않아 다음 순번인 유현이 잡는 장면의 배경입니다.
+- [데브시스터즈의 장애 대응 원칙과 방법](https://tech.devsisters.com/posts/incident-management-principles/): 지휘자와 기록가를 두고 "시스템 변경은 1인이 진행"합니다. 다만 지휘자는 순번이 아니라 최초 인지자가 맡고 필요하면 인계합니다. 페이브릭과 다른 선택입니다.
+- [장애 모의 훈련 그리고 배운 점 · Hyperconnect Tech Blog](https://hyperconnect.github.io/2024/11/12/sre-incident-training.html): SRE 팀은 장애를 감독하며 전체 상황을 보고, 개발팀은 자기 컴포넌트 상태를 보고하고 빠르게 에스컬레이션합니다. SRE가 지휘하고 서비스 팀이 불려 들어오는 배치가 같습니다.
+
 ## 인시던트 지휘
 
 1화에서 유현이 쓴 규정, "손을 쓰는 사람과 지휘하는 사람을 나눈다"는 원칙의 출처입니다.
@@ -177,4 +204,4 @@ permalink: /appendix/
 
 ## 용어에 관한 메모
 
-연작에서는 장애 지휘 역할을 "인시던트 커맨더"라고 부르고, 그 역할을 "맡다"라는 동사와 씁니다. "인시던트 커맨더"라는 명사는 [Atlassian 한국어 용어집](https://www.atlassian.com/ko/incident-management/glossary)을 비롯한 번역 자료에서 그대로 쓰이지만, 국내 회사들은 위의 사례처럼 "지휘자"나 "총괄"이라는 자기 말을 더 자주 씁니다. 유현의 회사는 PagerDuty와 SEV 등급을 쓰는 곳이라 영어 명사를 그대로 두었습니다.
+연작에서는 장애 지휘 역할을 "인시던트 커맨더"라고 부르고, 그 역할을 "맡다"라는 동사와 씁니다. "인시던트 커맨더"라는 명사는 [Atlassian 한국어 용어집](https://www.atlassian.com/ko/incident-management/glossary)을 비롯한 번역 자료에서 그대로 쓰이지만, 국내 회사들은 위의 사례처럼 "지휘자"나 "총괄"이라는 자기 말을 더 자주 씁니다. 페이브릭은 PagerDuty와 SEV 등급을 쓰는 곳이라 영어 명사를 그대로 두었습니다.
