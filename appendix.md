@@ -11,16 +11,18 @@ wide: true
 
 ## 페이브릭의 대응 규정
 
-연작의 회사 페이브릭이 따르는 역할 구분입니다. 1화에서 민아가 쓴 규정이고, 15화에서 하늘에게 넘어갑니다.
+연작의 회사 페이브릭이 따르는 역할 구분입니다. 1화에서 민아가 쓴 규정이고, 15화에서 경민에게 넘어갑니다.
 
 | 역할 | 누가 | 순번 | 대기 방식 | 하는 일 | 하지 않는 일 |
 |---|---|---|---|---|---|
-| 온콜 | SRE 팀원(팀장 포함), 주 단위 교대 | SRE 온콜 교대표 | 페이지를 직접 받고 몇 분 안에 ack. 노트북 상시 휴대. 술은 사이다 | 초동 대응, 손(시스템 변경) | SEV1에서 혼자 판단하고 혼자 손 쓰기 |
+| 온콜 | SRE 팀원(팀장 포함), 주 단위 교대 | SRE 온콜 교대표 | 페이지를 직접 받고 몇 분 안에 ack. 노트북 상시 휴대. 술은 사이다 | 초동 대응, 오퍼레이터(시스템 변경) | SEV1에서 혼자 판단하고 혼자 변경 실행 |
 | 지휘 순번(인시던트 커맨더) | SRE 팀원(팀장 포함), 주 단위 | SRE 지휘 순번 | 페이지가 오지 않음. SEV1이 선언되면 불려 나오고, 닿지 않으면 다음 순번. 술은 사이다 | 상황 파악, 역할 배정, 판단과 지시, 타임라인 | 키보드 잡기 |
-| 손 | 기본은 온콜. 커맨더가 담당 개발자에게 맡길 수 있음 | 없음(커맨더가 지정) | 지정된 동안만 | 지시받은 변경 실행, 보이는 것 보고 | 지시 없는 변경 |
-| 서비스 팀 담당 개발자(결제팀 등) | 결제팀 | 온콜도 지휘 순번도 없음 | 부르면 들어감 | 자기 코드 설명, 필요하면 손 | |
+| 오퍼레이터 | 기본은 온콜. 커맨더가 담당 개발자에게 맡길 수 있음 | 없음(커맨더가 지정) | 지정된 동안만 | 지시받은 변경 실행, 보이는 것 보고 | 지시 없는 변경 |
+| 서비스 팀 담당 개발자(결제팀 등) | 결제팀 | 온콜도 지휘 순번도 없음 | 부르면 들어감 | 자기 코드 설명, 필요하면 오퍼레이터 | |
 | 배포 게이트 승인자 | 결제팀 명단, 5화 이후 주 단위 교대표 두 명 | 별개 | 승인 요청이 오면 응답 | 플래그·배포 승인 | 혼자 승인 |
 | 동결 예외 승인 | 플랫폼 본부장과 결제팀 리드의 서면 | 별개 규정 | | 동결 중 배포 허가 | |
+
+본문에서 지시받은 변경을 실제로 실행하는 사람을 오퍼레이터라고 부릅니다. Google SRE Book이 인시던트 커맨더와 나눠 둔 운영 리드(Operations Lead)의 운영 작업(Operational Work), PagerDuty의 SME(Subject Matter Expert)와 리졸버, GitLab의 EOC(Engineer On Call)가 같은 자리입니다.
 
 역할표 밖의 조항은 셋입니다. 음주 상태로는 프로덕션 접근도 지휘도 하지 않는다(1화). 상중인 사람은 온콜과 시스템 접근에서 뺀다(10화). 이동이나 행사가 있으면 전날까지 교대를 올리고, 받아 주는 대체 순번을 따로 둔다(12화).
 
@@ -29,7 +31,7 @@ wide: true
 - [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/): 지휘(Incident Command)와 운영(Operational Work)을 나누고, "시스템을 바꾸는 건 운영 팀뿐"이라고 명시합니다. 지휘 순번이 키보드를 잡지 않는다는 페이브릭의 규정은 이 조항을 그대로 가져온 것입니다.
 - [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/): 사용자 대면 서비스의 응답 기대치는 5분, 덜 급한 시스템은 30분. 많은 팀이 primary와 secondary 두 순번을 두고 secondary는 primary가 놓친 페이지를 받는 예비로 씁니다. 페이브릭의 온콜과 지휘 순번의 대기 방식이 다른 것과 같은 구조입니다.
 - [Incident Management · GitLab Handbook](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/): 페이지를 24x7 받는 SRE의 EOC(Engineer On Call), 영향 파악과 인원 소집을 맡는 IMOC(Incident Manager On Call), 고객 대응의 CMOC를 각각 별도 순번으로 돌립니다. 온콜과 지휘 순번을 따로 두는 회사의 공개된 예입니다. [Incident Responder](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/roles/incident-responder/)와 [Incident Lead](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/roles/incident-lead/) 역할 문서가 따로 있습니다.
-- [Different Roles for Incidents · PagerDuty](https://response.pagerduty.com/before/different_roles/): "인시던트 커맨더는 해결자가 아니다. 모든 복구 작업은 위임한다." SME(Subject Matter Expert)는 보통 해당 서비스의 primary 온콜이 맡습니다. 결제팀 개발자가 손으로 불려 들어오는 구조는 이 SME 역할을 따른 것입니다.
+- [Different Roles for Incidents · PagerDuty](https://response.pagerduty.com/before/different_roles/): "인시던트 커맨더는 해결자가 아니다. 모든 복구 작업은 위임한다." SME(Subject Matter Expert)는 보통 해당 서비스의 primary 온콜이 맡습니다. 결제팀 개발자가 오퍼레이터로 불려 들어오는 구조는 이 SME 역할을 따른 것입니다.
 - [Incident Commander Training · PagerDuty](https://response.pagerduty.com/training/incident_commander/): 커맨더는 그래프도 로그도 직접 보지 않고 위임합니다. 훈련을 마친 사람이 스스로 커맨더 순번표에 이름을 올리는 것으로 정식 커맨더가 됩니다. 피로해서 계속할 수 없으면 인계하라는 조항이 있는데, 음주를 명시한 조항은 이 문서에도 없습니다. 페이브릭의 음주 조항은 참고한 문서 없이 회사가 스스로 정한 것입니다.
 - [Being On-Call · PagerDuty](https://response.pagerduty.com/oncall/being_oncall/): 에스컬레이션 5분, 여행이나 일정이 있으면 미리 교대를 잡을 것. 12화의 다섯 번째 재발 방지 항목은 이 조항을 옮겨 적은 것입니다.
 - [Escalation Policies · PagerDuty](https://support.pagerduty.com/main/docs/escalation-policies): 정해진 시간 안에 ack가 없으면 다음 단계로 넘어가는 규칙. 1화와 9화에서 지휘 순번이 닿지 않아 다음 순번인 민아가 잡는 장면의 배경입니다.
@@ -38,7 +40,7 @@ wide: true
 
 ## 인시던트 지휘
 
-1화에서 민아가 쓴 규정, "손을 쓰는 사람과 지휘하는 사람을 나눈다"는 원칙의 출처입니다.
+1화에서 민아가 쓴 규정, "오퍼레이터와 커맨더를 나눈다"는 원칙의 출처입니다.
 
 - [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/): 인시던트 커맨더, 운영 리드, 커뮤니케이션 리드로 역할을 나누는 구조. 민아가 브리지 콜에서 맡는 역할은 이 구조의 인시던트 커맨더입니다.
 - [Emergency Response · Google SRE Book](https://sre.google/sre-book/emergency-response/): 대응 중에 '누가 무엇을 했는지'를 남기는 습관에 관한 장.
@@ -49,7 +51,7 @@ wide: true
 
 ## 블레임리스 포스트모템
 
-1화의 제목이자 민석이 회의실에서 먼저 꺼내는 말입니다.
+1화의 제목이자 찬석이 회의실에서 먼저 꺼내는 말입니다.
 
 - [Postmortem Culture: Learning from Failure · Google SRE Book](https://sre.google/sre-book/postmortem-culture/): 비난 없는 포스트모템을 왜, 어떻게 쓰는지를 정리한 장.
 - [Postmortem Culture · Google SRE Workbook](https://sre.google/workbook/postmortem-culture/): 잘 쓴 포스트모템과 잘못 쓴 포스트모템의 예.
@@ -80,7 +82,7 @@ wide: true
 
 ## 헬스체크
 
-6화에서 하늘이 찾는 '사람이 안 나오는 장애'의 배경입니다.
+6화에서 경민이 찾는 '사람이 안 나오는 장애'의 배경입니다.
 
 - [Implementing health checks · Amazon Builders' Library](https://aws.amazon.com/builders-library/implementing-health-checks/): 얕은 헬스체크와 깊은 헬스체크, 잘못된 헬스체크가 만드는 장애.
 - [Configure Liveness, Readiness and Startup Probes · Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
@@ -105,7 +107,7 @@ wide: true
 
 ## DNS와 TTL
 
-8화의 제목이자, 하늘이 전화번호부에 비유하는 것입니다. 엔드포인트를 옮길 때 왜 TTL을 미리 낮춰야 하는지의 배경입니다.
+8화의 제목이자, 경민이 전화번호부에 비유하는 것입니다. 엔드포인트를 옮길 때 왜 TTL을 미리 낮춰야 하는지의 배경입니다.
 
 - [RFC 1035 · Domain Names: Implementation and Specification](https://www.rfc-editor.org/rfc/rfc1035): DNS 레코드의 TTL을 정의한 문서.
 - [RFC 2308 · Negative Caching of DNS Queries](https://www.rfc-editor.org/rfc/rfc2308): 없는 응답도 캐시된다는 것. 커토버가 늦게 수렴하는 또 다른 이유.
@@ -114,7 +116,7 @@ wide: true
 
 ## 외부 사업자의 포스트모템
 
-8화에서 넉 달 만에 도착하는 클라우드 사업자의 포스트모템, 그리고 6화에서 하늘이 던진 '사람이 안 나오는 장애' 질문의 답입니다.
+8화에서 넉 달 만에 도착하는 클라우드 사업자의 포스트모템, 그리고 6화에서 경민이 던진 '사람이 안 나오는 장애' 질문의 답입니다.
 
 - [Summary of the Amazon S3 Service Disruption · AWS](https://aws.amazon.com/message/41926/): 사업자가 공개하는 사후 보고서의 실제 예. 원인은 기술과 절차로 적히고, 사람 이름은 나오지 않습니다.
 - [Google Cloud Incident Reports](https://status.cloud.google.com/summary): 공개 포스트모템 모음.
