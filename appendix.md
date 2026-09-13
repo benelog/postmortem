@@ -203,6 +203,7 @@ wide: true
 - [데브시스터즈의 장애 대응 원칙과 방법](https://tech.devsisters.com/posts/incident-management-principles/): 인시던트 커맨더를 '지휘자'로, 기록 담당을 '기록가'로 부릅니다. 최초 인지자가 지휘자를 맡고 필요하면 인계한다는 원칙.
 - [장애 모의 훈련 그리고 배운 점 · Hyperconnect Tech Blog](https://hyperconnect.github.io/2024/11/12/sre-incident-training.html): SRE 팀이 장애 대응을 '총괄'하는 조직의 모의 훈련 기록.
 - [우아~한 장애대응 · 우아한형제들 기술블로그](https://techblog.woowahan.com/4886/): 장애 전파와 보고 체계.
+- [LINE 플랫폼 서버의 장애 대응 프로세스와 문화 · LINE Engineering](https://engineering.linecorp.com/ko/blog/line-platform-server-outage-process-and-dev-culture): 장애 등급을 영향 범위와 기능의 심각도로 정하고 대응 중에 바꿀 수 있다는 기준, 1차 보고는 근무일 1일 안, 회고는 5일 안이라는 기한, 재발 방지·탐지·대응의 세 관점으로 나눈 개선 항목. 1화의 SEV1 등급 설명은 이 기준을 따랐습니다.
 - [장애 발생 시 대처 방법: 4단계 장애 대응 플레이북 · 비브라늄랩스](https://vibraniumlabs.ai/blog/what-to-do-during-an-outage): 역할을 먼저 정하고 책임은 나중에 묻는다는 순서.
 
 ## 용어에 관한 메모
