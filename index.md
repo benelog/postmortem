@@ -23,6 +23,6 @@ layout: default
 <a class="appendix-card" href="{{ '/appendix/' | relative_url }}">
   <span class="appendix-kicker">부록</span>
   <span class="appendix-title">참고 자료</span>
-  <span class="appendix-desc">각 화의 장애가 기대는 실제 문서들 — 인시던트 지휘, 블레임리스 포스트모템, 온콜, 감사 로그, 그리고 국내 회사들의 장애 대응 사례. 각 화로 바로 가는 링크도 함께.</span>
+  <span class="appendix-desc">각 화의 장애가 기대는 실제 문서들. 인시던트 지휘, 블레임리스 포스트모템, 온콜, 감사 로그, 그리고 국내 회사들의 장애 대응 사례. 각 화로 바로 가는 링크도 함께.</span>
   <span class="appendix-go">보러 가기 →</span>
 </a>
