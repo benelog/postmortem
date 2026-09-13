@@ -243,6 +243,19 @@
    "final_source": "/home/benelog/.codex/generated_images/01a09815-9022-78f2-94e9-c4f253dbbb7c/exec-f998039d-751f-4636-a011-e11e59062f65.png"
   },
   {
+   "name": "ep11",
+   "output": "ep11.webp",
+   "alt": "반깁스한 발을 테이블에 올리고 목발을 곁에 둔 채, 토요일 밤 집에서 홀로 노트북으로 장애를 대응하는 도현",
+   "note": "7~10화와 같은 방식. 극화체 레시피에 토요일 저녁 집 거실 팔레트(청회색 벽, 호두색 낮은 테이블, 창밖 차가운 밤, 스탠드 램프 하나만 따뜻한 국소 강조)를 담아 codex exec image_gen으로 직접 생성. 노트북은 화면이 안 보이게 뒤로 돌림(3화 규칙). 1672x941 그대로 webp 변환.",
+   "steps": [
+    {
+     "purpose": "극화체 토요일 밤 집 대응 장면 직접 생성 (codex exec image_gen)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라.\n\n이 그림은 한국어 연작 추리 만화 「포스트모템」 11화 삽화다. 기존 1~10화 삽화와 같은 극화체(劇畵體) 스타일을 정확히 따라야 한다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no skin pores, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute caricature. Absolutely NO text, NO lettering, NO speech bubbles, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin (face, neck, hands, the injured foot): very light warm porcelain-beige with a tiny hint of peach. Base approximately #F5E1D4, highlights #FAEDE4, minimal flat shadows #E8CBBB. Light fair flesh, NOT orange, yellow, bronze or tan.\n\n[배경 팔레트 — 토요일 저녁 집 거실]\nA small home living room on a Saturday evening. Muted, cozy-but-tense palette: gray-blue walls (#7C8790), a neutral taupe-gray sofa (#8A8079), a low wooden coffee table in muted walnut (#76645A). Through a window, a COLD dark blue night (#3E4A57). The one warm accent is a single floor/desk lamp glow near the man — a small warm pool in an otherwise cool, dim room. White/gray/blue dominate broad surfaces; warm light stays small and local.\n\n[장면]\nA man in his 30s — a backend engineer — sits on a sofa at home on a Saturday evening, working an emergency alone. He has THICK eyebrows, an angular adult face, and thick tousled black hair. His RIGHT ANKLE is wrapped in a white bandage/brace and PROPPED UP on the low coffee table; a pair of crutches leans against the sofa beside him. He is hunched forward toward a LAPTOP open on the coffee table, angled AWAY from the viewer so we see its dark back/edge (no screen content), one earbud in his ear, a phone face-up on the table, a takeout container pushed aside. His brow is tight, focused, a little grim — a person who did not plan to be doing this tonight. Tense concentration in a quiet home, one lamp lit. 16:9 landscape.\n\n이 남자(도현)는 연작에 이미 나온 인물이니, 위의 굵은 눈썹·각진 얼굴·헝클어진 검은 머리 묘사대로 각진 극화체로 일관되게 그려라. 특정 실제 인물을 베끼지 마라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    }
+   ],
+   "final_source": "/home/benelog/.codex/generated_images/01a09824-2658-7ae2-80a2-23ce98e361ed/exec-71f2b32d-ae43-42cb-8877-eaa87f1d656d.png"
+  },
+  {
    "name": "share",
    "output": "share.jpg",
    "steps": [

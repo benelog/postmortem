@@ -124,6 +124,15 @@ permalink: /appendix/
 - [git-blame · Git 문서](https://git-scm.com/docs/git-blame) — blame은 그 줄을 마지막으로 바꾼 커밋을 가리킬 뿐입니다.
 - [Ignoring commits in git blame · `.git-blame-ignore-revs`](https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revs-fileltfilegt) — 대량 포매팅 커밋을 blame에서 건너뛰어 진짜 작성자를 드러내는 방법.
 
+## 대기열과 재시도 우회
+
+11화의 제목이자, 굿즈 오픈 때 절반만 동작하던 방어의 배경입니다. 대기열은 신규 진입만 막고, 실패한 사람의 재시도는 그 밖에서 새고 있었습니다.
+
+- [Using a virtual waiting room to protect your application · AWS](https://aws.amazon.com/solutions/implementations/virtual-waiting-room-on-aws/) — 가상 대기실이 뒤의 시스템을 보호하는 구조.
+- [Handling Overload · Google SRE Book](https://sre.google/sre-book/handling-overload/) — 과부하를 앞에서 흘려보내는 부하 차단(load shedding). 통과율을 낮춰 뒤를 지키는 방식.
+- [Addressing Cascading Failures · Google SRE Book](https://sre.google/sre-book/addressing-cascading-failures/) — 재시도가 어떻게 장애를 스스로 지속시키는지.
+- [Timeouts, retries, and backoff with jitter · Amazon Builders' Library](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) — 방어를 우회한 재시도가 부하를 배로 만드는 방식.
+
 ## 국내 회사의 장애 대응 사례
 
 인물들의 말투와 절차를 한국 회사의 것으로 맞출 때 참고했습니다.
