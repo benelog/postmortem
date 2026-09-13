@@ -109,7 +109,7 @@ PagerDuty 알림음은 어떤 상황에서도 사람을 일으켜 세운다. 유
   "env": "production",
   "from": false, "to": true,
   "at": "2026-09-11T02:11:52+09:00",
-  "actor": { "type": "api_token", "name": "ci-deploy-payments", "owner": "yoo.dohyun" },
+  "actor": { "type": "api_token", "name": "ci-deploy-payments", "owner": "yoo.dokyung" },
   "source_ip": "10.40.0.7"
 }
 ```

@@ -8,12 +8,6 @@ permalink: /appendix/
 
 이 연작의 회사와 사람과 장애는 지어낸 것이지만, 인물들이 따르는 관행과 어휘는 지어낸 것이 아닙니다. 각 화의 소재가 된 문서와, 표현을 고를 때 참고한 국내 사례를 모았습니다.
 
-## 각 화로
-
-{% assign eps = site.episodes | sort: "number" %}{% for e in eps %}
-- [{{ e.number }}화 · {{ e.title }}]({{ e.url | relative_url }}): {{ e.pov }} 시점{% endfor %}
-
-
 ## 인시던트 지휘
 
 1화에서 유현이 쓴 규정, "손을 쓰는 사람과 지휘하는 사람을 나눈다"는 원칙의 출처입니다.
@@ -104,6 +98,7 @@ permalink: /appendix/
 
 - [Release Engineering · Google SRE Book](https://sre.google/sre-book/release-engineering/): 언제 배포를 멈추고, 그 동결에 어떤 예외를 둘지.
 - [Numeric Types · PostgreSQL Documentation](https://www.postgresql.org/docs/current/datatype-numeric.html): 정수 시퀀스에도 천장이 있다는 것. 다 쓰기 전에는 조용하다가 다 쓰는 순간 터진다.
+- [CREATE SEQUENCE · PostgreSQL Documentation](https://www.postgresql.org/docs/current/sql-createsequence.html): 천장에 닿은 시퀀스는 기본적으로 오류를 내고, `CYCLE`이 붙어 있으면 처음으로 돌아간다. 9화의 중복은 오류 대신 순환을 고른 결과입니다.
 - [Feature Toggles · martinfowler.com](https://martinfowler.com/articles/feature-toggles.html): 동결 중의 대응은 배포가 아니라, 이미 배포된 코드를 플래그로 켜는 것.
 
 ## 복제 지연과 하드웨어 장애

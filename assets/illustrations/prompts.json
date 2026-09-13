@@ -1,6 +1,6 @@
 {
  "tool": "Built-in image_gen",
- "use_case": "style-transfer followed by skin color edit",
+ "use_case": "character continuity, style consistency, and user-directed facial likeness edits",
  "art_direction": "극화체: 굵은 먹선, 평면 채색, 밝고 옅은 살색 피부. 가게는 청회색 벽과 중성 갈색 목재, 조명에만 작은 따뜻한 색 강조. 사무실은 흰색 벽·밝은 회색 가구·자연스러운 푸른 낮빛.",
  "images": [
   {
@@ -22,9 +22,28 @@
     {
      "purpose": "가게 배경을 청회색 벽과 중성 갈색 목재로 구분",
      "prompt": "Use case: precise-object-edit. Change ONLY the TAVERN ENVIRONMENT COLOR PALETTE in this comic panel to separate it clearly from the very pale peach SKIN. The current mustard yellow walls, pillars and table are too similar to skin. Recolor large interior walls and panels a muted COOL BLUE GRAY (#758A90) and some desaturated sage-gray (#8B9890); neutral charcoal structural trim. Recolor tabletop and wooden furniture a neutral WALNUT/TAUPE BROWN (#76645A, lighter planes #A99784), visibly muted, NOT orange/yellow. Preserve original black ink marks, bold flat-color dramatic comic style and perspective. Keep amber ONLY as a small accent in actual bulbs/lamps and a few tiny window reflections, not as a global cast or broad yellow surface. Keep all characters including their LIGHT PALE PEACH skin EXACTLY the same color as input; do not change faces, poses, hands, clothes, objects, green glass bottles, alert phones or composition. The exterior alley remains deep teal. Strictly no global color filter, no realistic shading, no gradients, no new objects, no text. Preserve dimensions. Goal: cool subdued interior + neutral brown wood contrasts with delicately warm fair skin. Image 1 is the EDIT TARGET, Image 2 is ENVIRONMENT COLOR REFERENCE ONLY. Match the cool blue-gray tavern walls and neutral walnut table of image 2. Preserve all of image 1's people, pale skin and composition. Shop exterior wall and interior visible through windows should also lose broad mustard yellow casts, use cool gray-blue walls and neutral brown furniture. Keep small lamps warm."
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is the EDIT TARGET: original 1672x941 wide comic cover of a rainy tavern viewed from outside. Image 2 is CHARACTER REFERENCE ONLY: YEONGSEON is the elderly proprietor at far LEFT FOREGROUND with short thick permed hair. In image 1, correct ONLY the SMALL PROPRIETOR standing BEHIND the two main seated people near the upper middle inside the tavern. She currently looks like a young adult with a pulled-back bun. Restore the SAME older woman as image 2: broader fuller adult face, prominent rounded nose, short dense voluminous BLACK PERMED CURLS, visible eye/nasolabial age lines with a few bold ink marks, pale low-saturation peach skin. Keep her head angle looking down, body position, red blouse and tan apron, hands and action. Use the exact existing bold ink and flat color style; no pasted photographic face. Her small head must remain at its original scale. Every other part of image 1 is LOCKED: main bob-haired woman Yuhyeon, tousled-haired man Dokyeong, patrons, all faces/hands except proprietor, rainy teal alley, white-shirt shapes, tables/bottles/window mullions, lighting, framing and image dimensions. Do NOT redraw or recompose entire image. No text, logos, captions or watermark.",
+     "references": [
+      "cover.webp",
+      "ep5.webp"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = SMALL SEATED BOB-HAIRED WOMAN inside tavern CENTER-LEFT, head supported by hand, serious gaze toward man across table. Preserve tiny head size. Dokyeong white-shirted man, corrected older curly-haired proprietor behind pair and other patrons are LOCKED. No text added. Output landscape 1672x941.",
+     "references": [
+      "cover.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-1d053ab3-07db-48be-86f5-096443ca14e3.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-0f2fa1f1-0eae-434c-bc78-18bad11cca3e.png"
   },
   {
    "name": "ep1",
@@ -45,9 +64,28 @@
     {
      "purpose": "가게 배경을 청회색 벽과 중성 갈색 목재로 구분",
      "prompt": "Use case: precise-object-edit. Change ONLY the TAVERN ENVIRONMENT COLOR PALETTE in this comic panel to separate it clearly from the very pale peach SKIN. The current mustard yellow walls, pillars and table are too similar to skin. Recolor large interior walls and panels a muted COOL BLUE GRAY (#758A90) and some desaturated sage-gray (#8B9890); neutral charcoal structural trim. Recolor tabletop and wooden furniture a neutral WALNUT/TAUPE BROWN (#76645A, lighter planes #A99784), visibly muted, NOT orange/yellow. Preserve original black ink marks, bold flat-color dramatic comic style and perspective. Keep amber ONLY as a small accent in actual bulbs/lamps and a few tiny window reflections, not as a global cast or broad yellow surface. Keep all characters including their LIGHT PALE PEACH skin EXACTLY the same color as input; do not change faces, poses, hands, clothes, objects, green glass bottles, alert phones or composition. The exterior alley remains deep teal. Strictly no global color filter, no realistic shading, no gradients, no new objects, no text. Preserve dimensions. Goal: cool subdued interior + neutral brown wood contrasts with delicately warm fair skin."
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "사용자 지정 신민아 사진을 참고한 유현 얼굴 기준 설정",
+     "prompt": "Use case: identity-preserve. User requests that the fictional character YUHYEON in this Korean dramatic comic resemble actress SHIN MIN-A in the supplied Wikimedia portrait. Image 1 is the EDIT TARGET. Image 2 is the actress portrait, a facial likeness reference ONLY, never a style/pose/background reference. Change ONLY Yuhyeon's FACE and subtle hair framing immediately around it. Make the resemblance clearly recognizable in DRAWN comic form: softly full upper cheeks, smooth oval face gently tapering into a rounded rather than sharply pointed chin, almond-shaped dark eyes with the reference's more open rounded lower eyelids and natural spacing, gently curved natural eyebrows, straight modest nose bridge with a small softly rounded nose tip, defined cupid's-bow upper lip and fuller curved lower lip, subtle cheek/dimple contour only where the expression naturally allows. Preserve Yuhyeon as an adult experienced SRE leader; not teenager/chibi. Her familiar side-parted CHIN-LENGTH BLACK BOB remains unchanged in length, silhouette and bold white ink highlights. Keep EACH TARGET'S EXPRESSION, head angle and gaze: do not import the photo's broad smile into a tense scene. Retain existing BLACK INK comic outlines, flat very pale low-saturation peach skin, large solid black shadow shapes and sparse cel shadows. No photo face pasted into drawing, no pores, no soft realistic shading, no makeup glamour, no new jewelry. Every OTHER person and all of their faces/hair are LOCKED. Preserve body poses, hands, clothing, count and position of people, framing, perspective, time of day, lighting, palette, all objects and background exactly. Single panel, same landscape aspect and size as target. No added text or watermarks. Target identity mapping: YUHYEON is the LARGE BOB-HAIRED WOMAN on LEFT seated at table in dark blouse, looking down-right at alert phones with tense, slightly parted lips. Keep that serious expression while reshaping face to reference Shin Min-a likeness. DO NOT CHANGE the white-shirted MAN RIGHT (Dokyeong), background patrons, phones with red alerts, soju bottles, hands, bags, dishware, or rainy teal doorway. Output landscape 1672x941.",
+     "references": [
+      "ep1.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: precise-object-edit, fictional character facial shape correction. Image 1 is the EDIT TARGET. Image 2 is the user-provided SHIN MIN-A facial reference. User feedback: Yuhyeon's chin is visibly TOO POINTED compared with the reference; make her face a little rounder. Change ONLY THE BOB-HAIRED WOMAN'S LOWER FACE on LEFT. Her current face has a long diagonal cheek-to-chin line ending in a narrow V. Visibly correct it: shorten the lower third slightly, widen the chin tip into a small smooth rounded U-shaped arc, give the lower cheeks modest natural fullness, join cheeks and chin with a continuous soft oval curve rather than angular converging straight lines. Keep the same slim adult woman, not a round baby face; the intended result is Shin Min-a's softly full oval face and gently rounded jaw, not a sharp V-line beauty face. In this three-quarter angle, retain a softly rounded projecting chin contour rather than a needle point. Preserve her already established Shin Min-a-like eyes, nose and lips, natural eye spacing, expression of serious concern and down-right gaze. Keep her side-parted CHIN-LENGTH BLACK BOB, body, black blouse, hands and pale low-saturation peach skin. Match bold black drawn ink and FLAT cel coloring throughout the face, no airbrush makeup. Everything else is LOCKED: the white-shirted man right and every other person's face, hands, positions, all phones with red alert icons, bottles and dishes, tavern and rainy alley, colors, composition. No new text or jewelry. Landscape 1672x941. The change in chin roundness must be easy to see compared with image 1 while remaining subtle and natural.",
+     "references": [
+      "ep1.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-d55178cc-df99-404b-9cc7-8558df264332.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-7b55f725-5f25-426b-9e5a-849a72da129c.png"
   },
   {
    "name": "ep2",
@@ -68,9 +106,19 @@
     {
      "purpose": "사무실을 흰색·밝은 회색과 자연스러운 푸른 낮빛으로 보정",
      "prompt": "Use case: precise-object-edit. Recolor ONLY the OFFICE ENVIRONMENT of this existing dramatic comic illustration. The office currently has an unnatural dominant mustard-yellow color. Replace it with a natural clean WHITE and LIGHT COOL GRAY contemporary office palette. Walls, ceiling and structural pillars: neutral off-white #F3F4F2. Desktops and meeting tables: pale neutral gray #D6DADD (no yellow or golden wood); partitions: light cool gray #BBC7CD; window frames and ink outlines stay dark. Through windows show a natural PALE BLUE or white overcast daytime sky and subdued blue-gray city buildings; eliminate yellow sunset skies, yellow glass tint, amber daylight and ochre stains. Fluorescent lights are neutral white. White/gray must dominate broad surfaces, with clear black comic lines defining all objects and original cool monitor screens retained. Preserve exact scene, composition, people, facial features, hands, poses, clothes, VERY LIGHT PEACH SKIN colors, black ink shadow shapes, object placements, laptop/monitor graphics and red graph accents. Do not make skin gray or whiter. Keep original bold flat cel-colored geukhwa comic style; no photorealism, no gradients, no glossy render, no redraw of characters, no added text or objects. Do not globally desaturate the illustration: only replace yellow office surfaces and yellow daylight with whites/grays and pale blue daylight. Preserve landscape aspect ratio and dimensions."
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = standing woman UPPER LEFT with arms folded behind seated white-shirted Dokyeong. Keep serious intent gaze toward monitors. Dokyeong and all coworkers are locked. Output landscape 1672x941. Drawing constraint: Yuhyeon's face must be made of the SAME FEW CRISP BLACK PEN STROKES and flat skin fill as other people's faces in the target. Draw nose with one or two distinct dark ink lines, eyelids with simple bold strokes, lips as flat shapes. NO smoothly shaded photographic face or blurred cheek highlights. Preserve a rounded outer jaw contour despite the strong ink style.",
+     "references": [
+      "ep2.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-c4edcca2-c992-48ff-b0b3-ac2410e6223b.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-0dc4f9f6-a847-47e5-a271-dd51c4fd83b2.png"
   },
   {
    "name": "ep3",
@@ -98,9 +146,19 @@
      "references": [
       "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-b5febe79-7e94-4133-9904-db0bd9ebc29b.png"
      ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = SEATED CENTER bob-haired woman with hand near lips, looking at monitor. Keep worried concentrating expression. Left pointing man Dokyeong and upper-center rectangular-glasses older man Minseok are locked. Output landscape 1672x941. Drawing constraint: Yuhyeon's face must be made of the SAME FEW CRISP BLACK PEN STROKES and flat skin fill as other people's faces in the target. Draw nose with one or two distinct dark ink lines, eyelids with simple bold strokes, lips as flat shapes. NO smoothly shaded photographic face or blurred cheek highlights. Preserve a rounded outer jaw contour despite the strong ink style.",
+     "references": [
+      "ep3.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-bedf6fa3-05e9-4c03-9997-42e30f9ea7aa.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-ba9c9038-2297-4031-9ce7-aa564cbf7e58.png"
   },
   {
    "name": "ep4",
@@ -152,9 +210,19 @@
       "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-68cddb8f-6d00-4845-b411-80341b9ffd82.png",
       "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-b5febe79-7e94-4133-9904-db0bd9ebc29b.png"
      ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = seated woman at the LEFT END of rear table, chin-length bob, dark blouse, fist near mouth, worried downward gaze. NOT the far-right tied-haired woman Yuri; Yuri must remain unchanged. Proprietor foreground left, Dokyeong and Minseok all remain unchanged. Output landscape 1672x941. Drawing constraint: Yuhyeon's face must be made of the SAME FEW CRISP BLACK PEN STROKES and flat skin fill as other people's faces in the target. Draw nose with one or two distinct dark ink lines, eyelids with simple bold strokes, lips as flat shapes. NO smoothly shaded photographic face or blurred cheek highlights. Preserve a rounded outer jaw contour despite the strong ink style.",
+     "references": [
+      "ep5.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-ca82cc8e-c1b2-4834-a5c9-5202917ff85f.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-e4e0c693-b0b6-40db-9a8b-0f4e722876bf.png"
   },
   {
    "name": "ep6",
@@ -186,9 +254,27 @@
       "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-38899d8a-1196-4ecb-bc87-9e59ffd5c518.png",
       "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-68cddb8f-6d00-4845-b411-80341b9ffd82.png"
      ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = CENTER bob-haired woman in black POURING CLEAR SODA for the short-haired glasses person left. Preserve the restrained gentle smile and downward gaze; reference Shin Min-a's subtle cheek/dimple is appropriate, but no broad toothy grin. Haneul in blue at left foreground, Dokyeong white-shirted behind, Minseok with rectangular glasses right, Yuri far right with tied hair and older proprietor at back are all LOCKED. Output landscape 1672x941.",
+     "references": [
+      "ep6.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "둥근 얼굴과 미소를 유지하며 사진 같은 얼굴 명암을 먹선과 평면 채색으로 보정",
+     "prompt": "Image 1 is EDIT TARGET. Correct ONLY the FACE RENDERING of the bob-haired woman in BLACK at CENTER pouring soda. Her rounder Shin Min-a-inspired facial identity and gentle smile are now correct, but the face looks softly photographic compared with everyone else. Redraw exactly that face using the same CRISP BLACK PEN STROKES and FLAT CEL COLOR as the other people's faces in this panel: bold curved eye contours, natural simple brow strokes, nose drawn as one curved/angular black ink line with a tiny nostril mark, flat lip shapes, uniform pale peach skin and at most one small hard-edged shadow. Keep the full gently curved cheeks and rounded chin, existing proportions and facial likeness; DO NOT turn the face into sharp angular cheek-to-chin straight lines or a V chin. Keep all other faces (including Haneul left foreground, Dokyeong behind, Minseok right, Yuri far right and older proprietor behind) identical. Body poses, soda pouring, hands, clothing, all furniture/food/rain/background, colors and lighting unchanged. No photo face, no airbrushed highlights, no gradients, no new text. Same landscape dimensions.",
+     "references": [
+      "ep6.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-f844d63a-bd4d-44ad-af32-07c05288f724.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-ebec6477-f1e0-4ba4-974e-468c1cac0466.png"
   },
   {
    "name": "ep7",
@@ -212,9 +298,30 @@
     {
      "purpose": "극화체 밤 골목·유리문 장면 직접 생성 (codex exec image_gen)",
      "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라.\n\n이 그림은 한국어 연작 추리 만화 「포스트모템」 8화 삽화다. 기존 1~7화 삽화와 같은 극화체(劇畵體) 스타일을 정확히 따라야 한다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no skin pores, no photographic lighting, no volumetric rendering, no detailed fabric or wood texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute caricature. Absolutely NO text, NO lettering, NO signage text, NO speech bubbles, NO numbers, NO logos anywhere (the shop sign is blank).\n\n[피부톤]\nAny exposed skin (the man's face, ear, neck, one hand): very light warm porcelain-beige with a tiny hint of peach. Base approximately #F5E1D4, highlights #FAEDE4, minimal flat shadows #E8CBBB. Light fair flesh, NOT orange, yellow, bronze or tan.\n\n[배경 팔레트 — 밤 골목 + 술집]\nA late-night back-alley tavern scene. Interior walls a muted COOL BLUE-GRAY (#758A90) with some desaturated sage-gray; wooden tables and furniture a neutral WALNUT/TAUPE BROWN (#76645A, lighter planes #A99784), muted, NOT orange or yellow. The alley outside is deep dark TEAL, cold night. Keep warm amber ONLY as a small accent inside the lit tavern lamps and the warm glow spilling through the glass door onto the wet-dark pavement — never as a global cast. Cool dark exterior contrasts with a small warm interior.\n\n[장면]\nExterior view of a small tavern at night, seen from the alley. In the FOREGROUND, seen from BEHIND or 3/4-back, stands a man in his 50s in a dark overcoat — a company CEO — facing a lit glass door, hesitating, one hand just lowered from the glass, about to turn away. He is outside, in the cold dark alley. Through the warm-lit GLASS DOOR of the tavern we see, smaller and simplified, FOUR people seated at two small tables pushed together, and clearly ONE EMPTY CHAIR among them; one of the four is lifting a bottle to pour into a glass. The blank tavern sign hangs above the door (no text on it). Mood: a man standing outside a warm room he has not entered, looking in at people and an empty seat. Composition emphasizes the lone dark figure outside versus the small warm gathering inside behind glass. 16:9 landscape.\n\n이 대표(외투 입은 남자)는 이 연작에 처음 나오는 새 인물이므로 특정 실제 인물을 베끼지 말고 위 묘사대로 각진 극화체로 새로 그려라. 유리문 안의 네 사람은 작고 단순하게, 실루엣에 가깝게 그려라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve and style-transfer. Edit the FIRST image, a panel in the Korean dramatic comic 포스트모템. The other images are references ONLY. Preserve target's single-panel landscape 1672x941 composition, framing, camera perspective, narrative action, people count, body poses, hands, props and setting unless an explicit correction below requires a local change. Match the early episodes' bold variable-width black ink contours, large flat ink shadows, restrained flat cel colors, crisp facial ink marks and sharp white hair highlights. Skin is very pale low-saturation peach-beige, with at most a small hard-edged shadow; no airbrushed shading, no orange/tan skin, no glossy webtoon face, no blurred foreground/depth-of-field, no photographic grain. Preserve the time of day. Retain cool blue-gray environments, neutral walnut wood, and small local amber lamps. Do not brighten night into day. No lettering, numbers, captions, logos or watermark. Do not add jewelry. Adapt reference facial geometry to the target head angles and expressions; do not copy reference poses. The three references establish recurring characters: reference 2 gives YUHYEON (woman with chin-length side-parted bob at left) and DOKYEONG (man with thick brows, angular jaw and full tousled hair at right); reference 3 upper-center gives MINSEOK (mature long rectangular face, forehead creases, rectangular glasses, swept side part); reference 4 left foreground gives HANEUL (neat SHORT black hair covering ears only partly, round glasses, blue shirt). CRITICAL: Replace only the FOUR incorrectly generic seated people inside the window with these exact four recurring people, keeping their existing positions and scale: leftmost person pouring = Haneul, blue shirt, short hair and round glasses, pouring bottle into a glass; center person facing viewer = Minseok, rectangular glasses and middle-aged face; center-right seated person with back to viewer = Dokyeong, tousled black hair and white shirt; far-right seated person in profile = Yuhyeon, chin-length side-parted black bob and dark blouse. No ponytail for Yuhyeon. Preserve the fifth person, CEO in dark coat seen from behind OUTSIDE on left, unchanged. Preserve the EMPTY CHAIR at far right, two adjoining tables, glass door, rain and alley. Interior must have cool blue-gray walls and pale peach skin, without amber wash over the whole room. Keep small hanging lamps warm. Keep the broad composition and small scale of the inside figures; don't turn into portraits.",
+     "references": [
+      "ep8.webp",
+      "ep1.webp",
+      "ep3.webp",
+      "ep6.webp"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = SMALL SEATED WOMAN at FAR RIGHT of group INSIDE glass window, in dark blouse and chin-length bob, hand near chin, profile facing LEFT. Keep her tiny scale, adapt the new likeness to profile without enlarging head. Haneul short-haired blue-shirted pouring left, bespectacled Minseok center, tousled Dokyeong white shirt back-facing, EMPTY CHAIR and large CEO outdoors are all locked. Output landscape 1672x941. Drawing constraint: Yuhyeon's face must be made of the SAME FEW CRISP BLACK PEN STROKES and flat skin fill as other people's faces in the target. Draw nose with one or two distinct dark ink lines, eyelids with simple bold strokes, lips as flat shapes. NO smoothly shaded photographic face or blurred cheek highlights. Preserve a rounded outer jaw contour despite the strong ink style.",
+     "references": [
+      "ep8.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a097ee-fd59-79d3-bf06-1783a2a1a3a7/exec-e7353db6-1197-41b7-aee6-e400f392a256.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-305408e0-6023-4f25-baf0-e5d918e288e0.png"
   },
   {
    "name": "ep9",
@@ -225,9 +332,19 @@
     {
      "purpose": "9화 장면 직접 생성 (codex exec image_gen)",
      "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 9화 삽화이며 나머지 화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, simplified faces; eyes a few pen strokes; noses a single angular line; hair solid black silhouettes with 2-3 white highlights; expression via eyebrows and mouth. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft washes, no 3D, no glossy webtoon. Serious adult crime/drama comic, not chibi. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, flat shadows ~#E8CBBB. NOT orange/yellow/tan.\n\n[배경 팔레트 — 연말, 텅 빈 저녁 사무실]\nA modern office in the evening at year-end, almost EMPTY because everyone is on holiday. Neutral off-white and cool gray desks; most desks empty, their chairs pushed in and monitors dark. Through the window, a cold dark blue winter evening city (#3E4A57). One small warm accent: a single lit desk area, and perhaps one tiny forgotten string of holiday lights on an empty partition. White/gray dominant, cold and empty, one warm pool of light.\n\n[장면]\nA man in his 30s — a payments backend engineer with THICK eyebrows, an angular adult face, and thick tousled black hair — sits alone at his desk in the emptied year-end office, the only person who stayed. He is focused and a little grim, working an emergency by himself; a monitor on his desk is angled AWAY from the viewer (dark back only, no screen content). Rows of empty desks recede around him into cool shadow. The subject is solitude: one worker in a large empty office at year-end, holding the line alone. 16:9.\n\n이 남자(도경)는 연작에 이미 나온 인물이니 굵은 눈썹·각진 얼굴·헝클어진 검은 머리로 일관되게 그려라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve and style-transfer. Edit the FIRST image, a panel in the Korean dramatic comic 포스트모템. The other images are references ONLY. Preserve target's single-panel landscape 1672x941 composition, framing, camera perspective, narrative action, people count, body poses, hands, props and setting unless an explicit correction below requires a local change. Match the early episodes' bold variable-width black ink contours, large flat ink shadows, restrained flat cel colors, crisp facial ink marks and sharp white hair highlights. Skin is very pale low-saturation peach-beige, with at most a small hard-edged shadow; no airbrushed shading, no orange/tan skin, no glossy webtoon face, no blurred foreground/depth-of-field, no photographic grain. Preserve the time of day. Retain cool blue-gray environments, neutral walnut wood, and small local amber lamps. Do not brighten night into day. No lettering, numbers, captions, logos or watermark. Do not add jewelry. Adapt reference facial geometry to the target head angles and expressions; do not copy reference poses. Correct DOKYEONG, the only foreground person, to the MAN RIGHT in image 2 and seated foreground man in image 3. Retain mature angular adult face, strong jaw and thick straight brows, full irregular tousled BLACK hair with crisp white ink highlights (not gray soft sheen), same eye/nose proportions. Target face is too simplified and youthful. Match the confident heavier ink contour and flat pale peach skin of early episodes. Keep black sweater, seated focused posture, hands, opaque monitor BACK, dark mostly-empty nighttime office, distant small Christmas tree and string lights, desk lamp pool, snowy city windows. Reduce photorealistic smooth shading and foreground camera blur without changing layout or increasing overall brightness.",
+     "references": [
+      "ep9.webp",
+      "ep1.webp",
+      "ep2.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a09851-49ca-74d1-affc-f04f1f9fc867/exec-949a687a-3653-4d65-a34c-e44965e825de.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-58cf0b30-2f0f-49a4-8176-e09607cd912b.png"
   },
   {
    "name": "ep10",
@@ -242,9 +359,29 @@
     {
      "purpose": "국내 고속버스의 모든 좌석을 전방으로 통일하고, 앞에서 뒤를 바라보는 구도로 후면 벽과 마지막 좌석 열을 표현",
      "prompt": "Use case: precise-object-edit. Input image: edit target, the existing episode 9 illustration. Fix the physically contradictory seat directions inside this South Korean express coach. Keep the foreground woman, her face, short black bob, tense expression, black coat, earbud, hands holding a phone near her mouth, laptop on lap, left-side snowy countryside window, blue dusk light, dark detailed graphic-novel art style and wide 16:9 composition as close to the original as possible. The camera is positioned toward the FRONT of the coach and looks BACK toward the REAR. The woman faces forward toward the camera, as do ALL passenger seats and ALL other passengers. Rebuild the background to make this unambiguous: the far end of the aisle is a normal upholstered REAR wall with a final row of forward-facing passenger seats, NOT a front windshield or driver's cockpit. Remove the distant front road windshield, windshield mirror, dashboard, front monitor, and driver's area. Show the front upholstered cushions and headrests of every visible seat on both sides, with seat bases projecting toward the camera; no rear-facing seat backs with mesh pockets facing the camera. Background passengers face toward the camera, their faces can be obscured naturally by the seats ahead, never show the backs of their heads as if facing away. Keep all seats aligned in the same longitudinal direction, with plausible coach aisle perspective. No facing pairs, no reversed seats, no train interior. The actual bus front is behind the camera and outside the frame. Change only the interior geometry and necessary background passenger orientations; preserve the lead character and mood. No text or watermark."
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve and style-transfer. Edit the FIRST image, a panel in the Korean dramatic comic 포스트모템. The other images are references ONLY. Preserve target's single-panel landscape 1672x941 composition, framing, camera perspective, narrative action, people count, body poses, hands, props and setting unless an explicit correction below requires a local change. Match the early episodes' bold variable-width black ink contours, large flat ink shadows, restrained flat cel colors, crisp facial ink marks and sharp white hair highlights. Skin is very pale low-saturation peach-beige, with at most a small hard-edged shadow; no airbrushed shading, no orange/tan skin, no glossy webtoon face, no blurred foreground/depth-of-field, no photographic grain. Preserve the time of day. Retain cool blue-gray environments, neutral walnut wood, and small local amber lamps. Do not brighten night into day. No lettering, numbers, captions, logos or watermark. Do not add jewelry. Adapt reference facial geometry to the target head angles and expressions; do not copy reference poses. Correct YUHYEON to the WOMAN LEFT in image 2 and standing woman in image 3: same side-parted chin-length bob, narrow angular adult jaw, sharp almond eyes and straight nose, crisp white ink highlights in black hair. Current skin and hair have a muddy brown-gray shaded finish: restore very pale low-saturation peach in face/hands with small flat shadow only; keep black mourning coat, earbud, phone held discreetly in front of mouth by BOTH hands, laptop on lap with opaque back. Keep dusk winter blue bus interior and window landscape, sparse passengers, seating, road and low sunset accent. Preserve her tense quiet expression. Replace photographic landscape softness and coat/seat microtexture with restrained drawn ink hatching and flat blue-gray shapes, matching the drawing density/ink weight of image 2. Do not remove passengers; story says about ten passengers.",
+     "references": [
+      "ep10.webp",
+      "ep1.webp",
+      "ep2.webp"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = only foreground woman on bus, black bob and black winter mourning coat, earbud, holding PHONE by mouth with BOTH hands. Keep tense quiet concentrating expression, head/gaze down-left, hands obscuring mouth as originally, laptop back, passengers and winter twilight exactly. Output landscape 1672x941. Drawing constraint: Yuhyeon's face must be made of the SAME FEW CRISP BLACK PEN STROKES and flat skin fill as other people's faces in the target. Draw nose with one or two distinct dark ink lines, eyelids with simple bold strokes, lips as flat shapes. NO smoothly shaded photographic face or blurred cheek highlights. Preserve a rounded outer jaw contour despite the strong ink style.",
+     "references": [
+      "ep10.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a09803-c9e9-7cf2-9e36-3057284c0419/exec-a3c56c12-a340-420c-833c-e3cc0a068b13.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-cc815f57-5afe-4397-bb24-ee4979293aa1.png"
   },
   {
    "name": "ep11",
@@ -255,9 +392,19 @@
     {
      "purpose": "극화체 해질녘 빈 사무실·신입과 사수 장면 직접 생성 (codex exec image_gen)",
      "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라.\n\n이 그림은 한국어 연작 추리 만화 「포스트모템」 10화 삽화다. 기존 1~9화 삽화와 같은 극화체(劇畵體) 스타일을 정확히 따라야 한다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no skin pores, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute caricature. Absolutely NO text, NO lettering, NO speech bubbles, NO numbers, NO logos, NO readable screen or paper content anywhere.\n\n[피부톤]\nExposed skin (faces, necks, hands): very light warm porcelain-beige with a tiny hint of peach. Base approximately #F5E1D4, highlights #FAEDE4, minimal flat shadows #E8CBBB. Light fair flesh, NOT orange, yellow, bronze or tan.\n\n[배경 팔레트 — 해질녘 텅 빈 사무실]\nAn empty modern office at dusk. Broad surfaces are neutral off-white #F3F4F2 walls and pale cool-gray #D6DADD desks and partitions. Through the windows, a COLD BLUE winter/late-winter dusk sky (#5B6E7A) over dim blue-gray buildings; most overhead lights are off, the room mostly in cool shadow. The ONE warm accent is a single desk lamp glowing over the seated newcomer — a small pool of warm light in a cool, empty room. White/gray/blue dominate; warm light stays tiny and local.\n\n[장면]\nForeground: a YOUNG new hire in their mid-20s sits alone at a desk (the second desk from the window), lit by a single warm desk lamp. Short, neat dark hair, a plain sweater, an earnest tired face. They have just finished typing and are turning to look toward a doorway across the room. A computer MONITOR on the desk is angled AWAY from the viewer so we see only its dark back/edge (no screen content). Beside the keyboard, a small neat STACK of blank printed documents. Around them, rows of empty desks recede into cool shadow. Background: at the far DOORWAY of the office, a woman in her late 20s stands waiting, small in the frame — ROUND glasses, neat hair, one hand on the door frame, patient. Mood: a newcomer leaving a message for the future in an emptied office, a mentor waiting at the door. Cool empty room, one warm lamp. 16:9 landscape.\n\n두 인물은 극화체 얼굴로 그려라. 문가의 여자(둥근 안경, late 20s)는 연작에 이미 나온 인물이니 둥근 안경·단정한 머리로 일관되게. 앉아 있는 신입은 새 인물이니 위 묘사대로 새로 그려라. 특정 실제 인물을 베끼지 마라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve and style-transfer. Edit the FIRST image, a panel in the Korean dramatic comic 포스트모템. The other images are references ONLY. Preserve target's single-panel landscape 1672x941 composition, framing, camera perspective, narrative action, people count, body poses, hands, props and setting unless an explicit correction below requires a local change. Match the early episodes' bold variable-width black ink contours, large flat ink shadows, restrained flat cel colors, crisp facial ink marks and sharp white hair highlights. Skin is very pale low-saturation peach-beige, with at most a small hard-edged shadow; no airbrushed shading, no orange/tan skin, no glossy webtoon face, no blurred foreground/depth-of-field, no photographic grain. Preserve the time of day. Retain cool blue-gray environments, neutral walnut wood, and small local amber lamps. Do not brighten night into day. No lettering, numbers, captions, logos or watermark. Do not add jewelry. Adapt reference facial geometry to the target head angles and expressions; do not copy reference poses. Keep foreground MINSEO's unique identity unchanged: youthful serious tired face, neat short black hair, no glasses, plain gray-brown sweater, seated and turning toward doorway. Correct ONLY the background person HANEUL in doorway to SAME short-haired round-glasses person at LEFT FOREGROUND of image 2 (blue shirt receiving soda). Haneul has neatly cut SHORT black hair with side-swept fringe, ears partly visible, small round black-rim glasses, no bun or ponytail. Keep Haneul standing in doorway with one hand on frame and restrained concerned expression, retain dark winter coat but blue shirt visible underneath. Restore early episodes' bold sharp ink, flat pale peach skin and crisp white hair highlights throughout. Keep dim evening office, empty desks, small warm lamp, blank paper stack, monitor BACK and current composition. Tone down fabric grain and glossy floor reflection into flat drawn shading.",
+     "references": [
+      "ep11.webp",
+      "ep6.webp",
+      "ep2.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a09815-9022-78f2-94e9-c4f253dbbb7c/exec-f998039d-751f-4636-a011-e11e59062f65.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-03e8dc95-01ed-4e21-817f-6b7ecbebfb09.png"
   },
   {
    "name": "ep12",
@@ -268,9 +415,19 @@
     {
      "purpose": "극화체 토요일 밤 집 대응 장면 직접 생성 (codex exec image_gen)",
      "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라.\n\n이 그림은 한국어 연작 추리 만화 「포스트모템」 11화 삽화다. 기존 1~10화 삽화와 같은 극화체(劇畵體) 스타일을 정확히 따라야 한다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no skin pores, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute caricature. Absolutely NO text, NO lettering, NO speech bubbles, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin (face, neck, hands, the injured foot): very light warm porcelain-beige with a tiny hint of peach. Base approximately #F5E1D4, highlights #FAEDE4, minimal flat shadows #E8CBBB. Light fair flesh, NOT orange, yellow, bronze or tan.\n\n[배경 팔레트 — 토요일 저녁 집 거실]\nA small home living room on a Saturday evening. Muted, cozy-but-tense palette: gray-blue walls (#7C8790), a neutral taupe-gray sofa (#8A8079), a low wooden coffee table in muted walnut (#76645A). Through a window, a COLD dark blue night (#3E4A57). The one warm accent is a single floor/desk lamp glow near the man — a small warm pool in an otherwise cool, dim room. White/gray/blue dominate broad surfaces; warm light stays small and local.\n\n[장면]\nA man in his 30s — a backend engineer — sits on a sofa at home on a Saturday evening, working an emergency alone. He has THICK eyebrows, an angular adult face, and thick tousled black hair. His RIGHT ANKLE is wrapped in a white bandage/brace and PROPPED UP on the low coffee table; a pair of crutches leans against the sofa beside him. He is hunched forward toward a LAPTOP open on the coffee table, angled AWAY from the viewer so we see its dark back/edge (no screen content), one earbud in his ear, a phone face-up on the table, a takeout container pushed aside. His brow is tight, focused, a little grim — a person who did not plan to be doing this tonight. Tense concentration in a quiet home, one lamp lit. 16:9 landscape.\n\n이 남자(도경)는 연작에 이미 나온 인물이니, 위의 굵은 눈썹·각진 얼굴·헝클어진 검은 머리 묘사대로 각진 극화체로 일관되게 그려라. 특정 실제 인물을 베끼지 마라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve and style-transfer. Edit the FIRST image, a panel in the Korean dramatic comic 포스트모템. The other images are references ONLY. Preserve target's single-panel landscape 1672x941 composition, framing, camera perspective, narrative action, people count, body poses, hands, props and setting unless an explicit correction below requires a local change. Match the early episodes' bold variable-width black ink contours, large flat ink shadows, restrained flat cel colors, crisp facial ink marks and sharp white hair highlights. Skin is very pale low-saturation peach-beige, with at most a small hard-edged shadow; no airbrushed shading, no orange/tan skin, no glossy webtoon face, no blurred foreground/depth-of-field, no photographic grain. Preserve the time of day. Retain cool blue-gray environments, neutral walnut wood, and small local amber lamps. Do not brighten night into day. No lettering, numbers, captions, logos or watermark. Do not add jewelry. Adapt reference facial geometry to the target head angles and expressions; do not copy reference poses. Correct DOKYEONG to MAN RIGHT of reference image 2 and seated foreground man of image 3: same angular adult jaw and facial proportions, thick eyebrows, full messy black hair with jagged vivid white INK highlights. Do not shrink his head or make him teenager-like. Remove soft realistic skin shading and gray gradient highlights; use bold early-episode ink and flat very pale peach skin. Preserve the ENTIRE injured-at-home action: black casual shirt, gray pants, hunched sofa pose, hand under chin, other hand at laptop keyboard, visible bandaged ankle propped on low table, crutches leaning at left, laptop opaque BACK, phone, takeaway food carton, cup, window and single lamp. Keep blue-gray night and small warm light pool. Simplify distracting photographic sofa/rug/fabric microtexture into sparse ink hatching with large flat shadows.",
+     "references": [
+      "ep12.webp",
+      "ep1.webp",
+      "ep2.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a09824-2658-7ae2-80a2-23ce98e361ed/exec-71f2b32d-ae43-42cb-8877-eaa87f1d656d.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-83425fe9-8189-4982-8341-7aba93435ea2.png"
   },
   {
    "name": "ep13",
@@ -281,9 +438,29 @@
     {
      "purpose": "13화 장면 직접 생성 (codex exec image_gen)",
      "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 12화 삽화이며 1~11화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a tiny hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, minimal flat shadows ~#E8CBBB. Light fair flesh, NOT orange/yellow/tan.\n\n[배경 팔레트 — 깊은 밤, 정전 뒤 사무실]\nA mostly DARK open-plan office deep at night. Cool dark blue night (#3E4A57) through the windows. Most monitors are OFF — only their dark backs and edges visible, no screen content. One or two distant screens glow faintly cool as they slowly boot. A single warm desk lamp is the one warm accent in a room full of cold shadow. Off-white walls fall into deep gray shadow.\n\n[장면]\nA woman in her early 40s — an SRE lead with an ANGULAR narrow face, sharp eyes, a CHIN-LENGTH black bob, dark clothes — sits alone at a desk deep in the night, surrounded by rows of dark, powered-off monitors (dark backs only). One warm desk lamp lights her. She is calm and focused, reading a laptop that is angled AWAY from us (dark back visible). The whole room is a dead system she is quietly bringing back to life. Mostly dark, cold blue, one small warm lamp, tense concentration. 16:9.\n\n이 여자(유현)는 연작에 이미 나온 인물이니 각진 좁은 얼굴·날카로운 눈매·턱 길이 검은 단발로 일관되게 그려라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve and style-transfer. Edit the FIRST image, a panel in the Korean dramatic comic 포스트모템. The other images are references ONLY. Preserve target's single-panel landscape 1672x941 composition, framing, camera perspective, narrative action, people count, body poses, hands, props and setting unless an explicit correction below requires a local change. Match the early episodes' bold variable-width black ink contours, large flat ink shadows, restrained flat cel colors, crisp facial ink marks and sharp white hair highlights. Skin is very pale low-saturation peach-beige, with at most a small hard-edged shadow; no airbrushed shading, no orange/tan skin, no glossy webtoon face, no blurred foreground/depth-of-field, no photographic grain. Preserve the time of day. Retain cool blue-gray environments, neutral walnut wood, and small local amber lamps. Do not brighten night into day. No lettering, numbers, captions, logos or watermark. Do not add jewelry. Adapt reference facial geometry to the target head angles and expressions; do not copy reference poses. YUHYEON at desk must match woman LEFT of image 2 and standing woman of image 3: same adult facial geometry with narrow angular jaw, sharp almond eyes, straight nose, side-parted chin-length BLACK bob, crisp bold white ink hair highlights. Current face has thin sleek lines and softer rounded geometry. Use early-episode line weight, heavy flat ink shadows and pale peach face and hands. Retain her calm concentration, chin resting on hand, dark jacket and original silhouette. Preserve the deep-night office with almost all monitors OFF and two small distant cool-blue boot screens, opaque monitor and laptop BACKS, one small warm desk lamp and all props. Remove photographic blur and subtle airbrush lighting from foreground monitor housings; no global brightening.",
+     "references": [
+      "ep13.webp",
+      "ep1.webp",
+      "ep2.webp"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = only foreground woman at desk, bob hair, dark jacket, hand supporting chin, quiet concentration looking down-right at laptop. Preserve near-total dark office, only two distant boot screens, lamp and all opaque computer backs. Output landscape 1672x941. Drawing constraint: Yuhyeon's face must be made of the SAME FEW CRISP BLACK PEN STROKES and flat skin fill as other people's faces in the target. Draw nose with one or two distinct dark ink lines, eyelids with simple bold strokes, lips as flat shapes. NO smoothly shaded photographic face or blurred cheek highlights. Preserve a rounded outer jaw contour despite the strong ink style.",
+     "references": [
+      "ep13.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a09852-5854-7eb0-b1a8-cef113093348/exec-c3581dbc-5b29-484e-b30e-48b725c77f76.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-3ab86b5e-ea5a-4969-8f6d-cd2ac0265738.png"
   },
   {
    "name": "ep14",
@@ -294,9 +471,47 @@
     {
      "purpose": "14화 장면 직접 생성 (codex exec image_gen)",
      "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 13화 삽화이며 1~11화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a tiny hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, minimal flat shadows ~#E8CBBB. Light fair flesh, NOT orange/yellow/tan.\n\n[배경 팔레트 — 사무실, 초록 대시보드 벽]\nAn office wall covered with mounted dashboard monitors that all glow a flat, uniform GREEN (health dashboards — abstract flat green fills only, NO text, NO numbers, NO charts). The green glow is the dominant light and tints the room and her face green. The rest of the office is cool neutral gray.\n\n[장면]\nA woman in her early 40s (ANGULAR narrow face, sharp eyes, CHIN-LENGTH black bob) stands before the wall of uniformly GREEN monitors — but she is turned AWAY from the green wall, toward a single laptop on a desk (angled away, dark back), her brow furrowed in open skepticism. Everything behind her says all-clear green; her face says she does not believe it. The subject is that tension: a reassuring green wall, and one person refusing to trust it. Green-lit, cool, tense. 16:9.\n\n이 여자(유현)는 각진 좁은 얼굴·날카로운 눈매·턱 길이 검은 단발로 일관되게 그려라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve and style-transfer. Edit the FIRST image, a panel in the Korean dramatic comic 포스트모템. The other images are references ONLY. Preserve target's single-panel landscape 1672x941 composition, framing, camera perspective, narrative action, people count, body poses, hands, props and setting unless an explicit correction below requires a local change. Match the early episodes' bold variable-width black ink contours, large flat ink shadows, restrained flat cel colors, crisp facial ink marks and sharp white hair highlights. Skin is very pale low-saturation peach-beige, with at most a small hard-edged shadow; no airbrushed shading, no orange/tan skin, no glossy webtoon face, no blurred foreground/depth-of-field, no photographic grain. Preserve the time of day. Retain cool blue-gray environments, neutral walnut wood, and small local amber lamps. Do not brighten night into day. No lettering, numbers, captions, logos or watermark. Do not add jewelry. Adapt reference facial geometry to the target head angles and expressions; do not copy reference poses. YUHYEON is the SAME bob-haired woman on left in reference 2 and standing left in reference 3. Target currently has an excessively tall elongated head, narrow pointed chin and sleek thin-lined face. Restore reference's adult facial proportions, angular but substantial jaw, sharp almond eyes and chin-length side-parted bob with layered curved ink highlights; no earrings, no glam lipstick. Preserve skeptical frown and gaze down at laptop. GREEN monitors are narratively essential: keep ALL wall screens green, but replace eye-searing neon/chroma-key green with subdued flat emerald/teal green (#398A68 to #438C72), readable as healthy green and consistent with the restrained palette. Remove the broad green stripe painted across face; permit a small subdued green edge reflection on shadow side only, keep main skin pale peach. Keep black jacket, laptop back, monitor wall geometry and all objects. Match bold ink and crisp flat shapes of early episodes.",
+     "references": [
+      "ep14.webp",
+      "ep1.webp",
+      "ep2.webp"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = large foreground bob-haired woman with skeptical frown, looking down-right at laptop. Preserve skeptical expression while adapting actress likeness. Keep all screen greens MUTED TEAL-EMERALD as already corrected, no neon green, no green stripe across face, laptop/back and office geometry unchanged. Output landscape 1672x941. Drawing constraint: Yuhyeon's face must be made of the SAME FEW CRISP BLACK PEN STROKES and flat skin fill as other people's faces in the target. Draw nose with one or two distinct dark ink lines, eyelids with simple bold strokes, lips as flat shapes. NO smoothly shaded photographic face or blurred cheek highlights. Preserve a rounded outer jaw contour despite the strong ink style.",
+     "references": [
+      "ep14.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "사용자 추가 사진 참고: 얼굴 확대본에서 광대 아래부터 턱까지 곡선으로 보정",
+     "prompt": "첫 번째 이미지를 수정해줘. 지금 얼굴은 광대부터 턱까지 양쪽 윤곽이 직선으로 뻗어 V자가 된다. 이 선을 그대로 두면 안 된다. 두 번째 사진의 신민아처럼 아래 볼이 도톰하고 광대에서 턱까지 크게 둥글게 휘는 얼굴로 다시 그려줘. 하관은 조금 짧고 넓게, 턱끝은 작은 점이 아닌 둥근 U자 곡선으로. 특히 이미지 왼쪽 귀 아래(뺨)부터 턱까지의 긴 사선을 바깥으로 볼록하게 휘어진 볼선으로 교체한다. 지금 얼굴보다 확실히 둥그스름하게, 성인 여성의 자연스러운 볼 볼륨을 추가해줘. 피부색만 바꾸거나 선을 그대로 남기는 수정은 안 된다. 얼굴 윤곽과 하관의 비율은 적극적으로 바꿔도 된다. 검은 단발, 내려다보는 시선, 살짝 찌푸린 눈썹, 눈과 입의 기본 인상, 짙은 재킷, 배경은 유지한다. 사진을 붙이지 말고 기존 만화의 검은 먹선과 평면 살색으로 표현한다. 코도 만화의 뚜렷한 먹선으로 그린다. 눈을 크게 만들거나 웃는 표정으로 바꾸지 않는다. 오직 이 확대 이미지 한 장을 같은 정사각형 구도로 반환해줘.",
+     "references": [
+      "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-460ac09d-d4e0-4f09-9391-8b9cdd912740.png",
+      "https://blog.naver.com/seowlgp/224333791814"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "확대본의 곡선형 볼·턱 윤곽을 원래 전체 장면에 반영",
+     "prompt": "Use case: compositing, precise character-face continuity edit. Image 1 is FULL PANEL EDIT TARGET. Image 2 is an enlarged CORRECTED CROP of the SAME woman's head from image 1. Transfer image 2's corrected facial drawing back to the woman's head in image 1 at its original position, scale and head angle. The target crop originally corresponds approximately to x=480..1000, y=0..520 in a 1672x941 full panel. The purpose is to preserve image 2's FULLER ROUNDED LOWER CHEEKS and smoothly CURVED jawline around a SHORTER BROADER ROUND CHIN. Do not simplify this curved contour back into image 1's long diagonal straight V-jaw. Match face geometry of corrected crop exactly, scale naturally. Keep full-panel framing and woman's body, hair silhouette, pose, eyes' gaze toward laptop and serious expression. Preserve image 1 everywhere outside face: clothes, laptop, desks, dark ink, muted green screens, room, lighting and all props. Keep bold INK COMIC style, not photographic shading. Output full original landscape 1672x941, no caption or new text.",
+     "references": [
+      "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-460ac09d-d4e0-4f09-9391-8b9cdd912740.png",
+      "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-143eea14-019e-401d-a000-9a26faed19c2.png"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a09853-556d-7fa2-ab45-f2d5b9e96a15/exec-8dbcccdd-3cf8-465b-bd9d-4610ddd1c44d.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-87090870-876f-48f1-805e-460af4c2021d.png"
   },
   {
    "name": "ep15",
@@ -307,9 +522,30 @@
     {
      "purpose": "15화 장면 직접 생성 (codex exec image_gen)",
      "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 14화 삽화이며 1~11화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a tiny hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, minimal flat shadows ~#E8CBBB. Light fair flesh, NOT orange/yellow/tan.\n\n[배경 팔레트 — 저녁 사무실]\nAn office in the evening. Cool neutral white and gray surfaces with a little warm interior light. A few monitors carry a small, abstract warning glow (a touch of amber/red, NO text). Cool with small warm accents.\n\n[장면]\nFOREGROUND: a woman in her LATE 20s — ROUND glasses, neat hair, a BLUE shirt — sits at a desk leading an incident, one hand on the keyboard, an earbud in, focused and in command. BACKGROUND: standing a few steps behind her with ARMS FOLDED, watching but deliberately NOT touching any keyboard, an older woman in her early 40s (ANGULAR narrow face, sharp eyes, CHIN-LENGTH black bob), calm, holding back, letting the younger one lead. The subject is a handover: the young one leads at the keyboard, the older one watches and keeps her hands off. Monitors angled so no readable content shows. 16:9.\n\n두 인물 모두 연작에 이미 나온 인물이다. 앞의 젊은 여자(하늘)는 둥근 안경·단정한 머리·푸른 셔츠, 뒤의 여자(유현)는 각진 좁은 얼굴·턱 길이 검은 단발로 일관되게.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve and style-transfer. Edit the FIRST image, a panel in the Korean dramatic comic 포스트모템. The other images are references ONLY. Preserve target's single-panel landscape 1672x941 composition, framing, camera perspective, narrative action, people count, body poses, hands, props and setting unless an explicit correction below requires a local change. Match the early episodes' bold variable-width black ink contours, large flat ink shadows, restrained flat cel colors, crisp facial ink marks and sharp white hair highlights. Skin is very pale low-saturation peach-beige, with at most a small hard-edged shadow; no airbrushed shading, no orange/tan skin, no glossy webtoon face, no blurred foreground/depth-of-field, no photographic grain. Preserve the time of day. Retain cool blue-gray environments, neutral walnut wood, and small local amber lamps. Do not brighten night into day. No lettering, numbers, captions, logos or watermark. Do not add jewelry. Adapt reference facial geometry to the target head angles and expressions; do not copy reference poses. Correct two returning characters and drawing style. FOREGROUND HANEUL at keyboard must have SAME identity as image 3 LEFT FOREGROUND person receiving soda: neat SHORT black hair, simple side-swept fringe, small round dark-rim glasses, restrained facial features, muted BLUE SHIRT. Remove the target's voluminous tied-up bun/ponytail and glamorized large eyes/full lipstick; restore the short-haired newcomer now older and confidently leading. Keep earbud, focused expression, hands at keyboard and forward lean. BACKGROUND YUHYEON with folded arms must match the WOMAN LEFT in image 2 and standing woman in image 4: narrower angular tapered face, sharp almond eyes, straight nose, chin-length side-parted black bob, pale skin, no earrings or full lipstick. Preserve her older leader presence, calm expression, dark jacket, folded arms and distance behind Haneul. Match image 4's office ink weight and crispness while preserving evening city lights; reduce glossy/vector-clean faces and camera blur. Keep all screens, tables and office layout.",
+     "references": [
+      "ep15.webp",
+      "ep1.webp",
+      "ep6.webp",
+      "ep2.webp"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = BACKGROUND STANDING WOMAN LEFT with chin-length bob, DARK JACKET, ARMS FOLDED, calmly watching. Only her face changes. FOREGROUND short-haired HANEUL in blue shirt, round glasses and earbud remains EXACTLY unchanged; do not apply actress features to Haneul or grow Haneul's hair. Output landscape 1672x941. Drawing constraint: Yuhyeon's face must be made of the SAME FEW CRISP BLACK PEN STROKES and flat skin fill as other people's faces in the target. Draw nose with one or two distinct dark ink lines, eyelids with simple bold strokes, lips as flat shapes. NO smoothly shaded photographic face or blurred cheek highlights. Preserve a rounded outer jaw contour despite the strong ink style.",
+     "references": [
+      "ep15.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a09854-630a-77e1-ab22-be38abce65cf/exec-d5c51a55-89da-4116-a6dc-0a10a216c9aa.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-6e2b5ca6-c6ac-44b2-9914-0ac1e44b528b.png"
   },
   {
    "name": "ep16",
@@ -320,9 +556,28 @@
     {
      "purpose": "16화 장면 직접 생성 (codex exec image_gen)",
      "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 마지막 15화 삽화이며 1~11화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a tiny hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, minimal flat shadows ~#E8CBBB. Light fair flesh, NOT orange/yellow/tan.\n\n[배경 팔레트 — 밤 술집 안 + 유리문 밖 골목]\nInterior of a small late-night tavern: muted COOL BLUE-GRAY walls (#758A90), neutral WALNUT/TAUPE wooden table and furniture (#76645A), a small warm lamp glow inside. Through the glass door, a cold dark TEAL alley at night. Warm interior against cold exterior; amber only as a small lamp accent.\n\n[장면]\nInside the tavern, late at night. A woman in her early 40s (ANGULAR narrow face, sharp eyes, CHIN-LENGTH black bob) sits alone at a wooden table with a green soju bottle and a small glass, NOT drinking, her hands resting still on the table. A closed laptop bag sits on the seat beside her, unopened. She looks toward the lit GLASS DOOR, through which we see — small, outside in the cold alley — TWO people standing with phones held to their ears, handling something. Her expression is calm, resolved, a little wistful: the person who once would have jumped in, now sitting still. Warm tavern interior, cold alley through the glass. 16:9.\n\n이 여자(유현)는 각진 좁은 얼굴·날카로운 눈매·턱 길이 검은 단발로 일관되게 그려라. 특정 실제 인물을 베끼지 마라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve and style-transfer. Edit the FIRST image, a panel in the Korean dramatic comic 포스트모템. The other images are references ONLY. Preserve target's single-panel landscape 1672x941 composition, framing, camera perspective, narrative action, people count, body poses, hands, props and setting unless an explicit correction below requires a local change. Match the early episodes' bold variable-width black ink contours, large flat ink shadows, restrained flat cel colors, crisp facial ink marks and sharp white hair highlights. Skin is very pale low-saturation peach-beige, with at most a small hard-edged shadow; no airbrushed shading, no orange/tan skin, no glossy webtoon face, no blurred foreground/depth-of-field, no photographic grain. Preserve the time of day. Retain cool blue-gray environments, neutral walnut wood, and small local amber lamps. Do not brighten night into day. No lettering, numbers, captions, logos or watermark. Do not add jewelry. Adapt reference facial geometry to the target head angles and expressions; do not copy reference poses. Correct YUHYEON seated left to same woman LEFT in image 2: identical adult narrow angular jaw and profile nose, sharp eyes, chin-length side-parted bob with white ink highlights, pale low-saturation peach skin. Keep her calm reflective profile looking RIGHT toward the door, do not turn her toward camera or make her angry. Simplify excessive all-over photographic/grainy texture on coat, wall and wood into selective confident ink hatching and broad flat colors like reference. Keep black jacket, hands folded resting still, closed laptop bag on seat to left, green bottle and small glass untouched, same framing, TWO small people OUTSIDE on phones, cold rainy teal alley, warm hanging lamp only as small accent. No added earrings, no writing; preserve final episode's restraint and visual echo of episode 1.",
+     "references": [
+      "ep16.webp",
+      "ep1.webp"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = LARGE SEATED WOMAN LEFT, head in near PROFILE facing RIGHT toward glass door, calm contemplative closed-mouth expression. Preserve her adult profile and restrained mood while adding actress's rounded nose tip, softer oval cheek/jaw and curved lip profile. Keep her hands resting together, closed laptop bag, bottle/glass, TWO people outdoors on calls, warm lamp, cool alley exactly. Output landscape 1672x941.",
+     "references": [
+      "ep16.webp",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a09855-6d07-7c93-bac4-8282038c8687/exec-21b91514-169a-41e7-8892-63b53e399bb1.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-d9d90a5b-1b82-42e3-9933-b692d4c75a1c.png"
   },
   {
    "name": "share",
@@ -347,15 +602,40 @@
     {
      "purpose": "공유 이미지 문구를 '시스템은 복구됐다. 할 일은 끝나지 않았다.' 두 줄로 교체",
      "prompt": "Use case: text-localization. Input image is the EDIT TARGET: existing 1200x630 Korean graphic-novel promotional cover. Edit ONLY the small ivory Korean tagline beneath the large brush-lettered title on the dark left portion. Remove the old tagline '장애의 뒤에는 사람이 있다' and replace it with EXACTLY these two lines, including periods:\n시스템은 복구됐다.\n할 일은 끝나지 않았다.\nUse legible refined Korean type matching the existing small tagline's ivory color and weight, left-aligned at approximately x=42, starting around y=454, line spacing approximately 36 pixels. Both lines should fit within the existing dark left title area with good margins and avoid overlapping the illustration. Keep the large original title '포스트' / '모템' EXACTLY unchanged in its original brush calligraphy, position, scale, texture and color. Preserve the rainy alley, tavern scene, all people and their faces, pale skin colors, lighting, ink lines, muted blue-gray and walnut palette, and composition exactly. No other changes, no extra lettering, no watermark. Output landscape 1200x630."
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET: 1200x630 Korean promotional comic cover with calligraphic title and two-line tagline on LEFT. Image 2 is CHARACTER REFERENCE ONLY: elderly proprietor YEONGSEON at far LEFT FOREGROUND. Change ONLY the tiny proprietor standing BEHIND the main seated pair in the upper middle-right tavern area: make her match that same older woman, broad face and prominent nose, older cheek/eye folds, dense short black PERMED CURLS, pale low-saturation peach skin. Keep tiny scale, head angle looking down, apron/blouse, hands and pose unchanged. All other pixels/content are LOCKED. Especially preserve LEFT TYPOGRAPHY EXACTLY: brush title '포스트' above '모템'; tagline exact '시스템은 복구됐다.' and '할 일은 끝나지 않았다.' on two lines, same letters, punctuation, brush strokes, typography, color, position and size. Do not regenerate typography or move it. Preserve the two main characters Yuhyeon and Dokyeong exactly, all other patrons, window frames, rain, alley, ink lines, flat colors and lighting. Output 1200x630 landscape. No new text, captions, people, logos or watermark.",
+     "references": [
+      "share.jpg",
+      "ep5.webp"
+     ]
+    },
+    {
+     "review": "2026-09-13-continuity-and-yuhyeon",
+     "purpose": "유현 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
+     "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL YUHYEON (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY YUHYEON'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Yuhyeon = SMALL SEATED BOB-HAIRED WOMAN in middle-right tavern area, hand at cheek, facing man. Preserve her tiny size. ALL LEFT TYPOGRAPHY IS LOCKED: exact brush title '포스트' above '모템'; exact two tagline lines '시스템은 복구됐다.' and '할 일은 끝나지 않았다.' including periods. Keep letter shapes, layout and color exactly. Other faces including old curly-haired proprietor and white-shirted man, rain and alley are LOCKED. Output landscape 1200x630.",
+     "references": [
+      "share.jpg",
+      "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+      "ep1.webp"
+     ]
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-d0c7b02c-64b9-41ef-8ea6-53e8c4628203.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-cff33913-878f-40eb-a237-1f35f027121a.png"
   }
  ],
  "character_references": {
   "서유현": {
    "image": "ep1.webp",
-   "features": "턱선이 좁고 각진 얼굴, 날카로운 눈매, 턱 길이의 검은 단발"
+   "facial_contour_reference": "ep14.webp",
+   "features": "신민아 참고 사진의 인상을 반영한 성인 얼굴. 부드러운 타원형 얼굴, 볼 아래까지 자연스러운 볼륨, 광대에서 턱까지 완만하게 휘는 곡선, 짧고 둥근 턱끝. 자연스러운 눈매, 둥근 코끝, 곡선형 입매, 옆가르마의 턱 길이 검은 단발. 표정은 장면에 맞춤.",
+   "avoid": "광대부터 턱까지 긴 직선, 뾰족한 V자 턱, 과도하게 긴 하관, 사진 같은 피부 명암",
+   "external_references": [
+    "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+    "https://blog.naver.com/seowlgp/224333791814"
+   ]
   },
   "유도경": {
    "image": "ep1.webp",
@@ -375,7 +655,7 @@
   },
   "정하늘": {
    "image": "ep6.webp",
-   "features": "둥근 안경, 가지런한 머리, 푸른 셔츠"
+   "features": "짧고 단정한 검은 머리와 옆으로 흐르는 앞머리, 작은 둥근 안경, 푸른 셔츠. 6화를 기준으로 8·11·15화에 같은 외모 적용."
   },
   "최은서": {
    "image": "ep7.webp",
@@ -390,8 +670,64 @@
    "features": "50대, 짧은 옆가르마, 어두운 외투, 골목에 뒤돌아 선 뒷모습으로 주로 등장"
   },
   "조민서": {
-   "image": "ep10.webp",
+   "image": "ep11.webp",
    "features": "20대 중반 SRE 신입, 짧고 단정한 검은 머리, 무지 스웨터, 진지하고 지친 얼굴"
+  }
+ },
+ "reference_credits": [
+  {
+   "subject": "서유현 얼굴 참고",
+   "title": "Shin Min A.jpg",
+   "author": "LG전자 / LGEPR",
+   "url": "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "adaptation": "얼굴 인상을 참고하여 검은 단발의 극화체 인물로 재해석. 표정, 복장, 배경 및 볼·턱 윤곽 변경."
+  },
+  {
+   "subject": "서유현의 볼·턱 곡선 추가 참고",
+   "author": "알고리즘 (네이버 블로그 seowlgp)",
+   "url": "https://blog.naver.com/seowlgp/224333791814",
+   "note": "사용자가 지정한 게시물의 신민아 사진을 얼굴 윤곽 참고로 사용. 사진 원본은 저장소에 포함하지 않음."
+  }
+ ],
+ "continuity_review": {
+  "date": "2026-09-13",
+  "tool": "Built-in image_gen",
+  "report": "review.md",
+  "reviewed_assets": [
+   "cover.webp",
+   "ep1.webp",
+   "ep2.webp",
+   "ep3.webp",
+   "ep4.webp",
+   "ep5.webp",
+   "ep6.webp",
+   "ep7.webp",
+   "ep8.webp",
+   "ep9.webp",
+   "ep10.webp",
+   "ep11.webp",
+   "ep12.webp",
+   "ep13.webp",
+   "ep14.webp",
+   "ep15.webp",
+   "ep16.webp",
+   "share.jpg"
+  ],
+  "unchanged_assets": [
+   "ep4.webp",
+   "ep7.webp"
+  ],
+  "final_dimensions": {
+   "episodes_and_cover": [
+    1672,
+    941
+   ],
+   "share": [
+    1200,
+    630
+   ]
   }
  }
 }

@@ -67,7 +67,7 @@ layout: episode
   "env": "production",
   "from": true, "to": false,
   "at": "2026-11-20T09:59:41+09:00",
-  "actor": { "type": "service", "name": "gate-bot", "owner": "seo.jian" },
+  "actor": { "type": "service", "name": "gate-bot", "owner": "seo.yuhyun" },
   "reason": "auto-revert: change #4479 unapproved for 24h",
   "restored_snapshot": "snap-20261027-1412"
 }
