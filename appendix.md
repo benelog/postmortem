@@ -139,6 +139,30 @@ permalink: /appendix/
 - [Addressing Cascading Failures · Google SRE Book](https://sre.google/sre-book/addressing-cascading-failures/) — 재시도가 어떻게 장애를 스스로 지속시키는지.
 - [Timeouts, retries, and backoff with jitter · Amazon Builders' Library](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) — 방어를 우회한 재시도가 부하를 배로 만드는 방식.
 
+## 콜드 스타트와 기동 의존성
+
+12화에서 전기는 돌아왔는데 시스템이 안 켜지던 이유, 서로가 서로를 기다리던 순환의 배경입니다.
+
+- [Addressing Cascading Failures · Google SRE Book](https://sre.google/sre-book/addressing-cascading-failures/) — 전체가 식은 뒤 다시 켜질 때 나타나는 부하와 순환.
+- [Reducing the Impact of a Cold Cache/Cold Start](https://aws.amazon.com/builders-library/avoiding-fallback-in-distributed-systems/) — 늘 켜져 있던 시스템이 처음부터 켜질 때 드러나는 숨은 의존성.
+- [GameDay / 카오스 엔지니어링 · Principles of Chaos](https://principlesofchaos.org/) — 처음부터 켜보지 않은 순서는 순서가 아니라는 것. 실제로 껐다 켜보는 훈련.
+
+## 관측의 사각과 데드맨 스위치
+
+13화에서 대시보드가 전부 초록인데 사용자는 실패하던 이유, 무신호를 무장애로 착각한 사각의 배경입니다.
+
+- [Monitoring Distributed Systems · Google SRE Book](https://sre.google/sre-book/monitoring-distributed-systems/) — 지표가 오지 않는 것과 문제가 없는 것을 구별하기.
+- [Dead man's switch · 정상 신호의 부재를 경보로](https://en.wikipedia.org/wiki/Dead_man%27s_switch) — 보고가 끊기는 것 자체를 알림 조건으로 삼는 발상.
+- [My Philosophy on Alerting · Rob Ewaschuk](https://docs.google.com/document/d/199PqyG3UsyXlwieHaqbGiWVa8eMWi8zzAn0YfcApr8Q/edit) — 증상 기반 경보와, 관측 파이프라인 자체의 건강.
+
+## 캐시 스탬피드
+
+14화에서 캐시가 텅 빈 채 돌아오자 모두가 같은 문을 동시에 두드리던 현상의 배경입니다.
+
+- [Cache stampede · thundering herd](https://en.wikipedia.org/wiki/Cache_stampede) — 캐시가 비면 같은 값을 여러 요청이 동시에 다시 계산하는 문제.
+- [Caching at Reddit — request coalescing / single-flight](https://www.rfc-editor.org/rfc/rfc5861) — 하나만 계산하고 나머지는 그 결과를 기다리게 하는 단일 실행.
+- [Timeouts, retries, and backoff with jitter · Amazon Builders' Library](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) — 만료 시각에 흔들림을 줘서 한꺼번에 몰리는 걸 흩뜨리기.
+
 ## 국내 회사의 장애 대응 사례
 
 인물들의 말투와 절차를 한국 회사의 것으로 맞출 때 참고했습니다.
