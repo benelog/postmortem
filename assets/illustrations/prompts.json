@@ -230,6 +230,19 @@
    "final_source": "/home/benelog/.codex/generated_images/01a09803-c9e9-7cf2-9e36-3057284c0419/exec-a3c56c12-a340-420c-833c-e3cc0a068b13.png"
   },
   {
+   "name": "ep10",
+   "output": "ep10.webp",
+   "alt": "해질녘 텅 빈 사무실, 데스크 램프 아래 앉은 신입 민서와 저 문가에서 기다리는 하늘, 책상 위 백지 문서 더미",
+   "note": "7~9화와 같은 방식. 극화체 레시피에 해질녘 텅 빈 사무실 팔레트(흰색·회색 표면, 창밖 차가운 청색 #5B6E7A, 데스크 램프 하나만 따뜻한 국소 강조)를 담아 codex exec image_gen으로 직접 생성. 모니터는 화면이 안 보이게 뒤로 돌림(3화 규칙). 결말이 뒤풀이가 아닌 사무실이라 그에 맞춘 장면. 1672x941 그대로 webp 변환.",
+   "steps": [
+    {
+     "purpose": "극화체 해질녘 빈 사무실·신입과 사수 장면 직접 생성 (codex exec image_gen)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라.\n\n이 그림은 한국어 연작 추리 만화 「포스트모템」 10화 삽화다. 기존 1~9화 삽화와 같은 극화체(劇畵體) 스타일을 정확히 따라야 한다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no skin pores, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute caricature. Absolutely NO text, NO lettering, NO speech bubbles, NO numbers, NO logos, NO readable screen or paper content anywhere.\n\n[피부톤]\nExposed skin (faces, necks, hands): very light warm porcelain-beige with a tiny hint of peach. Base approximately #F5E1D4, highlights #FAEDE4, minimal flat shadows #E8CBBB. Light fair flesh, NOT orange, yellow, bronze or tan.\n\n[배경 팔레트 — 해질녘 텅 빈 사무실]\nAn empty modern office at dusk. Broad surfaces are neutral off-white #F3F4F2 walls and pale cool-gray #D6DADD desks and partitions. Through the windows, a COLD BLUE winter/late-winter dusk sky (#5B6E7A) over dim blue-gray buildings; most overhead lights are off, the room mostly in cool shadow. The ONE warm accent is a single desk lamp glowing over the seated newcomer — a small pool of warm light in a cool, empty room. White/gray/blue dominate; warm light stays tiny and local.\n\n[장면]\nForeground: a YOUNG new hire in their mid-20s sits alone at a desk (the second desk from the window), lit by a single warm desk lamp. Short, neat dark hair, a plain sweater, an earnest tired face. They have just finished typing and are turning to look toward a doorway across the room. A computer MONITOR on the desk is angled AWAY from the viewer so we see only its dark back/edge (no screen content). Beside the keyboard, a small neat STACK of blank printed documents. Around them, rows of empty desks recede into cool shadow. Background: at the far DOORWAY of the office, a woman in her late 20s stands waiting, small in the frame — ROUND glasses, neat hair, one hand on the door frame, patient. Mood: a newcomer leaving a message for the future in an emptied office, a mentor waiting at the door. Cool empty room, one warm lamp. 16:9 landscape.\n\n두 인물은 극화체 얼굴로 그려라. 문가의 여자(둥근 안경, late 20s)는 연작에 이미 나온 인물이니 둥근 안경·단정한 머리로 일관되게. 앉아 있는 신입은 새 인물이니 위 묘사대로 새로 그려라. 특정 실제 인물을 베끼지 마라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    }
+   ],
+   "final_source": "/home/benelog/.codex/generated_images/01a09815-9022-78f2-94e9-c4f253dbbb7c/exec-f998039d-751f-4636-a011-e11e59062f65.png"
+  },
+  {
    "name": "share",
    "output": "share.jpg",
    "steps": [
@@ -289,6 +302,10 @@
   "윤태섭": {
    "image": "ep8.webp",
    "features": "50대, 짧은 옆가르마, 어두운 외투, 골목에 뒤돌아 선 뒷모습으로 주로 등장"
+  },
+  "조민서": {
+   "image": "ep10.webp",
+   "features": "20대 중반 SRE 신입, 짧고 단정한 검은 머리, 무지 스웨터, 진지하고 지친 얼굴"
   }
  }
 }

@@ -15,11 +15,12 @@ https://benelog.github.io/postmortem/
 | 7 | 잠금 | 최은서 |
 | 8 | TTL | 윤태섭 |
 | 9 | 지연 | 서지안 |
+| 10 | 윤일 | 조민서 |
 
 각 화는 `_episodes/` 아래 마크다운 파일이며, GitHub Pages(Jekyll)로 빌드됩니다.
 부록 `appendix.md`는 각 화의 소재가 된 장애 대응 문서와 국내 사례 링크를 모은 참고 자료 페이지입니다.
 
-삽화는 `assets/illustrations/`의 `cover.webp`, `ep1.webp`–`ep9.webp`를 사용합니다.
+삽화는 `assets/illustrations/`의 `cover.webp`, `ep1.webp`–`ep10.webp`를 사용합니다.
 굵은 먹선, 단순화한 인물, 평면 채색과 밝고 옅은 살색 피부톤을 사용한 극화체로 표지와 각 화의 장면을 통일했습니다.
 가게 배경은 청회색 벽과 중성 갈색 목재로 피부색과 구분하고, 조명에만 따뜻한 색을 작게 남겼습니다.
 사무실 배경은 흰색 벽, 밝은 회색 가구, 자연스러운 푸른 낮빛으로 구성했습니다.

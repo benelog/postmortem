@@ -108,6 +108,22 @@ permalink: /appendix/
 - [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/) — 대응자의 상태와 교대. 컨디션이 좋지 않은 사람을 대응에서 빼는 것도 신뢰성의 일부입니다.
 - [Human factors and just culture](https://www.skybrary.aero/articles/just-culture) — 판단이 흐려진 사람에게 결정을 몰아주지 않는다는, 항공 안전에서 온 개념.
 
+## 윤일과 날짜 연산
+
+10화의 제목이자, 2월 29일에만 깨어난 버그의 배경입니다. 4년에 한 번 오는 날은 테스트도 4년에 한 번만 만납니다.
+
+- [`datetime.date.replace` · Python 문서](https://docs.python.org/3/library/datetime.html#datetime.date.replace) — 윤일에서 `replace(year=...)`가 예외를 던지는 지점.
+- [`relativedelta` · dateutil](https://dateutil.readthedocs.io/en/stable/relativedelta.html) — 1년을 더할 때 2월 29일을 2월 28일로 맞추는 안전한 연산.
+- [Falsehoods programmers believe about time](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca) — 날짜에 관해 우리가 틀리게 믿는 것들. 윤일도 그중 하나입니다.
+- [The Leap Day bug that took down Microsoft Azure (2012)](https://azure.microsoft.com/en-us/blog/summary-of-windows-azure-service-disruption-on-feb-29th-2012/) — 인증서 유효기간을 1년 뒤로 계산하다 2월 29일에 무너진 실제 사례.
+
+## git blame과 진짜 작성자
+
+10화에서 민서가 blame이 가리킨 이름을 진범으로 오해하지 않는 배경입니다.
+
+- [git-blame · Git 문서](https://git-scm.com/docs/git-blame) — blame은 그 줄을 마지막으로 바꾼 커밋을 가리킬 뿐입니다.
+- [Ignoring commits in git blame · `.git-blame-ignore-revs`](https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revs-fileltfilegt) — 대량 포매팅 커밋을 blame에서 건너뛰어 진짜 작성자를 드러내는 방법.
+
 ## 국내 회사의 장애 대응 사례
 
 인물들의 말투와 절차를 한국 회사의 것으로 맞출 때 참고했습니다.
