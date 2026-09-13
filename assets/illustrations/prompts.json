@@ -83,6 +83,15 @@
       "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
       "ep1.webp"
      ]
+    },
+    {
+     "review": "2026-09-13-anatomy-fix",
+     "purpose": "도경 오른손(테이블 위)의 손가락 수를 다섯으로 교정",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 셸 명령은 실행하지 마라.\n\nUse case: precise-object-edit, anatomy fix. Image 1 is the EDIT TARGET: the episode 1 illustration of the Korean dramatic comic 포스트모템 (landscape 1672x941), a night tavern with a woman (black bob, black blouse) on the left and a man (tousled black hair, white shirt) on the right, two phones with red alert icons on the table.\n\nPROBLEM: the man's RIGHT HAND — the hand resting flat on the table to the LEFT of his body in the image, next to the tall glass, with the forearm coming from his rolled white sleeve — is malformed and appears to have SIX fingers.\n\nTASK: Redraw ONLY that hand as a natural, relaxed adult male right hand resting on the wooden table: exactly FIVE fingers (thumb plus four fingers), fingers slightly curled and resting on the table, correct proportions, seen from the same angle. Keep the same wrist position, forearm, sleeve cuff and the tall glass beside it. Use the same bold black ink outlines, flat cel coloring, sparse halftone and the same very light warm porcelain-beige skin as his other hand and face.\n\nEVERYTHING ELSE IS LOCKED: both faces, hair, expressions, the woman's hands and glass, the man's other arm, clothes, both phones with red alerts, bottles, dishes, chopsticks, table, bag, doorway, rainy alley, patrons, lighting, palette, framing, camera angle and image dimensions 1672x941. Do not recompose. No text, lettering, logos or watermark.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n",
+     "references": [
+      "ep1.webp"
+     ],
+     "result": "/home/benelog/.codex/generated_images/01a09945-054f-79e2-aa95-8998d28509dc/exec-c64fc730-e5e2-4e73-b57c-8e6b1167d5ba.png"
     }
    ],
    "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-7b55f725-5f25-426b-9e5a-849a72da129c.png"
@@ -190,6 +199,15 @@
     {
      "purpose": "사무실을 흰색·밝은 회색과 자연스러운 푸른 낮빛으로 보정",
      "prompt": "Use case: precise-object-edit. Recolor ONLY the OFFICE ENVIRONMENT of this existing dramatic comic illustration. The office currently has an unnatural dominant mustard-yellow color. Replace it with a natural clean WHITE and LIGHT COOL GRAY contemporary office palette. Walls, ceiling and structural pillars: neutral off-white #F3F4F2. Desktops and meeting tables: pale neutral gray #D6DADD (no yellow or golden wood); partitions: light cool gray #BBC7CD; window frames and ink outlines stay dark. Through windows show a natural PALE BLUE or white overcast daytime sky and subdued blue-gray city buildings; eliminate yellow sunset skies, yellow glass tint, amber daylight and ochre stains. Fluorescent lights are neutral white. White/gray must dominate broad surfaces, with clear black comic lines defining all objects and original cool monitor screens retained. Preserve exact scene, composition, people, facial features, hands, poses, clothes, VERY LIGHT PEACH SKIN colors, black ink shadow shapes, object placements, laptop/monitor graphics and red graph accents. Do not make skin gray or whiter. Keep original bold flat cel-colored geukhwa comic style; no photorealism, no gradients, no glossy render, no redraw of characters, no added text or objects. Do not globally desaturate the illustration: only replace yellow office surfaces and yellow daylight with whites/grays and pale blue daylight. Preserve landscape aspect ratio and dimensions."
+    },
+    {
+     "review": "2026-09-13-yuri-distinct",
+     "purpose": "유리를 민아와 구분: 머리를 짙은 갈색으로, 눈을 쌍꺼풀 없는 홑꺼풀로 변경 (기준 이미지)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 셸 명령은 실행하지 마라.\n\nUse case: identity-preserve / precise-object-edit. Image 1 is the EDIT TARGET: the episode 4 illustration of the Korean dramatic comic 포스트모템 (landscape 1672x941). The woman at the desk on the phone is YURI. She must be visually distinct from another character (Mina, a woman with a black bob and double-lidded eyes), so change ONLY these two things about Yuri:\n1) HAIR COLOR: change her hair from black to a clearly visible DARK CHESTNUT BROWN (flat cel color around #4A2E1E with lighter highlights around #7A4A2A instead of white ink highlights). Keep the exact same hairstyle: hair tied back low, loose side-swept fringe, same silhouette and strands.\n2) EYES: redraw her eyes as MONOLID eyes (single eyelid, no crease line above the eye), slightly narrower and longer almond shape with a straight upper lid line, calm and serious. Keep her eyebrows, nose, mouth, long oval face shape, expression and gaze direction the same.\nEverything else is LOCKED: her pose, hand and phone, cardigan and lanyard, the desk, laptop, notebook, cup, the office, the people in the background, the window and city, lighting, palette, framing, camera and dimensions 1672x941. Same bold black ink outlines, flat cel coloring, sparse halftone, very light warm porcelain-beige skin (#F5E1D4). No text, lettering, logos or watermark.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n",
+     "references": [
+      "ep4.webp"
+     ],
+     "result": "/home/benelog/.codex/generated_images/01a09943-9156-7df0-a300-712cd58a0958/exec-0ae3a99a-00bb-44a7-8999-6b2978786e86.png"
     }
    ],
    "final_source": "/home/benelog/.codex/generated_images/01a095cc-a004-7370-bd40-934999431903/exec-38899d8a-1196-4ecb-bc87-9e59ffd5c518.png"
@@ -241,6 +259,16 @@
       "ep1.webp"
      ],
      "result": "/home/benelog/.codex/generated_images/01a0993d-fb86-7a22-b574-3bd6db2304af/exec-33bc1117-fb40-40e8-ab8e-172a62a45b5c.png"
+    },
+    {
+     "review": "2026-09-13-yuri-distinct",
+     "purpose": "뒤쪽 테이블의 유리를 4화 기준(갈색 머리, 홑꺼풀)으로 변경",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 셸 명령은 실행하지 마라.\n\nUse case: identity-preserve / precise-object-edit. Image 1 is the EDIT TARGET, a panel of the Korean dramatic comic 포스트모템 (landscape 1672x941). Image 2 is the CHARACTER REFERENCE ONLY for YURI: the woman on the phone at an office desk, with hair tied back low and a loose side-swept fringe in DARK CHESTNUT BROWN (flat cel color around #4A2E1E, highlights around #7A4A2A), MONOLID eyes (single eyelid, no crease, slightly narrow long almond shape), long oval face.\n\nTASK: In image 1, change ONLY YURI so she matches image 2 in exactly two respects: (1) her hair becomes the same dark chestnut brown instead of black, same tied-back hairstyle and silhouette; (2) her eyes become monolid with no crease line, slightly narrow and long. Keep her face shape, eyebrows, nose, mouth, expression, gaze, pose, hands, clothing and size exactly as they are.\n\nEVERYTHING ELSE IN IMAGE 1 IS LOCKED: every other person (in particular the woman with the BLACK bob, Mina, must stay black-haired and unchanged), faces, hair, clothes, poses, props, furniture, lighting, palette, framing, camera and dimensions 1672x941. Same bold black ink outlines, flat cel coloring, sparse halftone, very light warm porcelain-beige skin (#F5E1D4). No text, lettering, logos or watermark.\n\nWHERE YURI IS in image 1: at the table in the BACKGROUND RIGHT, the woman with hair tied back holding a soju glass, seated to the right of the man with square glasses. The woman with the black bob at that table (Mina) is a different person and must not change.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n",
+     "references": [
+      "ep5.webp",
+      "/home/benelog/.codex/generated_images/01a09943-9156-7df0-a300-712cd58a0958/exec-0ae3a99a-00bb-44a7-8999-6b2978786e86.png"
+     ],
+     "result": "/home/benelog/.codex/generated_images/01a09945-8e35-7de1-93a5-4170955e37ce/exec-16adf77e-f4e9-4306-b787-1d23643bb189.png"
     }
    ],
    "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-e4e0c693-b0b6-40db-9a8b-0f4e722876bf.png"
@@ -312,6 +340,16 @@
       "ep6.webp"
      ],
      "result": "/home/benelog/.codex/generated_images/01a09932-b028-7933-ba26-e08ca56d117b/exec-ffba031b-f726-41c0-97d5-101d70c79b8f.png"
+    },
+    {
+     "review": "2026-09-13-yuri-distinct",
+     "purpose": "오른쪽 끝의 유리를 4화 기준(갈색 머리, 홑꺼풀)으로 변경",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 셸 명령은 실행하지 마라.\n\nUse case: identity-preserve / precise-object-edit. Image 1 is the EDIT TARGET, a panel of the Korean dramatic comic 포스트모템 (landscape 1672x941). Image 2 is the CHARACTER REFERENCE ONLY for YURI: the woman on the phone at an office desk, with hair tied back low and a loose side-swept fringe in DARK CHESTNUT BROWN (flat cel color around #4A2E1E, highlights around #7A4A2A), MONOLID eyes (single eyelid, no crease, slightly narrow long almond shape), long oval face.\n\nTASK: In image 1, change ONLY YURI so she matches image 2 in exactly two respects: (1) her hair becomes the same dark chestnut brown instead of black, same tied-back hairstyle and silhouette; (2) her eyes become monolid with no crease line, slightly narrow and long. Keep her face shape, eyebrows, nose, mouth, expression, gaze, pose, hands, clothing and size exactly as they are.\n\nEVERYTHING ELSE IN IMAGE 1 IS LOCKED: every other person (in particular the woman with the BLACK bob, Mina, must stay black-haired and unchanged), faces, hair, clothes, poses, props, furniture, lighting, palette, framing, camera and dimensions 1672x941. Same bold black ink outlines, flat cel coloring, sparse halftone, very light warm porcelain-beige skin (#F5E1D4). No text, lettering, logos or watermark.\n\nWHERE YURI IS in image 1: the woman at the FAR RIGHT of the tavern table, resting her chin on her hand, hair tied back, in a gray cardigan. The woman standing and pouring in the center with the black bob (Mina) is a different person and must not change.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n",
+     "references": [
+      "ep6.webp",
+      "/home/benelog/.codex/generated_images/01a09943-9156-7df0-a300-712cd58a0958/exec-0ae3a99a-00bb-44a7-8999-6b2978786e86.png"
+     ],
+     "result": "/home/benelog/.codex/generated_images/01a09945-9ea7-7642-9b3b-c97d62df3f03/exec-bf1410d1-1744-4634-83c1-f8ec1c173340.png"
     }
    ],
    "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-c09c5288-4625-45d0-99c3-c2f333ba7a25.png"
@@ -345,6 +383,15 @@
       "/home/benelog/.codex/generated_images/01a09932-b028-7933-ba26-e08ca56d117b/exec-ffba031b-f726-41c0-97d5-101d70c79b8f.png"
      ],
      "result": "/home/benelog/.codex/generated_images/01a09934-219e-7610-bec0-17c6ba9df7d0/exec-36ca1c9d-8072-4d33-b242-7894d900ae05.png"
+    },
+    {
+     "review": "2026-09-13-anatomy-fix",
+     "purpose": "왼쪽 은서의 두 팔이 붙어 보이던 것을 분리된 두 팔과 손으로 교정",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 셸 명령은 실행하지 마라.\n\nUse case: precise-object-edit, anatomy fix. Image 1 is the EDIT TARGET: the episode 7 illustration of the Korean dramatic comic 포스트모템 (landscape 1672x941), a white meeting room with a woman in a gray cardigan on the LEFT, a young man with round glasses in a blue shirt in the middle background, and an older man in a white shirt and tie on the RIGHT, two paper cups on the table.\n\nPROBLEM: the LEFT woman's ARMS are malformed. Her two forearms rest on the table but merge into one continuous shape, so it looks as if both arms are fused together with no clear hands.\n\nTASK: Redraw ONLY her arms and hands so they are anatomically clear: two separate forearms in the gray cardigan sleeves resting on the table edge, LEFT forearm and RIGHT forearm clearly distinguished, with two visible relaxed hands (five fingers each) — for example her right hand loosely resting over her left wrist, or the two hands lightly clasped, with a visible gap and clean ink outline between the arms. Keep her upper body position, shoulders, cardigan, shirt, head, face, hair and expression exactly the same.\n\nEVERYTHING ELSE IS LOCKED: the young man with round glasses, the older man on the right, both paper cups, the pale gray table, walls, glass door, window, sky, lighting, palette, framing, camera angle and image dimensions 1672x941. Do not recompose. Same bold black ink outlines, flat cel coloring, sparse halftone, very light warm porcelain-beige skin (#F5E1D4). No text, lettering, logos or watermark.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n",
+     "references": [
+      "ep7.webp"
+     ],
+     "result": "/home/benelog/.codex/generated_images/01a09946-008e-77e3-8fd1-32e011592b82/exec-c1b62a7f-715a-4b12-a00c-ce43842a61fa.png"
     }
    ],
    "final_source": "/home/benelog/.codex/generated_images/01a097e5-552d-7c73-9b67-33107c0469b8/exec-92f0ba20-b2d8-4eef-810a-8cf493fd1a63.png"
@@ -900,7 +947,7 @@
   },
   "한유리": {
    "image": "ep4.webp",
-   "features": "긴 타원형 얼굴, 옆으로 흐르는 앞머리, 뒤로 묶은 머리"
+   "features": "긴 타원형 얼굴, 옆으로 흐르는 앞머리, 낮게 뒤로 묶은 짙은 갈색 머리(#4A2E1E 계열), 쌍꺼풀 없는 가늘고 긴 눈. 민아(검은 단발, 쌍꺼풀)와 구분되도록 2026-09-13 변경. 4화를 기준으로 5·6화에 적용."
   },
   "박영선": {
    "image": "ep5.webp",
