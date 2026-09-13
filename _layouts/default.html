@@ -25,7 +25,7 @@
 <header class="site-header">
   <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
 </header>
-<main>
+<main{% if page.wide %} class="wide"{% endif %}>
 {{ content }}
 </main>
 <footer class="site-footer">

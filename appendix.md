@@ -4,6 +4,7 @@ title: "참고 자료"
 kicker: "부록"
 summary: "연작에 나오는 장애 대응 관행과 용어의 출처"
 permalink: /appendix/
+wide: true
 ---
 
 이 연작의 회사와 사람과 장애는 지어낸 것이지만, 인물들이 따르는 관행과 어휘는 지어낸 것이 아닙니다. 각 화의 소재가 된 문서와, 표현을 고를 때 참고한 국내 사례를 모았습니다.
@@ -25,21 +26,21 @@ permalink: /appendix/
 
 ### 구조가 비슷한 회사와 문서
 
-- [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/): 지휘(Incident Command)와 운영(Operational Work)을 나누고, "시스템을 바꾸는 건 운영 팀뿐"이라고 못 박습니다. 지휘 순번이 키보드를 잡지 않는 규정의 원형입니다.
+- [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/): 지휘(Incident Command)와 운영(Operational Work)을 나누고, "시스템을 바꾸는 건 운영 팀뿐"이라고 명시합니다. 지휘 순번이 키보드를 잡지 않는다는 페이브릭의 규정은 이 조항을 그대로 가져온 것입니다.
 - [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/): 사용자 대면 서비스의 응답 기대치는 5분, 덜 급한 시스템은 30분. 많은 팀이 primary와 secondary 두 순번을 두고 secondary는 primary가 놓친 페이지를 받는 예비로 씁니다. 페이브릭의 온콜과 지휘 순번의 대기 방식이 다른 것과 같은 구조입니다.
 - [Incident Management · GitLab Handbook](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/): 페이지를 24x7 받는 SRE의 EOC(Engineer On Call), 영향 파악과 인원 소집을 맡는 IMOC(Incident Manager On Call), 고객 대응의 CMOC를 각각 별도 순번으로 돌립니다. 온콜과 지휘 순번을 따로 두는 회사의 공개된 예입니다. [Incident Responder](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/roles/incident-responder/)와 [Incident Lead](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/roles/incident-lead/) 역할 문서가 따로 있습니다.
-- [Different Roles for Incidents · PagerDuty](https://response.pagerduty.com/before/different_roles/): "인시던트 커맨더는 해결자가 아니다. 모든 복구 작업은 위임한다." SME(Subject Matter Expert)는 보통 해당 서비스의 primary 온콜이 맡습니다. 결제팀 개발자가 손으로 불려 들어오는 구조가 여기 있습니다.
-- [Incident Commander Training · PagerDuty](https://response.pagerduty.com/training/incident_commander/): 커맨더는 그래프도 로그도 직접 보지 않고 위임합니다. 훈련을 마친 사람이 스스로 커맨더 순번표에 이름을 올리는 것으로 정식 커맨더가 됩니다. 피로해서 계속할 수 없으면 인계하라는 조항이 있는데, 음주를 명시한 조항은 이 문서에도 없습니다. 페이브릭의 음주 조항은 그 자리를 채운 자기 규정입니다.
-- [Being On-Call · PagerDuty](https://response.pagerduty.com/oncall/being_oncall/): 에스컬레이션 5분, 여행이나 일정이 있으면 미리 교대를 잡을 것. 12화 다섯 번째 재발 방지가 이 조항입니다.
+- [Different Roles for Incidents · PagerDuty](https://response.pagerduty.com/before/different_roles/): "인시던트 커맨더는 해결자가 아니다. 모든 복구 작업은 위임한다." SME(Subject Matter Expert)는 보통 해당 서비스의 primary 온콜이 맡습니다. 결제팀 개발자가 손으로 불려 들어오는 구조는 이 SME 역할을 따른 것입니다.
+- [Incident Commander Training · PagerDuty](https://response.pagerduty.com/training/incident_commander/): 커맨더는 그래프도 로그도 직접 보지 않고 위임합니다. 훈련을 마친 사람이 스스로 커맨더 순번표에 이름을 올리는 것으로 정식 커맨더가 됩니다. 피로해서 계속할 수 없으면 인계하라는 조항이 있는데, 음주를 명시한 조항은 이 문서에도 없습니다. 페이브릭의 음주 조항은 참고한 문서 없이 회사가 스스로 정한 것입니다.
+- [Being On-Call · PagerDuty](https://response.pagerduty.com/oncall/being_oncall/): 에스컬레이션 5분, 여행이나 일정이 있으면 미리 교대를 잡을 것. 12화의 다섯 번째 재발 방지 항목은 이 조항을 옮겨 적은 것입니다.
 - [Escalation Policies · PagerDuty](https://support.pagerduty.com/main/docs/escalation-policies): 정해진 시간 안에 ack가 없으면 다음 단계로 넘어가는 규칙. 1화와 9화에서 지휘 순번이 닿지 않아 다음 순번인 유현이 잡는 장면의 배경입니다.
 - [데브시스터즈의 장애 대응 원칙과 방법](https://tech.devsisters.com/posts/incident-management-principles/): 지휘자와 기록가를 두고 "시스템 변경은 1인이 진행"합니다. 다만 지휘자는 순번이 아니라 최초 인지자가 맡고 필요하면 인계합니다. 페이브릭과 다른 선택입니다.
-- [장애 모의 훈련 그리고 배운 점 · Hyperconnect Tech Blog](https://hyperconnect.github.io/2024/11/12/sre-incident-training.html): SRE 팀은 장애를 감독하며 전체 상황을 보고, 개발팀은 자기 컴포넌트 상태를 보고하고 빠르게 에스컬레이션합니다. SRE가 지휘하고 서비스 팀이 불려 들어오는 배치가 같습니다.
+- [장애 모의 훈련 그리고 배운 점 · Hyperconnect Tech Blog](https://hyperconnect.github.io/2024/11/12/sre-incident-training.html): SRE 팀은 장애를 감독하며 전체 상황을 보고, 개발팀은 자기 컴포넌트 상태를 보고하고 빠르게 에스컬레이션합니다. SRE가 지휘하고 서비스 팀이 불려 들어오는 역할 배치가 페이브릭과 같습니다.
 
 ## 인시던트 지휘
 
 1화에서 유현이 쓴 규정, "손을 쓰는 사람과 지휘하는 사람을 나눈다"는 원칙의 출처입니다.
 
-- [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/): 인시던트 커맨더, 운영 리드, 커뮤니케이션 리드로 역할을 나누는 구조. 유현이 브리지 콜에서 하는 일이 여기서 나옵니다.
+- [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/): 인시던트 커맨더, 운영 리드, 커뮤니케이션 리드로 역할을 나누는 구조. 유현이 브리지 콜에서 맡는 역할은 이 구조의 인시던트 커맨더입니다.
 - [Emergency Response · Google SRE Book](https://sre.google/sre-book/emergency-response/): 대응 중에 '누가 무엇을 했는지'를 남기는 습관에 관한 장.
 - [Incident Response · Google SRE Workbook](https://sre.google/workbook/incident-response/): 실제 사례로 풀어 쓴 지휘 체계.
 - [PagerDuty Incident Response](https://response.pagerduty.com/): 공개된 대응 매뉴얼. [역할 정의](https://response.pagerduty.com/before/different_roles/)와 [인시던트 커맨더 훈련](https://response.pagerduty.com/training/incident_commander/)이 따로 있습니다.
@@ -50,7 +51,7 @@ permalink: /appendix/
 
 1화의 제목이자 민석이 회의실에서 먼저 꺼내는 말입니다.
 
-- [Postmortem Culture: Learning from Failure · Google SRE Book](https://sre.google/sre-book/postmortem-culture/): 비난 없는 포스트모템의 원형.
+- [Postmortem Culture: Learning from Failure · Google SRE Book](https://sre.google/sre-book/postmortem-culture/): 비난 없는 포스트모템을 왜, 어떻게 쓰는지를 정리한 장.
 - [Postmortem Culture · Google SRE Workbook](https://sre.google/workbook/postmortem-culture/): 잘 쓴 포스트모템과 잘못 쓴 포스트모템의 예.
 - [Blameless PostMortems and a Just Culture · Etsy Code as Craft](https://www.etsy.com/codeascraft/blameless-postmortems): 2012년 글. '블레임리스'라는 말을 널리 퍼뜨린 문서입니다.
 - [비난 없는 포스트모템 · Atlassian](https://www.atlassian.com/ko/incident-management/postmortem/blameless)
@@ -64,7 +65,7 @@ permalink: /appendix/
 
 ## 피처 플래그와 비밀 관리
 
-1화의 스위치보드 감사 로그, 2화의 승인 봇과 자동 원복, 3화의 퇴사자 토큰이 여기서 나옵니다.
+1화의 스위치보드 감사 로그, 2화의 승인 봇과 자동 원복, 3화의 퇴사자 토큰을 쓸 때 참고했습니다.
 
 - [Feature Toggles · martinfowler.com](https://martinfowler.com/articles/feature-toggles.html): 플래그의 종류와 수명, 운영 플래그를 언제 치워야 하는지.
 - [Secrets Management Cheat Sheet · OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html): 토큰의 소유자, 만료, 접근 기록에 관한 점검 항목.
@@ -139,7 +140,7 @@ permalink: /appendix/
 
 ## 슬픔과 판단, 그리고 온콜에서 빼기
 
-10화에서 유현이 상을 당한 팀원을 온콜과 시스템 접근에서 빼는 이유, 1화의 음주 규정과 같은 결의 원칙입니다.
+10화에서 유현이 상을 당한 팀원을 온콜과 시스템 접근에서 빼는 이유입니다. 1화의 음주 규정과 같은 원칙에서 나왔습니다.
 
 - [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/): 대응자의 상태와 교대. 컨디션이 좋지 않은 사람을 대응에서 빼는 것도 신뢰성의 일부입니다.
 - [Human factors and just culture](https://www.skybrary.aero/articles/just-culture): 판단이 흐려진 사람에게 결정을 몰아주지 않는다는, 항공 안전에서 온 개념.

@@ -68,3 +68,7 @@ main { max-width: 40rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
 .page table { display: block; overflow-x: auto; border-collapse: collapse; font-size: .85rem; line-height: 1.6; margin: 0 0 1.25rem; white-space: nowrap; }
 .page th, .page td { border: 1px solid var(--line); padding: .45rem .6rem; text-align: left; vertical-align: top; white-space: normal; min-width: 7rem; }
 .page th { background: var(--code-bg); font-weight: 600; }
+main.wide { max-width: 64rem; }
+main.wide .page > :not(table), main.wide > .episode-nav { max-width: 37.5rem; margin-left: auto; margin-right: auto; }
+main.wide .page table { margin-left: auto; margin-right: auto; }
+main.wide .page th, main.wide .page td { min-width: 5.5rem; }
