@@ -156,9 +156,20 @@
       "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
       "ep1.webp"
      ]
+    },
+    {
+     "purpose": "3·10·13화의 보이는 볼·턱 윤곽을 1·2화 기준으로 재보정",
+     "prompt": "Use case: precise-object-edit. Edit ONLY Yuhyeon's face contour in image 1, the full original scene. Images 2 and 3 are approved face references of the SAME woman from episodes 1 and 2. She is an adult East Asian woman with a chin-length side-parted black bob and black clothing. The target currently has an excessively straight diagonal lower cheek outline and a narrow triangular lower face. REDRAW her visible lower cheek/jaw into a distinctly softer, slightly fuller adult oval face matching the references. Increase natural cheek volume below the cheekbone, create a smooth convex cheek curve transitioning continuously into a SHORTER, BROADER, ROUNDED chin. Remove the sharp V shape and angular cheek-to-jaw corner. This must be a visible contour correction, not merely a color or shading change. Follow the Shin Min-a-inspired gently full-cheeked, soft oval impression in the approved references; maintain a mature adult appearance. Preserve her eyes, nose, mouth, serious expression, gaze, hairstyle and exact head orientation. Keep all existing hands in exactly the same pose and position, including where fingers overlap her face. Adjust the visible facial boundary up to those occlusions; do not remove the hands to expose the chin. Keep pale peach skin consistent with the original face, neck and hands, original bold black comic ink, flat colors and restrained skin shading. Preserve all other characters, original composition, lighting, objects, background and costumes. No changes to others' faces. No added text or inset. Return the entire original landscape 16:9 scene. Yuhyeon is the central seated woman with her hand partly covering her mouth, between a young man pointing on the LEFT and a mature man with rectangular glasses and red tie ABOVE. Her exposed LEFT lower cheek currently descends in a long straight diagonal to a sharp chin beside her hand. Give this exposed cheek a rounder, fuller outward arc and wider rounded lower jaw so she resembles the approved references. Preserve the large foreground monitor BACK (not a screen).",
+     "references": [
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep3.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep1.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep2.webp"
+     ],
+     "generated_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-296cc4d3-bd80-4029-ad6e-a1c876e625f3.png",
+     "review": "2026-09-13-jaw-3-10-13-followup"
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-ba9c9038-2297-4031-9ce7-aa564cbf7e58.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-296cc4d3-bd80-4029-ad6e-a1c876e625f3.png"
   },
   {
    "name": "ep4",
@@ -272,9 +283,19 @@
      "references": [
       "ep6.webp"
      ]
+    },
+    {
+     "purpose": "1·2화 기준으로 유현의 볼 볼륨과 둥근 턱선 재보정",
+     "prompt": "Use case: precise local character-continuity edit. Image 1 is the full scene to edit. Images 2 and 3 (episode 1 and episode 2) are the APPROVED same-character face and skin references, not composition references. Yuhyeon is the adult East Asian woman with a chin-length side-parted black bob and black blouse/jacket. Change ONLY her lower-cheek and jaw contour to closely match her soft, gently full oval face in the approved images. Give her a little more natural adult cheek fullness below the cheekbones, with a continuous convex curved cheek-to-jaw contour, a shorter lower face and a visibly round broad U-shaped chin tip. Avoid a narrow triangular chin, V line, a point, hollow cheek, or long straight diagonal cheekbone-to-chin edges. Preserve her mature adult age, recognizability, eyes, nose, mouth, hairstyle, head pose, expression and bold Korean dramatic-comic ink style. Keep skin light low-saturation peach-pink consistent with references and her own neck/hands; no yellow/orange or gray cast and no global recoloring. Keep flat comic skin shading, no photographic airbrushing. Preserve every other character, all their faces, all hands, poses, clothes, background, props, lighting, perspective and frame exactly. Return the FULL scene at the original landscape 16:9 framing, no inset, no lettering, no comparison panels. The target Yuhyeon is CENTER, smiling and pouring from a clear bottle. Her present chin is too tapered and narrow: broaden and round the bottom of her face and gently fill out both lower cheeks, preserving the small friendly smile. Keep the six people exactly as in image 1. Match her face color to her light peach forearm.",
+     "references": [
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep6.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep1.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep2.webp"
+     ],
+     "review": "2026-09-13-skin-and-jaw-recheck"
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-ebec6477-f1e0-4ba4-974e-468c1cac0466.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-c09c5288-4625-45d0-99c3-c2f333ba7a25.png"
   },
   {
    "name": "ep7",
@@ -379,9 +400,40 @@
       "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
       "ep1.webp"
      ]
+    },
+    {
+     "purpose": "3·10·13화의 보이는 볼·턱 윤곽을 1·2화 기준으로 재보정",
+     "prompt": "Use case: precise-object-edit. Edit ONLY Yuhyeon's face contour in image 1, the full original scene. Images 2 and 3 are approved face references of the SAME woman from episodes 1 and 2. She is an adult East Asian woman with a chin-length side-parted black bob and black clothing. The target currently has an excessively straight diagonal lower cheek outline and a narrow triangular lower face. REDRAW her visible lower cheek/jaw into a distinctly softer, slightly fuller adult oval face matching the references. Increase natural cheek volume below the cheekbone, create a smooth convex cheek curve transitioning continuously into a SHORTER, BROADER, ROUNDED chin. Remove the sharp V shape and angular cheek-to-jaw corner. This must be a visible contour correction, not merely a color or shading change. Follow the Shin Min-a-inspired gently full-cheeked, soft oval impression in the approved references; maintain a mature adult appearance. Preserve her eyes, nose, mouth, serious expression, gaze, hairstyle and exact head orientation. Keep all existing hands in exactly the same pose and position, including where fingers overlap her face. Adjust the visible facial boundary up to those occlusions; do not remove the hands to expose the chin. Keep pale peach skin consistent with the original face, neck and hands, original bold black comic ink, flat colors and restrained skin shading. Preserve all other characters, original composition, lighting, objects, background and costumes. No changes to others' faces. No added text or inset. Return the entire original landscape 16:9 scene. Yuhyeon is seated in a coach bus by a snowy twilight window, holding a phone near her mouth, with an earbud. Her exposed RIGHT lower cheek/jaw is too straight and narrow from below the ear to the hand. Make that line a soft, gently convex fuller cheek, with a rounder shorter chin meeting the hand naturally. Do not alter either hand or phone. Keep the dark bus, snow landscape and laptop exactly.",
+     "references": [
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep10.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep1.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep2.webp"
+     ],
+     "generated_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-bdf3fb41-695a-409e-8f21-b44124588d3e.png",
+     "review": "2026-09-13-jaw-3-10-13-followup"
+    },
+    {
+     "purpose": "10·13화 얼굴 확대 윤곽 보정",
+     "prompt": "Use case: precise-object-edit. Image 1 is a cropped face that needs a substantial lower-face correction. Image 2 is the approved same woman's soft oval face reference. Redraw the lower half of the face in image 1 to have the same softly full cheeks and rounded jaw as image 2. The current cheek tapers into a sharp triangular point next to the hand. Make the lower cheek noticeably fuller (about 15 percent more width), round the transition from cheek to jaw, shorten the chin, and replace that point with a broad rounded U contour that meets the obscuring fingers naturally. Draw a smooth convex lower-cheek silhouette, not a straight diagonal. Preserve eye/nose/mouth locations and expression, adult age, black bob, hand and finger positions, light peach skin palette, black ink flat comic style, and exact crop framing. Change the visible FACE OUTLINE itself. Do not try to fake fullness merely by changing shadows or adding a large triangular neck shadow. The neck shadow must follow the corrected rounded jaw naturally. Keep this a face crop; no whole body, inset or text.",
+     "references": [
+      "/tmp/outage-jaw-3-10-13/ep10-before.png",
+      "/tmp/outage-skin-jaw-recheck/ep1-face.png"
+     ],
+     "generated_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-2b715925-72ea-4ecf-846a-315bccb75c5b.png",
+     "review": "2026-09-13-jaw-3-10-13-followup"
+    },
+    {
+     "purpose": "확대 보정한 볼·턱 윤곽을 전체 장면에 반영",
+     "prompt": "Use case: compositing / precise-object-edit. Image 1 is the original FULL episode illustration. Image 2 is an approved enlarged correction of Yuhyeon's face from this exact scene. Apply the softer fuller cheek and rounded shortened jaw contour from image 2 to the SAME woman in image 1 at her original size and position. Match the corrected lower-face SHAPE faithfully, including the continuous convex lower cheek and the broadened rounded chin by the hand; do not revert to image 1's triangular sharp jaw. Keep her original mature age, eyes, expression, black bob, head angle, and exact hand/finger pose. Preserve the pale peach skin palette and bold flat-color ink style of image 1; avoid adding photographic gradients. Keep all non-face scene content, the frame, people, lighting and props unchanged. Image 2 is a face detail reference only: no inset or montage, no gray border, do not enlarge the woman or change framing. Return image 1's complete original landscape 16:9 illustration with just this corrected facial contour.",
+     "references": [
+      "/tmp/outage-jaw-3-10-13/ep10.webp",
+      "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-2b715925-72ea-4ecf-846a-315bccb75c5b.png"
+     ],
+     "generated_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-82e64f39-4a0d-4f20-8127-fe8949d72fb5.png",
+     "review": "2026-09-13-jaw-3-10-13-followup"
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-cc815f57-5afe-4397-bb24-ee4979293aa1.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-82e64f39-4a0d-4f20-8127-fe8949d72fb5.png"
   },
   {
    "name": "ep11",
@@ -458,9 +510,50 @@
       "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
       "ep1.webp"
      ]
+    },
+    {
+     "purpose": "3·10·13화의 보이는 볼·턱 윤곽을 1·2화 기준으로 재보정",
+     "prompt": "Use case: precise-object-edit. Edit ONLY Yuhyeon's face contour in image 1, the full original scene. Images 2 and 3 are approved face references of the SAME woman from episodes 1 and 2. She is an adult East Asian woman with a chin-length side-parted black bob and black clothing. The target currently has an excessively straight diagonal lower cheek outline and a narrow triangular lower face. REDRAW her visible lower cheek/jaw into a distinctly softer, slightly fuller adult oval face matching the references. Increase natural cheek volume below the cheekbone, create a smooth convex cheek curve transitioning continuously into a SHORTER, BROADER, ROUNDED chin. Remove the sharp V shape and angular cheek-to-jaw corner. This must be a visible contour correction, not merely a color or shading change. Follow the Shin Min-a-inspired gently full-cheeked, soft oval impression in the approved references; maintain a mature adult appearance. Preserve her eyes, nose, mouth, serious expression, gaze, hairstyle and exact head orientation. Keep all existing hands in exactly the same pose and position, including where fingers overlap her face. Adjust the visible facial boundary up to those occlusions; do not remove the hands to expose the chin. Keep pale peach skin consistent with the original face, neck and hands, original bold black comic ink, flat colors and restrained skin shading. Preserve all other characters, original composition, lighting, objects, background and costumes. No changes to others' faces. No added text or inset. Return the entire original landscape 16:9 scene. Yuhyeon is seated alone in a dark office, chin near her hand, beside a lit desk lamp. Her visible LEFT cheek-to-chin contour is currently sharply triangular and angular. Replace with an appreciably fuller, softly rounded lower cheek, shorter and wider rounded jaw matching episode 1 and 2. Keep the hand, worried concentration, laptop, monitor arrangement and dark office lighting exactly.",
+     "references": [
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep13.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep1.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep2.webp"
+     ],
+     "generated_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-138ec670-7d16-4ee0-94c1-8bd4a47e4efc.png",
+     "review": "2026-09-13-jaw-3-10-13-followup"
+    },
+    {
+     "purpose": "10·13화 얼굴 확대 윤곽 보정",
+     "prompt": "Use case: precise-object-edit. Image 1 is a cropped face that needs a substantial lower-face correction. Image 2 is the approved same woman's soft oval face reference. Redraw the lower half of the face in image 1 to have the same softly full cheeks and rounded jaw as image 2. The current cheek tapers into a sharp triangular point next to the hand. Make the lower cheek noticeably fuller (about 15 percent more width), round the transition from cheek to jaw, shorten the chin, and replace that point with a broad rounded U contour that meets the obscuring fingers naturally. Draw a smooth convex lower-cheek silhouette, not a straight diagonal. Preserve eye/nose/mouth locations and expression, adult age, black bob, hand and finger positions, light peach skin palette, black ink flat comic style, and exact crop framing. Change the visible FACE OUTLINE itself. Do not try to fake fullness merely by changing shadows or adding a large triangular neck shadow. The neck shadow must follow the corrected rounded jaw naturally. Keep this a face crop; no whole body, inset or text.",
+     "references": [
+      "/tmp/outage-jaw-3-10-13/ep13-before.png",
+      "/tmp/outage-skin-jaw-recheck/ep1-face.png"
+     ],
+     "generated_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-749a8090-96c3-469b-9820-0b4ce74e0dec.png",
+     "review": "2026-09-13-jaw-3-10-13-followup"
+    },
+    {
+     "purpose": "확대 보정한 볼·턱 윤곽을 전체 장면에 반영",
+     "prompt": "Use case: compositing / precise-object-edit. Image 1 is the original FULL episode illustration. Image 2 is an approved enlarged correction of Yuhyeon's face from this exact scene. Apply the softer fuller cheek and rounded shortened jaw contour from image 2 to the SAME woman in image 1 at her original size and position. Match the corrected lower-face SHAPE faithfully, including the continuous convex lower cheek and the broadened rounded chin by the hand; do not revert to image 1's triangular sharp jaw. Keep her original mature age, eyes, expression, black bob, head angle, and exact hand/finger pose. Preserve the pale peach skin palette and bold flat-color ink style of image 1; avoid adding photographic gradients. Keep all non-face scene content, the frame, people, lighting and props unchanged. Image 2 is a face detail reference only: no inset or montage, no gray border, do not enlarge the woman or change framing. Return image 1's complete original landscape 16:9 illustration with just this corrected facial contour.",
+     "references": [
+      "/tmp/outage-jaw-3-10-13/ep13.webp",
+      "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-749a8090-96c3-469b-9820-0b4ce74e0dec.png"
+     ],
+     "generated_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-9e63dde0-d5b3-41ca-8ec3-b00311f5785d.png",
+     "review": "2026-09-13-jaw-3-10-13-followup"
+    },
+    {
+     "purpose": "13화 손 위에 남은 뾰족한 턱끝을 추가로 짧고 둥글게 보정",
+     "prompt": "Use case: precise-object-edit. Image 1 is the full scene. Make ONE clear geometric correction to the seated woman's face: her chin above the supporting hand is still triangular and pointed. SHORTEN her lower face by about 12 pixels at this 1672x941 scene scale, lift the chin tip, broaden its bottom, and move the visible lower-left cheek outward about 10 pixels to create a fuller rounded cheek. The lower cheek must turn into a broad rounded U arc rather than a diagonal edge terminating in a point against the fingers. Use image 2's rounded lower face shape, which is the desired correction of this very face. Let the supporting hand touch the new rounded chin naturally, with minimal adjustment only if necessary. Keep her mature age, eyes, nose, mouth, head tilt, serious expression, hairstyle and original skin color. Preserve the entire night-office composition, laptop, desk lamp, furniture, crop and inky comic style. The change in cheek/jaw outline must be plainly visible. Do not merely adjust the skin shading or leave the original pointed contour. Return the full landscape scene, no inset.",
+     "references": [
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep13.webp",
+      "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-749a8090-96c3-469b-9820-0b4ce74e0dec.png"
+     ],
+     "generated_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-11f620b0-e359-4e95-9846-765446e3e992.png",
+     "review": "2026-09-13-jaw-3-10-13-followup"
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-3ab86b5e-ea5a-4969-8f6d-cd2ac0265738.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-11f620b0-e359-4e95-9846-765446e3e992.png"
   },
   {
    "name": "ep14",
@@ -509,9 +602,19 @@
       "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-460ac09d-d4e0-4f09-9391-8b9cdd912740.png",
       "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-143eea14-019e-401d-a000-9a26faed19c2.png"
      ]
+    },
+    {
+     "purpose": "1·2화 기준으로 유현의 볼 볼륨과 둥근 턱선 재보정",
+     "prompt": "Use case: precise local character-continuity edit. Image 1 is the full scene to edit. Images 2 and 3 (episode 1 and episode 2) are the APPROVED same-character face and skin references, not composition references. Yuhyeon is the adult East Asian woman with a chin-length side-parted black bob and black blouse/jacket. Change ONLY her lower-cheek and jaw contour to closely match her soft, gently full oval face in the approved images. Give her a little more natural adult cheek fullness below the cheekbones, with a continuous convex curved cheek-to-jaw contour, a shorter lower face and a visibly round broad U-shaped chin tip. Avoid a narrow triangular chin, V line, a point, hollow cheek, or long straight diagonal cheekbone-to-chin edges. Preserve her mature adult age, recognizability, eyes, nose, mouth, hairstyle, head pose, expression and bold Korean dramatic-comic ink style. Keep skin light low-saturation peach-pink consistent with references and her own neck/hands; no yellow/orange or gray cast and no global recoloring. Keep flat comic skin shading, no photographic airbrushing. Preserve every other character, all their faces, all hands, poses, clothes, background, props, lighting, perspective and frame exactly. Return the FULL scene at the original landscape 16:9 framing, no inset, no lettering, no comparison panels. The target Yuhyeon is the only woman seated behind a black laptop in front of green displays. Her lower face is too long and lean. Make her cheeks appreciably fuller and jaw arc visibly rounder like approved episode 1, with a shorter softly rounded chin. Maintain her worried frown and downward tilted head. Do not merely round a tiny chin tip while leaving the long straight cheek outline.",
+     "references": [
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep14.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep1.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep2.webp"
+     ],
+     "review": "2026-09-13-skin-and-jaw-recheck"
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-87090870-876f-48f1-805e-460af4c2021d.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-92415630-ada7-4af1-af76-f2319c24f47a.png"
   },
   {
    "name": "ep15",
@@ -543,9 +646,19 @@
       "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
       "ep1.webp"
      ]
+    },
+    {
+     "purpose": "1·2화 기준으로 유현의 볼 볼륨과 둥근 턱선 재보정",
+     "prompt": "Use case: precise local character-continuity edit. Image 1 is the full scene to edit. Images 2 and 3 (episode 1 and episode 2) are the APPROVED same-character face and skin references, not composition references. Yuhyeon is the adult East Asian woman with a chin-length side-parted black bob and black blouse/jacket. Change ONLY her lower-cheek and jaw contour to closely match her soft, gently full oval face in the approved images. Give her a little more natural adult cheek fullness below the cheekbones, with a continuous convex curved cheek-to-jaw contour, a shorter lower face and a visibly round broad U-shaped chin tip. Avoid a narrow triangular chin, V line, a point, hollow cheek, or long straight diagonal cheekbone-to-chin edges. Preserve her mature adult age, recognizability, eyes, nose, mouth, hairstyle, head pose, expression and bold Korean dramatic-comic ink style. Keep skin light low-saturation peach-pink consistent with references and her own neck/hands; no yellow/orange or gray cast and no global recoloring. Keep flat comic skin shading, no photographic airbrushing. Preserve every other character, all their faces, all hands, poses, clothes, background, props, lighting, perspective and frame exactly. Return the FULL scene at the original landscape 16:9 framing, no inset, no lettering, no comparison panels. The target Yuhyeon is the woman standing at BACK LEFT with folded arms. Do not edit the short-haired person with round glasses and blue shirt seated in the foreground. Her lower-cheek edge currently slopes as a long straight diagonal into a narrow chin. Replace with a gently convex fuller cheek and shorter rounded jaw like approved episode 1 and 2, maintaining her existing expression and posture.",
+     "references": [
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep15.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep1.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep2.webp"
+     ],
+     "review": "2026-09-13-skin-and-jaw-recheck"
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-6e2b5ca6-c6ac-44b2-9914-0ac1e44b528b.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-43c22c44-7e65-4315-bfe4-f76a1cd88749.png"
   },
   {
    "name": "ep16",
@@ -629,12 +742,15 @@
  "character_references": {
   "서유현": {
    "image": "ep1.webp",
-   "facial_contour_reference": "ep14.webp",
-   "features": "신민아 참고 사진의 인상을 반영한 성인 얼굴. 부드러운 타원형 얼굴, 볼 아래까지 자연스러운 볼륨, 광대에서 턱까지 완만하게 휘는 곡선, 짧고 둥근 턱끝. 자연스러운 눈매, 둥근 코끝, 곡선형 입매, 옆가르마의 턱 길이 검은 단발. 표정은 장면에 맞춤.",
+   "facial_contour_reference": "ep1.webp",
+   "features": "1·2화를 고정 기준으로 사용. 신민아 참고의 부드러운 타원형 얼굴, 광대 아래에 자연스러운 볼 볼륨, 볼에서 턱까지 이어지는 완만한 곡선과 짧고 둥근 턱끝. 옅은 복숭아색 피부, 검은 단발, 성숙한 성인 인상. 장면의 표정·각도·조명은 유지.",
    "avoid": "광대부터 턱까지 긴 직선, 뾰족한 V자 턱, 과도하게 긴 하관, 사진 같은 피부 명암",
    "external_references": [
     "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
     "https://blog.naver.com/seowlgp/224333791814"
+   ],
+   "additional_facial_contour_references": [
+    "ep2.webp"
    ]
   },
   "유도경": {
@@ -729,5 +845,44 @@
     630
    ]
   }
+ },
+ "skin_jaw_recheck": {
+  "date": "2026-09-13",
+  "report": "review.md",
+  "reference_assets": [
+   "ep1.webp",
+   "ep2.webp"
+  ],
+  "reviewed_assets": [
+   "cover.webp",
+   "ep1.webp",
+   "ep2.webp",
+   "ep3.webp",
+   "ep4.webp",
+   "ep5.webp",
+   "ep6.webp",
+   "ep7.webp",
+   "ep8.webp",
+   "ep9.webp",
+   "ep10.webp",
+   "ep11.webp",
+   "ep12.webp",
+   "ep13.webp",
+   "ep14.webp",
+   "ep15.webp",
+   "ep16.webp",
+   "share.jpg"
+  ],
+  "modified_assets": [
+   "ep3.webp",
+   "ep6.webp",
+   "ep10.webp",
+   "ep13.webp",
+   "ep14.webp",
+   "ep15.webp"
+  ],
+  "method": "전체 장면 및 유현 얼굴 확대 육안 비교. 일부 밝은 피부 영역의 RGB 중앙값을 보조 비교했으며, 얼굴 각도·가림·조명 차이를 고려해 판단. 자동 동일인 판정이나 동일 RGB 강제 적용은 하지 않음.",
+  "conclusion": "피부는 옅은 복숭아색 계열로 대체로 일관됨. 8·11화의 따뜻한 조명색은 유지. 6·14·15화 보정 이후 사용자 지적에 따라 3·10·13화의 드러난 볼·턱 윤곽도 추가로 부드럽게 수정. 1·2화 원본 유지.",
+  "followup": "손에 일부 가려져 있더라도 드러난 광대 아래부터 턱까지의 직선적 윤곽은 별도로 검수한다. 10·13화는 얼굴 확대 보정 후 전체 장면에 반영했고 13화 턱끝은 추가 보정했다."
  }
 }
