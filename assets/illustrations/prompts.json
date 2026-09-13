@@ -219,6 +219,19 @@
   {
    "name": "ep9",
    "output": "ep9.webp",
+   "alt": "연말 텅 빈 저녁 사무실에 홀로 남아 장애를 대응하는 도경, 뒤로 작은 트리와 빈 자리들",
+   "note": "극화체 레시피를 담아 codex exec image_gen으로 직접 생성. 1672x941 그대로 webp 변환.",
+   "steps": [
+    {
+     "purpose": "9화 장면 직접 생성 (codex exec image_gen)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 9화 삽화이며 나머지 화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, simplified faces; eyes a few pen strokes; noses a single angular line; hair solid black silhouettes with 2-3 white highlights; expression via eyebrows and mouth. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft washes, no 3D, no glossy webtoon. Serious adult crime/drama comic, not chibi. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, flat shadows ~#E8CBBB. NOT orange/yellow/tan.\n\n[배경 팔레트 — 연말, 텅 빈 저녁 사무실]\nA modern office in the evening at year-end, almost EMPTY because everyone is on holiday. Neutral off-white and cool gray desks; most desks empty, their chairs pushed in and monitors dark. Through the window, a cold dark blue winter evening city (#3E4A57). One small warm accent: a single lit desk area, and perhaps one tiny forgotten string of holiday lights on an empty partition. White/gray dominant, cold and empty, one warm pool of light.\n\n[장면]\nA man in his 30s — a payments backend engineer with THICK eyebrows, an angular adult face, and thick tousled black hair — sits alone at his desk in the emptied year-end office, the only person who stayed. He is focused and a little grim, working an emergency by himself; a monitor on his desk is angled AWAY from the viewer (dark back only, no screen content). Rows of empty desks recede around him into cool shadow. The subject is solitude: one worker in a large empty office at year-end, holding the line alone. 16:9.\n\n이 남자(도경)는 연작에 이미 나온 인물이니 굵은 눈썹·각진 얼굴·헝클어진 검은 머리로 일관되게 그려라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    }
+   ],
+   "final_source": "/home/benelog/.codex/generated_images/01a09851-49ca-74d1-affc-f04f1f9fc867/exec-949a687a-3653-4d65-a34c-e44965e825de.png"
+  },
+  {
+   "name": "ep10",
+   "output": "ep10.webp",
    "alt": "겨울 해질녘 텅 빈 시외버스 뒷자리에서 이어폰을 끼고 휴대폰을 입가에 가린 채 조용히 장애를 지휘하는 유현",
    "note": "7·8화와 같은 방식. 극화체 레시피에 겨울 해질녘 시외버스 실내 팔레트(청회색 좌석 #8A929B, 차가운 저녁빛 창밖 #5B6E7A, 휴대폰 화면의 작은 따뜻한 글로우만 강조)를 담아 codex exec image_gen으로 직접 생성. 노트북은 화면이 안 보이게 뒤로 돌림(3화 관찰 시점 규칙과 동일). 1672x941 그대로 webp 변환.",
    "steps": [
@@ -234,8 +247,8 @@
    "final_source": "/home/benelog/.codex/generated_images/01a09803-c9e9-7cf2-9e36-3057284c0419/exec-a3c56c12-a340-420c-833c-e3cc0a068b13.png"
   },
   {
-   "name": "ep10",
-   "output": "ep10.webp",
+   "name": "ep11",
+   "output": "ep11.webp",
    "alt": "해질녘 텅 빈 사무실, 데스크 램프 아래 앉은 신입 민서와 저 문가에서 기다리는 하늘, 책상 위 백지 문서 더미",
    "note": "7~9화와 같은 방식. 극화체 레시피에 해질녘 텅 빈 사무실 팔레트(흰색·회색 표면, 창밖 차가운 청색 #5B6E7A, 데스크 램프 하나만 따뜻한 국소 강조)를 담아 codex exec image_gen으로 직접 생성. 모니터는 화면이 안 보이게 뒤로 돌림(3화 규칙). 결말이 뒤풀이가 아닌 사무실이라 그에 맞춘 장면. 1672x941 그대로 webp 변환.",
    "steps": [
@@ -247,8 +260,8 @@
    "final_source": "/home/benelog/.codex/generated_images/01a09815-9022-78f2-94e9-c4f253dbbb7c/exec-f998039d-751f-4636-a011-e11e59062f65.png"
   },
   {
-   "name": "ep11",
-   "output": "ep11.webp",
+   "name": "ep12",
+   "output": "ep12.webp",
    "alt": "반깁스한 발을 테이블에 올리고 목발을 곁에 둔 채, 토요일 밤 집에서 홀로 노트북으로 장애를 대응하는 도경",
    "note": "7~10화와 같은 방식. 극화체 레시피에 토요일 저녁 집 거실 팔레트(청회색 벽, 호두색 낮은 테이블, 창밖 차가운 밤, 스탠드 램프 하나만 따뜻한 국소 강조)를 담아 codex exec image_gen으로 직접 생성. 노트북은 화면이 안 보이게 뒤로 돌림(3화 규칙). 1672x941 그대로 webp 변환.",
    "steps": [
@@ -258,6 +271,58 @@
     }
    ],
    "final_source": "/home/benelog/.codex/generated_images/01a09824-2658-7ae2-80a2-23ce98e361ed/exec-71f2b32d-ae43-42cb-8877-eaa87f1d656d.png"
+  },
+  {
+   "name": "ep13",
+   "output": "ep13.webp",
+   "alt": "정전 뒤 깊은 밤, 대부분 꺼진 모니터들 사이에서 데스크 램프 하나로 시스템을 다시 세우는 유현",
+   "note": "극화체 레시피를 담아 codex exec image_gen으로 직접 생성. 1672x941 그대로 webp 변환.",
+   "steps": [
+    {
+     "purpose": "13화 장면 직접 생성 (codex exec image_gen)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 12화 삽화이며 1~11화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a tiny hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, minimal flat shadows ~#E8CBBB. Light fair flesh, NOT orange/yellow/tan.\n\n[배경 팔레트 — 깊은 밤, 정전 뒤 사무실]\nA mostly DARK open-plan office deep at night. Cool dark blue night (#3E4A57) through the windows. Most monitors are OFF — only their dark backs and edges visible, no screen content. One or two distant screens glow faintly cool as they slowly boot. A single warm desk lamp is the one warm accent in a room full of cold shadow. Off-white walls fall into deep gray shadow.\n\n[장면]\nA woman in her early 40s — an SRE lead with an ANGULAR narrow face, sharp eyes, a CHIN-LENGTH black bob, dark clothes — sits alone at a desk deep in the night, surrounded by rows of dark, powered-off monitors (dark backs only). One warm desk lamp lights her. She is calm and focused, reading a laptop that is angled AWAY from us (dark back visible). The whole room is a dead system she is quietly bringing back to life. Mostly dark, cold blue, one small warm lamp, tense concentration. 16:9.\n\n이 여자(유현)는 연작에 이미 나온 인물이니 각진 좁은 얼굴·날카로운 눈매·턱 길이 검은 단발로 일관되게 그려라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    }
+   ],
+   "final_source": "/home/benelog/.codex/generated_images/01a09852-5854-7eb0-b1a8-cef113093348/exec-c3581dbc-5b29-484e-b30e-48b725c77f76.png"
+  },
+  {
+   "name": "ep14",
+   "output": "ep14.webp",
+   "alt": "온통 초록으로 빛나는 대시보드 벽 앞에서, 그 초록을 믿지 않고 노트북을 들여다보는 유현",
+   "note": "극화체 레시피를 담아 codex exec image_gen으로 직접 생성. 1672x941 그대로 webp 변환.",
+   "steps": [
+    {
+     "purpose": "14화 장면 직접 생성 (codex exec image_gen)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 13화 삽화이며 1~11화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a tiny hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, minimal flat shadows ~#E8CBBB. Light fair flesh, NOT orange/yellow/tan.\n\n[배경 팔레트 — 사무실, 초록 대시보드 벽]\nAn office wall covered with mounted dashboard monitors that all glow a flat, uniform GREEN (health dashboards — abstract flat green fills only, NO text, NO numbers, NO charts). The green glow is the dominant light and tints the room and her face green. The rest of the office is cool neutral gray.\n\n[장면]\nA woman in her early 40s (ANGULAR narrow face, sharp eyes, CHIN-LENGTH black bob) stands before the wall of uniformly GREEN monitors — but she is turned AWAY from the green wall, toward a single laptop on a desk (angled away, dark back), her brow furrowed in open skepticism. Everything behind her says all-clear green; her face says she does not believe it. The subject is that tension: a reassuring green wall, and one person refusing to trust it. Green-lit, cool, tense. 16:9.\n\n이 여자(유현)는 각진 좁은 얼굴·날카로운 눈매·턱 길이 검은 단발로 일관되게 그려라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    }
+   ],
+   "final_source": "/home/benelog/.codex/generated_images/01a09853-556d-7fa2-ab45-f2d5b9e96a15/exec-8dbcccdd-3cf8-465b-bd9d-4610ddd1c44d.png"
+  },
+  {
+   "name": "ep15",
+   "output": "ep15.webp",
+   "alt": "장애를 지휘하는 하늘과, 뒤에서 팔짱을 낀 채 손대지 않고 지켜보는 본부장 유현",
+   "note": "극화체 레시피를 담아 codex exec image_gen으로 직접 생성. 1672x941 그대로 webp 변환.",
+   "steps": [
+    {
+     "purpose": "15화 장면 직접 생성 (codex exec image_gen)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 14화 삽화이며 1~11화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a tiny hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, minimal flat shadows ~#E8CBBB. Light fair flesh, NOT orange/yellow/tan.\n\n[배경 팔레트 — 저녁 사무실]\nAn office in the evening. Cool neutral white and gray surfaces with a little warm interior light. A few monitors carry a small, abstract warning glow (a touch of amber/red, NO text). Cool with small warm accents.\n\n[장면]\nFOREGROUND: a woman in her LATE 20s — ROUND glasses, neat hair, a BLUE shirt — sits at a desk leading an incident, one hand on the keyboard, an earbud in, focused and in command. BACKGROUND: standing a few steps behind her with ARMS FOLDED, watching but deliberately NOT touching any keyboard, an older woman in her early 40s (ANGULAR narrow face, sharp eyes, CHIN-LENGTH black bob), calm, holding back, letting the younger one lead. The subject is a handover: the young one leads at the keyboard, the older one watches and keeps her hands off. Monitors angled so no readable content shows. 16:9.\n\n두 인물 모두 연작에 이미 나온 인물이다. 앞의 젊은 여자(하늘)는 둥근 안경·단정한 머리·푸른 셔츠, 뒤의 여자(유현)는 각진 좁은 얼굴·턱 길이 검은 단발로 일관되게.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    }
+   ],
+   "final_source": "/home/benelog/.codex/generated_images/01a09854-630a-77e1-ab22-be38abce65cf/exec-d5c51a55-89da-4116-a6dc-0a10a216c9aa.png"
+  },
+  {
+   "name": "ep16",
+   "output": "ep16.webp",
+   "alt": "새벽 술집에서 노트북 가방을 곁에 둔 채 열지 않고, 유리문 밖에서 전화로 대응하는 두 사람을 바라보는 유현",
+   "note": "극화체 레시피를 담아 codex exec image_gen으로 직접 생성. 1672x941 그대로 webp 변환.",
+   "steps": [
+    {
+     "purpose": "16화 장면 직접 생성 (codex exec image_gen)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 마지막 15화 삽화이며 1~11화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a tiny hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, minimal flat shadows ~#E8CBBB. Light fair flesh, NOT orange/yellow/tan.\n\n[배경 팔레트 — 밤 술집 안 + 유리문 밖 골목]\nInterior of a small late-night tavern: muted COOL BLUE-GRAY walls (#758A90), neutral WALNUT/TAUPE wooden table and furniture (#76645A), a small warm lamp glow inside. Through the glass door, a cold dark TEAL alley at night. Warm interior against cold exterior; amber only as a small lamp accent.\n\n[장면]\nInside the tavern, late at night. A woman in her early 40s (ANGULAR narrow face, sharp eyes, CHIN-LENGTH black bob) sits alone at a wooden table with a green soju bottle and a small glass, NOT drinking, her hands resting still on the table. A closed laptop bag sits on the seat beside her, unopened. She looks toward the lit GLASS DOOR, through which we see — small, outside in the cold alley — TWO people standing with phones held to their ears, handling something. Her expression is calm, resolved, a little wistful: the person who once would have jumped in, now sitting still. Warm tavern interior, cold alley through the glass. 16:9.\n\n이 여자(유현)는 각진 좁은 얼굴·날카로운 눈매·턱 길이 검은 단발로 일관되게 그려라. 특정 실제 인물을 베끼지 마라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    }
+   ],
+   "final_source": "/home/benelog/.codex/generated_images/01a09855-6d07-7c93-bac4-8282038c8687/exec-21b91514-169a-41e7-8892-63b53e399bb1.png"
   },
   {
    "name": "share",
