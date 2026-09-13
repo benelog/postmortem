@@ -8,6 +8,12 @@ permalink: /appendix/
 
 이 연작의 회사와 사람과 장애는 지어낸 것이지만, 인물들이 따르는 관행과 어휘는 지어낸 것이 아닙니다. 각 화의 소재가 된 문서와, 표현을 고를 때 참고한 국내 사례를 모았습니다.
 
+## 각 화로
+
+{% assign eps = site.episodes | sort: "number" %}{% for e in eps %}
+- [{{ e.number }}화 · {{ e.title }}]({{ e.url | relative_url }}) — {{ e.pov }} 시점{% endfor %}
+
+
 ## 인시던트 지휘
 
 1화에서 유현이 쓴 규정, "손을 쓰는 사람과 지휘하는 사람을 나눈다"는 원칙의 출처입니다.
