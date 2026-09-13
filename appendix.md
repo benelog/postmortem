@@ -11,7 +11,7 @@ wide: true
 
 ## 페이브릭의 대응 규정
 
-연작의 회사 페이브릭이 따르는 역할 구분입니다. 1화에서 유현이 쓴 규정이고, 15화에서 하늘에게 넘어갑니다.
+연작의 회사 페이브릭이 따르는 역할 구분입니다. 1화에서 민아가 쓴 규정이고, 15화에서 하늘에게 넘어갑니다.
 
 | 역할 | 누가 | 순번 | 대기 방식 | 하는 일 | 하지 않는 일 |
 |---|---|---|---|---|---|
@@ -32,15 +32,15 @@ wide: true
 - [Different Roles for Incidents · PagerDuty](https://response.pagerduty.com/before/different_roles/): "인시던트 커맨더는 해결자가 아니다. 모든 복구 작업은 위임한다." SME(Subject Matter Expert)는 보통 해당 서비스의 primary 온콜이 맡습니다. 결제팀 개발자가 손으로 불려 들어오는 구조는 이 SME 역할을 따른 것입니다.
 - [Incident Commander Training · PagerDuty](https://response.pagerduty.com/training/incident_commander/): 커맨더는 그래프도 로그도 직접 보지 않고 위임합니다. 훈련을 마친 사람이 스스로 커맨더 순번표에 이름을 올리는 것으로 정식 커맨더가 됩니다. 피로해서 계속할 수 없으면 인계하라는 조항이 있는데, 음주를 명시한 조항은 이 문서에도 없습니다. 페이브릭의 음주 조항은 참고한 문서 없이 회사가 스스로 정한 것입니다.
 - [Being On-Call · PagerDuty](https://response.pagerduty.com/oncall/being_oncall/): 에스컬레이션 5분, 여행이나 일정이 있으면 미리 교대를 잡을 것. 12화의 다섯 번째 재발 방지 항목은 이 조항을 옮겨 적은 것입니다.
-- [Escalation Policies · PagerDuty](https://support.pagerduty.com/main/docs/escalation-policies): 정해진 시간 안에 ack가 없으면 다음 단계로 넘어가는 규칙. 1화와 9화에서 지휘 순번이 닿지 않아 다음 순번인 유현이 잡는 장면의 배경입니다.
+- [Escalation Policies · PagerDuty](https://support.pagerduty.com/main/docs/escalation-policies): 정해진 시간 안에 ack가 없으면 다음 단계로 넘어가는 규칙. 1화와 9화에서 지휘 순번이 닿지 않아 다음 순번인 민아가 잡는 장면의 배경입니다.
 - [데브시스터즈의 장애 대응 원칙과 방법](https://tech.devsisters.com/posts/incident-management-principles/): 지휘자와 기록가를 두고 "시스템 변경은 1인이 진행"합니다. 다만 지휘자는 순번이 아니라 최초 인지자가 맡고 필요하면 인계합니다. 페이브릭과 다른 선택입니다.
 - [장애 모의 훈련 그리고 배운 점 · Hyperconnect Tech Blog](https://hyperconnect.github.io/2024/11/12/sre-incident-training.html): SRE 팀은 장애를 감독하며 전체 상황을 보고, 개발팀은 자기 컴포넌트 상태를 보고하고 빠르게 에스컬레이션합니다. SRE가 지휘하고 서비스 팀이 불려 들어오는 역할 배치가 페이브릭과 같습니다.
 
 ## 인시던트 지휘
 
-1화에서 유현이 쓴 규정, "손을 쓰는 사람과 지휘하는 사람을 나눈다"는 원칙의 출처입니다.
+1화에서 민아가 쓴 규정, "손을 쓰는 사람과 지휘하는 사람을 나눈다"는 원칙의 출처입니다.
 
-- [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/): 인시던트 커맨더, 운영 리드, 커뮤니케이션 리드로 역할을 나누는 구조. 유현이 브리지 콜에서 맡는 역할은 이 구조의 인시던트 커맨더입니다.
+- [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/): 인시던트 커맨더, 운영 리드, 커뮤니케이션 리드로 역할을 나누는 구조. 민아가 브리지 콜에서 맡는 역할은 이 구조의 인시던트 커맨더입니다.
 - [Emergency Response · Google SRE Book](https://sre.google/sre-book/emergency-response/): 대응 중에 '누가 무엇을 했는지'를 남기는 습관에 관한 장.
 - [Incident Response · Google SRE Workbook](https://sre.google/workbook/incident-response/): 실제 사례로 풀어 쓴 지휘 체계.
 - [PagerDuty Incident Response](https://response.pagerduty.com/): 공개된 대응 매뉴얼. [역할 정의](https://response.pagerduty.com/before/different_roles/)와 [인시던트 커맨더 훈련](https://response.pagerduty.com/training/incident_commander/)이 따로 있습니다.
@@ -58,7 +58,7 @@ wide: true
 
 ## 온콜
 
-유현과 도경이 새벽 두 시 술집에서 다투는 규정의 배경입니다.
+민아와 도경이 새벽 두 시 술집에서 다투는 규정의 배경입니다.
 
 - [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/): 온콜의 부담과 교대, 대응 시간에 관한 장.
 - [운영 비용을 95% 절감한 서버리스 온콜 시스템 구축기 · 올리브영 테크블로그](https://oliveyoung.tech/2025-12-24/amazon-connect/): 국내 회사의 온콜 호출 체계 사례.
@@ -87,16 +87,16 @@ wide: true
 
 ## 잠금과 롱 트랜잭션
 
-7화에서 임재헌이 건 배타 락과, 대기가 끝나도 풀리지 않던 거래의 배경입니다.
+7화에서 임경호가 건 배타 락과, 대기가 끝나도 풀리지 않던 거래의 배경입니다.
 
 - [Explicit Locking · PostgreSQL Documentation](https://www.postgresql.org/docs/current/explicit-locking.html): `ACCESS EXCLUSIVE` 락이 읽기까지 막는 이유. 대기 중인 배타 락이 뒤따르는 요청을 줄 세우는 동작.
 - [pg_locks · PostgreSQL Documentation](https://www.postgresql.org/docs/current/view-pg-locks.html): 은서가 잠금을 물고 있는 연결을 찾을 때 보는 뷰.
-- [Transactions · PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial-transactions.html): `BEGIN`으로 연 거래는 `COMMIT`이나 `ROLLBACK` 전까지 락을 놓지 않는다는 것. 임재헌이 놓친 부분입니다.
+- [Transactions · PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial-transactions.html): `BEGIN`으로 연 거래는 `COMMIT`이나 `ROLLBACK` 전까지 락을 놓지 않는다는 것. 임경호가 놓친 부분입니다.
 - [Managing Long-Running Queries and Idle-in-Transaction · PostgreSQL Wiki](https://wiki.postgresql.org/wiki/Lock_Monitoring): 잠긴 세션을 찾아 종료하는 방법.
 
 ## 감사 로그와 내부자 위협
 
-7화에서 임재헌이 직접 결재한 비용으로 만든 감사 로그에 그 자신이 잡히는 배경입니다.
+7화에서 임경호가 직접 결재한 비용으로 만든 감사 로그에 그 자신이 잡히는 배경입니다.
 
 - [Logging Cheat Sheet · OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html): 무엇을, 어디에, 얼마나 오래 남길지. 운영 데이터와 분리해 변조를 막는 감사 로그.
 - [CIS Control 8 · Audit Log Management](https://www.cisecurity.org/controls/audit-log-management): 접근과 변경을 사람 단위로 추적하는 통제 항목.
@@ -140,7 +140,7 @@ wide: true
 
 ## 슬픔과 판단, 그리고 온콜에서 빼기
 
-10화에서 유현이 상을 당한 팀원을 온콜과 시스템 접근에서 빼는 이유입니다. 1화의 음주 규정과 같은 원칙에서 나왔습니다.
+10화에서 민아가 상을 당한 팀원을 온콜과 시스템 접근에서 빼는 이유입니다. 1화의 음주 규정과 같은 원칙에서 나왔습니다.
 
 - [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/): 대응자의 상태와 교대. 컨디션이 좋지 않은 사람을 대응에서 빼는 것도 신뢰성의 일부입니다.
 - [Human factors and just culture](https://www.skybrary.aero/articles/just-culture): 판단이 흐려진 사람에게 결정을 몰아주지 않는다는, 항공 안전에서 온 개념.
@@ -156,7 +156,7 @@ wide: true
 
 ## git blame과 진짜 작성자
 
-11화에서 민서가 blame이 가리킨 이름을 진범으로 오해하지 않는 배경입니다.
+11화에서 유진이 blame이 가리킨 이름을 진범으로 오해하지 않는 배경입니다.
 
 - [git-blame · Git 문서](https://git-scm.com/docs/git-blame): blame은 그 줄을 마지막으로 바꾼 커밋을 가리킬 뿐입니다.
 - [Ignoring commits in git blame · `.git-blame-ignore-revs`](https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revs-fileltfilegt): 대량 포매팅 커밋을 blame에서 건너뛰어 진짜 작성자를 드러내는 방법.
