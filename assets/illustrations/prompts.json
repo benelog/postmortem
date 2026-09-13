@@ -612,9 +612,47 @@
       "/home/benelog/source/benelog/outage/assets/illustrations/ep2.webp"
      ],
      "review": "2026-09-13-skin-and-jaw-recheck"
+    },
+    {
+     "purpose": "14화 본문에 맞춰 정상 대시보드와 실제 결제 실패 로그를 대조하는 장면으로 새로 구성",
+     "prompt": "Use case: illustration-story. Create a completely NEW scene composition for episode 14 of a serious Korean workplace incident-response graphic novel. Attached images 1 and 2 are CHARACTER AND COMIC STYLE REFERENCES ONLY, not scenes to copy. The woman Yuhyeon is the SAME adult East Asian woman with side-parted chin-length shiny black bob, black blouse/jacket, pale low-saturation peach skin, softly full oval cheeks and SHORT BROAD ROUNDED chin from those references. Preserve her mature adult age and soft face contour; no pointy V chin, no hollow cheeks, no straight angular diagonal lower jaw. Bold black ink outlines, flat restrained color fills, strong black hair highlights, realistic adult proportions, restrained comic skin shading, no photorealism.\n\nStory moment: July Tuesday late afternoon in a Seoul tech office. Customers report failed payments, but her own monitoring dashboard reports only 0.2% errors and all indicators look healthy. Yuhyeon mistrusts the dashboard and examines actual logs from shard kr-c, discovering repeated 5xx payment-confirmation failures concealed by missing metrics. Depict this discovery, BEFORE restoring metrics, not a successful recovery or flashing critical alarm.\n\nNEW composition: cinematic landscape 16:9, medium-wide three-quarter side view of Yuhyeon sitting on the LEFT at a normal office desk, leaning toward TWO ordinary desk monitors on the RIGHT. The camera is beside the desk so her three-quarter face and BOTH actual SCREEN FRONTS are visible naturally at the same time; believable screen angle and perspective. Her expression is focused, troubled and skeptical, one hand on the mouse and the other indicating the relevant log row. Her whole face must remain visible enough to appreciate her soft cheek/jaw contour. Her face, the subtly green dashboard and the red error logs form the visual story.\n\nThe two monitors have convincing dark slate software UI backgrounds, fine graph grids, axes, sparklines, data tables and subtle pale labels. LEFT monitor is an ordinary payment monitoring dashboard: prominent small green status tile reading exactly '0.2%', several low green line charts with real plotted traces, small green health checks, labels 'kr-a' and 'kr-b'. Keep most screen area dark gray, green only in charts and compact status marks. RIGHT monitor is an analyst's raw log viewer with a search/filter label 'kr-c', dense neatly aligned timestamped log rows, many small red '5xx' codes. Along one edge of that right screen a CS message panel includes THREE small customer payment-failure screenshot thumbnails with simple red failure X icons. These are captured customer app errors, not monitoring alarms. Small text can be understated but the key labels '0.2%', 'kr-c', '5xx' should be clear and correctly written. No 6.1% (that is later in the story), no full-screen red alert. Do not invent an automatic no-data alert, because the whole incident went undetected.\n\nEnvironment: believable ordinary open-plan Seoul office, gray desks, a few distant workstations, windows with late-afternoon July daylight, muted blue-gray and white surfaces, binders, notebook and a modest desk plant. Neutral brown desk accents, black clothing, light peach skin; no global yellow or green cast. No enormous monitor wall, NO blank solid green screens, no science-fiction control center. Foreground objects must not hide her face or the important screen contents. Single coherent illustrated story panel, no speech bubbles, captions, title, watermark or comparison inset. Preserve the series' ink style and facial identity while making this entirely new composition clearly illustrate 'healthy dashboard versus failing real payments'.",
+     "references": [
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep1.webp",
+      "/home/benelog/source/benelog/outage/assets/illustrations/ep2.webp"
+     ],
+     "generated_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-39eef8ef-8b22-4652-8dcc-3a121ce73ec0.png",
+     "review": "2026-09-13-ep14-story-redraw"
+    },
+    {
+     "purpose": "본문에 없는 날짜와 장식 문구, 결제 청구 관련 추가 서술 정리",
+     "prompt": "Use case: precise-object-edit / text-localization. Make only these small content cleanups to this illustration, preserving ALL faces, Yuhyeon's soft rounded jaw and cheeks, hands, skin tones, composition, lighting and detailed monitor UI layout exactly. 1) Remove all decorative slogan lettering from the TWO white office pillars/walls in the background, leaving plain clean white-gray architecture. Remove the tiny distant building word 'Seoul'. 2) Remove the slogan lettering from the white tumbler on the desk; leave a plain white tumbler. 3) On the right monitor's log timestamp column and the CS panel, REMOVE the fabricated calendar dates '2024-07-23' (and any other calendar date) and retain only HH:MM:SS or HH:MM time-of-day timestamps. The story does not specify a calendar date here. Keep log rows compact and aligned, with the 'kr-c' filter and red '5xx' repeated status values. 4) Replace the third customer-report sentence about being charged with the simple sentence 'Payment failed.' so it does not invent a separate double-charge issue. Preserve the three payment-failure phone screenshots. Keep the left dashboard's '0.2%' green error-rate tile, real line/bar graphs and green health indicators untouched. No new labels, objects or other changes. Preserve original landscape framing and bold ink comic style.",
+     "references": [
+      "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-39eef8ef-8b22-4652-8dcc-3a121ce73ec0.png"
+     ],
+     "generated_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-1a945924-0ac5-4905-a7d6-7ffab6a2d0a1.png",
+     "review": "2026-09-13-ep14-story-redraw"
     }
    ],
-   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-92415630-ada7-4af1-af76-f2319c24f47a.png"
+   "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-1a945924-0ac5-4905-a7d6-7ffab6a2d0a1.png",
+   "scene_basis": {
+    "source": "_episodes/episode-14.md",
+    "sections": [
+     1,
+     2,
+     3
+    ],
+    "moment": "복구 전, 정상처럼 보이는 대시보드와 kr-c 원본 로그 및 CS 결제 실패 캡처를 대조하는 오후",
+    "visible_details": [
+     "0.2% 정상 지표",
+     "kr-a·kr-b 그래프",
+     "kr-c 필터와 붉은 5xx 로그",
+     "세 고객의 결제 실패 캡처"
+    ],
+    "character_references": [
+     "ep1.webp",
+     "ep2.webp"
+    ]
+   }
   },
   {
    "name": "ep15",

@@ -4,7 +4,7 @@ number: 14
 pov: "서유현"
 summary: "사용자는 결제가 안 된다고 했다. 대시보드는 전부 초록이었다."
 illustration: ep14.webp
-illustration_alt: "온통 초록으로 빛나는 대시보드 벽 앞에서, 그 초록을 믿지 않고 노트북을 들여다보는 유현"
+illustration_alt: "오류율 0.2%를 초록색으로 표시하는 대시보드 옆에서, kr-c의 붉은 5xx 로그와 고객 결제 실패 캡처를 대조하는 유현"
 layout: episode
 ---
 
