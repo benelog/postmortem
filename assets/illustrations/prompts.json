@@ -231,6 +231,16 @@
       "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
       "ep1.webp"
      ]
+    },
+    {
+     "review": "2026-09-13-pov-change-ep5",
+     "purpose": "5화 시점을 영선에서 도경으로 바꾼 본문에 맞춰, 카운터 앞에서 단말기를 만지려다 손을 멈춘 도경을 중심으로 새로 생성 (codex exec image_gen)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 셸 명령은 실행하지 마라.\n\n이 그림은 한국어 연작 추리 만화 「포스트모템」 5화 삽화의 새 구도다. 기존 삽화들과 같은 극화체 스타일을 정확히 따라야 한다.\n\nUse case: identity-preserve and style-transfer, NEW COMPOSITION. Image 1 is the CURRENT episode 5 illustration: the same tavern at night, the proprietor YEONGSEON (older woman, broad face, prominent nose, short thick black perm, red blouse and tan apron) holding a card terminal showing an error, with four worried guests at the table. Use it as the reference for YEONGSEON, the terminal, the counter and the tavern interior. Image 2 is the reference for DOKYEONG (man, thick eyebrows, angular adult face, thick tousled black hair, white shirt) and MINA (woman, chin-length side-parted black bob, soft oval face, dark blouse).\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9, 1672x941. Black ink marks on paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified adult faces; eyes drawn with a few pen strokes; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth. LARGE flat black shadow shapes. Hard-edged flat cel shading, sparse halftone dots, only a few flat spot colors. NO gradients, no pores, no photographic lighting, no detailed fabric or wood texture, no glossy webtoon style. Serious adult drama comic. Absolutely NO text, NO lettering, NO speech bubbles, NO readable numbers, NO logos anywhere; the terminal screen shows only an abstract red error glyph.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a hint of peach, base #F5E1D4, highlights #FAEDE4, minimal flat shadows #E8CBBB. Not orange, yellow or tan.\n\n[장면 — 카운터 앞의 도경]\nCamera at counter height inside the small tavern, late night. FOREGROUND, largest: DOKYEONG standing at the counter in a white shirt with sleeves rolled, slightly flushed from drinking, looking down at a small card payment terminal on the counter that shows a red error glyph. His RIGHT HAND is frozen in mid-air a few centimeters above the terminal, fingers half-extended as if he was about to touch it and stopped himself; his LEFT hand is already going into his trouser pocket. His expression is tense and restrained. BEHIND THE COUNTER: YEONGSEON, the older proprietor exactly as in image 1, one hand on the terminal's power cable, looking at Dokyeong with a worried, questioning face. BACKGROUND, smaller, at the joined tables: MINA (black bob, dark blouse) with her phone face-down on the table and her hand resting on it; a man in his late 40s with square glasses and a neat side part (Chanseok) sitting silent; and a woman with hair tied back (Yuri) holding a soju glass; two empty green soju bottles on the table. Between them, three customers standing near the counter holding wallets, unable to pay, drawn small and simple. Cool blue-gray walls, neutral brown wood counter and tables, small warm lamps, a muted TV on the wall showing baseball as abstract shapes. The visual center is Dokyeong's stopped hand above the terminal.\n\nPeople count: Dokyeong, Yeongseon, Mina, Chanseok, Yuri, plus three small customers. No one else.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n",
+     "references": [
+      "ep5.webp",
+      "ep1.webp"
+     ],
+     "result": "/home/benelog/.codex/generated_images/01a0993d-fb86-7a22-b574-3bd6db2304af/exec-33bc1117-fb40-40e8-ab8e-172a62a45b5c.png"
     }
    ],
    "final_source": "/home/benelog/.codex/generated_images/01a0985d-f992-7d40-9ee7-d15507716135/exec-e4e0c693-b0b6-40db-9a8b-0f4e722876bf.png"
@@ -894,7 +904,7 @@
   },
   "박영선": {
    "image": "ep5.webp",
-   "features": "넓은 얼굴과 도드라진 코, 나이 든 얼굴선, 풍성한 짧은 파마"
+   "features": "넓은 얼굴과 도드라진 코, 나이 든 얼굴선, 풍성한 짧은 파마, 붉은 꽃무늬 블라우스와 갈색 앞치마. 5화 재생성 후에도 같은 외모 유지."
   },
   "정경민": {
    "image": "ep6.webp",
