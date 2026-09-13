@@ -12,7 +12,7 @@ permalink: /appendix/
 
 연작의 회사 페이브릭이 따르는 역할 구분입니다. 1화에서 유현이 쓴 규정이고, 15화에서 하늘에게 넘어갑니다.
 
-| 역할 | 누가 | 순번 | 대기의 무게 | 하는 일 | 하지 않는 일 |
+| 역할 | 누가 | 순번 | 대기 방식 | 하는 일 | 하지 않는 일 |
 |---|---|---|---|---|---|
 | 온콜 | SRE 팀원(팀장 포함), 주 단위 교대 | SRE 온콜 교대표 | 페이지를 직접 받고 몇 분 안에 ack. 노트북 상시 휴대. 술은 사이다 | 초동 대응, 손(시스템 변경) | SEV1에서 혼자 판단하고 혼자 손 쓰기 |
 | 지휘 순번(인시던트 커맨더) | SRE 팀원(팀장 포함), 주 단위 | SRE 지휘 순번 | 페이지가 오지 않음. SEV1이 선언되면 불려 나오고, 닿지 않으면 다음 순번. 술은 사이다 | 상황 파악, 역할 배정, 판단과 지시, 타임라인 | 키보드 잡기 |
@@ -23,10 +23,10 @@ permalink: /appendix/
 
 역할표 밖의 조항은 셋입니다. 음주 상태로는 프로덕션 접근도 지휘도 하지 않는다(1화). 상중인 사람은 온콜과 시스템 접근에서 뺀다(10화). 이동이나 행사가 있으면 전날까지 교대를 올리고, 받아 주는 대체 순번을 따로 둔다(12화).
 
-### 비슷한 구조를 가진 회사와 문서
+### 구조가 비슷한 회사와 문서
 
 - [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/): 지휘(Incident Command)와 운영(Operational Work)을 나누고, "시스템을 바꾸는 건 운영 팀뿐"이라고 못 박습니다. 지휘 순번이 키보드를 잡지 않는 규정의 원형입니다.
-- [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/): 사용자 대면 서비스의 응답 기대치는 5분, 덜 급한 시스템은 30분. 많은 팀이 primary와 secondary 두 순번을 두고 secondary는 primary가 놓친 페이지를 받는 예비로 씁니다. 페이브릭의 온콜과 지휘 순번이 무게가 다른 것과 같은 구조입니다.
+- [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/): 사용자 대면 서비스의 응답 기대치는 5분, 덜 급한 시스템은 30분. 많은 팀이 primary와 secondary 두 순번을 두고 secondary는 primary가 놓친 페이지를 받는 예비로 씁니다. 페이브릭의 온콜과 지휘 순번의 대기 방식이 다른 것과 같은 구조입니다.
 - [Incident Management · GitLab Handbook](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/): 페이지를 24x7 받는 SRE의 EOC(Engineer On Call), 영향 파악과 인원 소집을 맡는 IMOC(Incident Manager On Call), 고객 대응의 CMOC를 각각 별도 순번으로 돌립니다. 온콜과 지휘 순번을 따로 두는 회사의 공개된 예입니다. [Incident Responder](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/roles/incident-responder/)와 [Incident Lead](https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/incident-management/roles/incident-lead/) 역할 문서가 따로 있습니다.
 - [Different Roles for Incidents · PagerDuty](https://response.pagerduty.com/before/different_roles/): "인시던트 커맨더는 해결자가 아니다. 모든 복구 작업은 위임한다." SME(Subject Matter Expert)는 보통 해당 서비스의 primary 온콜이 맡습니다. 결제팀 개발자가 손으로 불려 들어오는 구조가 여기 있습니다.
 - [Incident Commander Training · PagerDuty](https://response.pagerduty.com/training/incident_commander/): 커맨더는 그래프도 로그도 직접 보지 않고 위임합니다. 훈련을 마친 사람이 스스로 커맨더 순번표에 이름을 올리는 것으로 정식 커맨더가 됩니다. 피로해서 계속할 수 없으면 인계하라는 조항이 있는데, 음주를 명시한 조항은 이 문서에도 없습니다. 페이브릭의 음주 조항은 그 자리를 채운 자기 규정입니다.
@@ -95,11 +95,11 @@ permalink: /appendix/
 
 ## 감사 로그와 내부자 위협
 
-7화의, 범인이 결재한 비용으로 만든 감사 로그가 범인을 잡는 배경입니다.
+7화에서 임재헌이 직접 결재한 비용으로 만든 감사 로그에 그 자신이 잡히는 배경입니다.
 
 - [Logging Cheat Sheet · OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html): 무엇을, 어디에, 얼마나 오래 남길지. 운영 데이터와 분리해 변조를 막는 감사 로그.
 - [CIS Control 8 · Audit Log Management](https://www.cisecurity.org/controls/audit-log-management): 접근과 변경을 사람 단위로 추적하는 통제 항목.
-- [Insider Threat Mitigation · CISA](https://www.cisa.gov/topics/physical-security/insider-threat-mitigation): 권한을 가진 내부자가 만드는 사고의 성격.
+- [Insider Threat Mitigation · CISA](https://www.cisa.gov/topics/physical-security/insider-threat-mitigation): 권한이 있는 내부자가 만드는 사고의 성격.
 - [공용 계정을 없애야 하는 이유 · NIST SP 800-53 AC-2](https://csrc.nist.gov/projects/risk-management/sp800-53-controls/release-search#!/control?version=5.1&number=AC-2): 계정을 사람에게 귀속시켜 로그의 actor가 사람을 가리키게 하는 통제. `ops-admin` 같은 공용 계정이 왜 문제인지.
 
 ## DNS와 TTL
@@ -124,7 +124,7 @@ permalink: /appendix/
 9화에서 연말 배포 동결 중에 승인 번호가 천장에 닿은 이유, 그리고 고칠 코드가 있어도 올릴 수 없던 상황의 배경입니다.
 
 - [Release Engineering · Google SRE Book](https://sre.google/sre-book/release-engineering/): 언제 배포를 멈추고, 그 동결에 어떤 예외를 둘지.
-- [Numeric Types · PostgreSQL Documentation](https://www.postgresql.org/docs/current/datatype-numeric.html): 정수 시퀀스에도 천장이 있다는 것. 다 쓰기 전에는 조용하다가 다 쓰는 순간 터진다.
+- [Numeric Types · PostgreSQL Documentation](https://www.postgresql.org/docs/current/datatype-numeric.html): 정수 시퀀스에도 천장이 있다는 것. 다 쓰기 전에는 조용하다가 다 쓰는 순간 삽입이 실패한다.
 - [CREATE SEQUENCE · PostgreSQL Documentation](https://www.postgresql.org/docs/current/sql-createsequence.html): 천장에 닿은 시퀀스는 기본적으로 오류를 내고, `CYCLE`이 붙어 있으면 처음으로 돌아간다. 9화의 중복은 오류 대신 순환을 고른 결과입니다.
 - [Feature Toggles · martinfowler.com](https://martinfowler.com/articles/feature-toggles.html): 동결 중의 대응은 배포가 아니라, 이미 배포된 코드를 플래그로 켜는 것.
 
@@ -146,12 +146,12 @@ permalink: /appendix/
 
 ## 윤일과 날짜 연산
 
-11화의 제목이자, 2월 29일에만 깨어난 버그의 배경입니다. 4년에 한 번 오는 날은 테스트도 4년에 한 번만 만납니다.
+11화의 제목이자, 2월 29일에만 깨어난 버그의 배경입니다. 4년에 한 번 오는 날은 테스트도 4년에 한 번만 실행됩니다.
 
-- [`datetime.date.replace` · Python 문서](https://docs.python.org/3/library/datetime.html#datetime.date.replace): 윤일에서 `replace(year=...)`가 예외를 던지는 지점.
+- [`datetime.date.replace` · Python 문서](https://docs.python.org/3/library/datetime.html#datetime.date.replace): 윤일에서 `replace(year=...)`가 예외를 던지는 부분.
 - [`relativedelta` · dateutil](https://dateutil.readthedocs.io/en/stable/relativedelta.html): 1년을 더할 때 2월 29일을 2월 28일로 맞추는 안전한 연산.
 - [Falsehoods programmers believe about time](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca): 날짜에 관해 우리가 틀리게 믿는 것들. 윤일도 그중 하나입니다.
-- [The Leap Day bug that took down Microsoft Azure (2012)](https://azure.microsoft.com/en-us/blog/summary-of-windows-azure-service-disruption-on-feb-29th-2012/): 인증서 유효기간을 1년 뒤로 계산하다 2월 29일에 무너진 실제 사례.
+- [The Leap Day bug that took down Microsoft Azure (2012)](https://azure.microsoft.com/en-us/blog/summary-of-windows-azure-service-disruption-on-feb-29th-2012/): 인증서 유효기간을 1년 뒤로 계산하다 2월 29일에 서비스가 멈춘 실제 사례.
 
 ## git blame과 진짜 작성자
 
@@ -174,15 +174,15 @@ permalink: /appendix/
 13화에서 전기는 돌아왔는데 시스템이 안 켜지던 이유, 서로가 서로를 기다리던 순환의 배경입니다.
 
 - [Addressing Cascading Failures · Google SRE Book](https://sre.google/sre-book/addressing-cascading-failures/): 전체가 식은 뒤 다시 켜질 때 나타나는 부하와 순환.
-- [Reducing the Impact of a Cold Cache/Cold Start](https://aws.amazon.com/builders-library/avoiding-fallback-in-distributed-systems/): 늘 켜져 있던 시스템이 처음부터 켜질 때 드러나는 숨은 의존성.
-- [GameDay / 카오스 엔지니어링 · Principles of Chaos](https://principlesofchaos.org/): 처음부터 켜보지 않은 순서는 순서가 아니라는 것. 실제로 껐다 켜보는 훈련.
+- [Reducing the Impact of a Cold Cache/Cold Start](https://aws.amazon.com/builders-library/avoiding-fallback-in-distributed-systems/): 늘 켜져 있던 시스템을 처음부터 켤 때에야 드러나는 의존성.
+- [GameDay / 카오스 엔지니어링 · Principles of Chaos](https://principlesofchaos.org/): 처음부터 켜 보지 않은 순서는 순서가 아니라는 것. 실제로 껐다 켜 보는 훈련.
 
 ## 관측의 사각과 데드맨 스위치
 
 14화에서 대시보드가 전부 초록인데 사용자는 실패하던 이유, 무신호를 무장애로 착각한 사각의 배경입니다.
 
 - [Monitoring Distributed Systems · Google SRE Book](https://sre.google/sre-book/monitoring-distributed-systems/): 지표가 오지 않는 것과 문제가 없는 것을 구별하기.
-- [Dead man's switch · 정상 신호의 부재를 경보로](https://en.wikipedia.org/wiki/Dead_man%27s_switch): 보고가 끊기는 것 자체를 알림 조건으로 삼는 발상.
+- [Dead man's switch · 정상 신호의 부재를 경보로](https://en.wikipedia.org/wiki/Dead_man%27s_switch): 보고가 끊기는 것 자체를 경보 조건으로 삼는 발상.
 - [My Philosophy on Alerting · Rob Ewaschuk](https://docs.google.com/document/d/199PqyG3UsyXlwieHaqbGiWVa8eMWi8zzAn0YfcApr8Q/edit): 증상 기반 경보와, 관측 파이프라인 자체의 건강.
 
 ## 캐시 스탬피드
@@ -191,7 +191,7 @@ permalink: /appendix/
 
 - [Cache stampede · thundering herd](https://en.wikipedia.org/wiki/Cache_stampede): 캐시가 비면 같은 값을 여러 요청이 동시에 다시 계산하는 문제.
 - [Caching at Reddit: request coalescing / single-flight](https://www.rfc-editor.org/rfc/rfc5861): 하나만 계산하고 나머지는 그 결과를 기다리게 하는 단일 실행.
-- [Timeouts, retries, and backoff with jitter · Amazon Builders' Library](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/): 만료 시각에 흔들림을 줘서 한꺼번에 몰리는 걸 흩뜨리기.
+- [Timeouts, retries, and backoff with jitter · Amazon Builders' Library](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/): 만료 시각에 흔들림을 줘서 한꺼번에 몰리는 것을 흩뜨리기.
 
 ## 국내 회사의 장애 대응 사례
 
