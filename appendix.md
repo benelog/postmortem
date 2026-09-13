@@ -10,9 +10,9 @@ permalink: /appendix/
 
 ## 인시던트 지휘
 
-1화에서 지안이 쓴 규정, "손을 쓰는 사람과 지휘하는 사람을 나눈다"는 원칙의 출처입니다.
+1화에서 유현이 쓴 규정, "손을 쓰는 사람과 지휘하는 사람을 나눈다"는 원칙의 출처입니다.
 
-- [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/) — 인시던트 커맨더, 운영 리드, 커뮤니케이션 리드로 역할을 나누는 구조. 지안이 브리지 콜에서 하는 일이 여기서 나옵니다.
+- [Managing Incidents · Google SRE Book](https://sre.google/sre-book/managing-incidents/) — 인시던트 커맨더, 운영 리드, 커뮤니케이션 리드로 역할을 나누는 구조. 유현이 브리지 콜에서 하는 일이 여기서 나옵니다.
 - [Emergency Response · Google SRE Book](https://sre.google/sre-book/emergency-response/) — 대응 중에 '누가 무엇을 했는지'를 남기는 습관에 관한 장.
 - [Incident Response · Google SRE Workbook](https://sre.google/workbook/incident-response/) — 실제 사례로 풀어 쓴 지휘 체계.
 - [PagerDuty Incident Response](https://response.pagerduty.com/) — 공개된 대응 매뉴얼. [역할 정의](https://response.pagerduty.com/before/different_roles/)와 [인시던트 커맨더 훈련](https://response.pagerduty.com/training/incident_commander/)이 따로 있습니다.
@@ -30,7 +30,7 @@ permalink: /appendix/
 
 ## 온콜
 
-지안과 도현이 새벽 두 시 술집에서 다투는 규정의 배경입니다.
+유현과 도경이 새벽 두 시 술집에서 다투는 규정의 배경입니다.
 
 - [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/) — 온콜의 부담과 교대, 대응 시간에 관한 장.
 - [운영 비용을 95% 절감한 서버리스 온콜 시스템 구축기 · 올리브영 테크블로그](https://oliveyoung.tech/2025-12-24/amazon-connect/) — 국내 회사의 온콜 호출 체계 사례.
@@ -103,7 +103,7 @@ permalink: /appendix/
 
 ## 슬픔과 판단, 그리고 온콜에서 빼기
 
-9화에서 지안이 상을 당한 팀원을 온콜과 시스템 접근에서 빼는 이유, 1화의 음주 규정과 같은 결의 원칙입니다.
+9화에서 유현이 상을 당한 팀원을 온콜과 시스템 접근에서 빼는 이유, 1화의 음주 규정과 같은 결의 원칙입니다.
 
 - [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/) — 대응자의 상태와 교대. 컨디션이 좋지 않은 사람을 대응에서 빼는 것도 신뢰성의 일부입니다.
 - [Human factors and just culture](https://www.skybrary.aero/articles/just-culture) — 판단이 흐려진 사람에게 결정을 몰아주지 않는다는, 항공 안전에서 온 개념.
@@ -144,4 +144,4 @@ permalink: /appendix/
 
 ## 용어에 관한 메모
 
-연작에서는 장애 지휘 역할을 "인시던트 커맨더"라고 부르고, 그 역할을 "맡다"라는 동사와 씁니다. "인시던트 커맨더"라는 명사는 [Atlassian 한국어 용어집](https://www.atlassian.com/ko/incident-management/glossary)을 비롯한 번역 자료에서 그대로 쓰이지만, 국내 회사들은 위의 사례처럼 "지휘자"나 "총괄"이라는 자기 말을 더 자주 씁니다. 지안의 회사는 PagerDuty와 SEV 등급을 쓰는 곳이라 영어 명사를 그대로 두었습니다.
+연작에서는 장애 지휘 역할을 "인시던트 커맨더"라고 부르고, 그 역할을 "맡다"라는 동사와 씁니다. "인시던트 커맨더"라는 명사는 [Atlassian 한국어 용어집](https://www.atlassian.com/ko/incident-management/glossary)을 비롯한 번역 자료에서 그대로 쓰이지만, 국내 회사들은 위의 사례처럼 "지휘자"나 "총괄"이라는 자기 말을 더 자주 씁니다. 유현의 회사는 PagerDuty와 SEV 등급을 쓰는 곳이라 영어 명사를 그대로 두었습니다.
