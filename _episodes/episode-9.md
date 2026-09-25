@@ -96,7 +96,7 @@ approval_seq_2027   last_value = 114,982   is_cycled = true   max_value = 99,999
 
 ```
 approval_seq_2027      last_value = 115,640        is_cycled = true
-approval_seq_v2_2027   last_value = 1,000,214,880
+approval_seq_v2_2027   last_value = 1,001,642,880
 ```
 
 2027 시퀀스는 26일 밤 이후로 거의 안 움직였다. 새 번호는 전부 v2로 나가고 있었다. 자정이 지나자 2028 시퀀스가 새로 열렸고, 그건 처음부터 열 자리였다.
