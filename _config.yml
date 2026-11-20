@@ -7,12 +7,20 @@ collections:
   episodes:
     output: true
     permalink: /:name/
+  notes:
+    output: true
+    permalink: /:name/
 defaults:
   - scope:
       path: ""
       type: episodes
     values:
       layout: episode
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
 exclude:
   - assets/illustrations/prompts.json
   - README.md

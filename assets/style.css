@@ -72,3 +72,13 @@ main.wide { max-width: 64rem; }
 main.wide .page > :not(table), main.wide > .episode-nav { max-width: 37.5rem; margin-left: auto; margin-right: auto; }
 main.wide .page table { margin-left: auto; margin-right: auto; }
 main.wide .page th, main.wide .page td { min-width: 5.5rem; }
+
+.part-title { font-size: 1rem; letter-spacing: .15em; color: var(--accent); font-weight: 600; margin: 3rem 0 0; text-align: left; }
+.part-title + .episode-list { margin-top: 1rem; }
+.part-desc { color: var(--muted); font-size: .92rem; line-height: 1.7; margin: .5rem 0 0; }
+.note-list { margin-top: 1rem; }
+.note-list .title { font-size: 1.05rem; }
+.note-card { margin: 3rem 0 0; }
+.note-spoiler { color: var(--muted); font-size: .9rem; border-left: 3px solid var(--line); padding-left: .9rem; margin: 0 0 2rem; }
+.note-more { color: var(--muted); font-size: .9rem; margin-top: 3rem; }
+.note p { font-size: .98rem; line-height: 1.85; }

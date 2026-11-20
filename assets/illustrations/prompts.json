@@ -856,11 +856,24 @@
   {
    "name": "ep16",
    "output": "ep16.webp",
+   "alt": "밤, 집 책상에서 휴대폰을 귀에 대고 노트북 앞에 앉은 유진. 누르지 않은 손이 키보드 위에 떠 있다",
+   "note": "2026-11-21 16화 「위임」 신설. 극화체 레시피를 담아 codex exec image_gen으로 직접 생성(저장소 디렉터리에서 실행). 가장자리의 흰 테두리를 잘라 내고 1672x941 webp로 저장. 유진의 외모는 11화 기준(짧은 검은 머리, 갈색 무지 스웨터).",
+   "steps": [
+    {
+     "purpose": "16화 장면 직접 생성 (codex exec image_gen)",
+     "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 16화 삽화이며 1~15화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a tiny hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, minimal flat shadows ~#E8CBBB. Light fair flesh, NOT orange/yellow/tan.\n\n[배경 팔레트 — 밤, 작은 원룸의 책상]\nA small studio apartment at night. Cool blue-gray walls and dark window with a few distant city lights. One small warm desk lamp is the only warm color, making a small pool of light on the desk. White/gray/blue dominate; warm light stays tiny and local.\n\n[장면]\nA YOUNG SRE in their mid-20s sits alone at a small desk at home, late at night. Short, neat, slightly tousled BLACK hair, a plain BROWN crew-neck sweater, an earnest, tired, very focused face (same person as the newcomer in an earlier episode). A smartphone is held to the ear with the LEFT hand. An open LAPTOP sits on the desk with its BACK toward the viewer so that NO screen content is visible; only a faint cool glow from the screen lights the face from below. The RIGHT hand hovers in the air just above the keyboard, fingers slightly curled, deliberately NOT pressing anything: a moment of hesitation and restraint, choosing not to press a button. Beside the laptop: an open paper notebook with a pen, and a mug. The room behind is dim and quiet. Mood: alone at night, a name used without their knowing, deciding to read first before touching anything. 16:9 landscape.\n\n인물은 극화체 얼굴로 그려라. 짧고 단정한 검은 머리, 갈색 무지 스웨터, 진지하고 지친 얼굴. 특정 실제 인물을 베끼지 마라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
+    }
+   ],
+   "final_source": "/home/benelog/.codex/generated_images/01a1fa5f-1f72-7da3-9a02-f033548a9a00/exec-ce9f26ef-f24a-47dc-973a-700e3c684830.png"
+  },
+  {
+   "name": "ep17",
+   "output": "ep17.webp",
    "alt": "새벽 술집에서 노트북 가방을 곁에 둔 채 열지 않고, 유리문 밖에서 전화로 대응하는 두 사람을 바라보는 민아",
    "note": "극화체 레시피를 담아 codex exec image_gen으로 직접 생성. 1672x941 그대로 webp 변환.",
    "steps": [
     {
-     "purpose": "16화 장면 직접 생성 (codex exec image_gen)",
+     "purpose": "17화 장면 직접 생성 (codex exec image_gen)",
      "prompt": "너는 이미지 생성 작업만 한다. 내장 image_gen 도구로 그림 딱 한 장을 만들어라. 저장소 파일은 절대 수정하지 마라. 연작 만화 「포스트모템」 마지막 15화 삽화이며 1~11화와 같은 극화체다.\n\n[스타일 — 반드시 준수]\nCreate an original single-panel vintage Korean dramatic comic (geukhwa) illustration, LANDSCAPE 16:9. It must look like black ink marks on plain white paper, NOT a photo with a filter. Dominant bold variable-width BLACK outlines; angular, deliberately simplified faces and anatomy; eyes drawn with a few pen strokes; noses a single angular line; hair as solid black silhouettes with only 2-3 white highlights; expression carried by eyebrows and mouth shape. LARGE flat black shadow shapes and mostly WHITE unshaded skin. Hard-edged flat cel shading, sparse visible halftone dots. Only a few flat spot colors over black and white. NO gradients, no photographic lighting, no volumetric rendering, no detailed fabric texture, no soft painterly washes, no 3D, no glossy webtoon style. Serious adult crime/drama comic, not chibi or cute. Absolutely NO text, NO lettering, NO numbers, NO logos, NO readable screen content anywhere.\n\n[피부톤]\nExposed skin: very light warm porcelain-beige with a tiny hint of peach. Base ~#F5E1D4, highlights ~#FAEDE4, minimal flat shadows ~#E8CBBB. Light fair flesh, NOT orange/yellow/tan.\n\n[배경 팔레트 — 밤 술집 안 + 유리문 밖 골목]\nInterior of a small late-night tavern: muted COOL BLUE-GRAY walls (#758A90), neutral WALNUT/TAUPE wooden table and furniture (#76645A), a small warm lamp glow inside. Through the glass door, a cold dark TEAL alley at night. Warm interior against cold exterior; amber only as a small lamp accent.\n\n[장면]\nInside the tavern, late at night. A woman in her early 40s (ANGULAR narrow face, sharp eyes, CHIN-LENGTH black bob) sits alone at a wooden table with a green soju bottle and a small glass, NOT drinking, her hands resting still on the table. A closed laptop bag sits on the seat beside her, unopened. She looks toward the lit GLASS DOOR, through which we see — small, outside in the cold alley — TWO people standing with phones held to their ears, handling something. Her expression is calm, resolved, a little wistful: the person who once would have jumped in, now sitting still. Warm tavern interior, cold alley through the glass. 16:9.\n\n이 여자(민아)는 각진 좁은 얼굴·날카로운 눈매·턱 길이 검은 단발로 일관되게 그려라. 특정 실제 인물을 베끼지 마라.\n\n생성이 끝나면 마지막에 다음 형식으로 저장 경로 한 줄만 정확히 출력해라:\nSAVED=<생성된 PNG 파일의 절대 경로>\n"
     },
     {
@@ -868,7 +881,7 @@
      "purpose": "전체 삽화 검수: 인물 식별과 먹선·채색·질감의 연속성 보정",
      "prompt": "Use case: identity-preserve and style-transfer. Edit the FIRST image, a panel in the Korean dramatic comic 포스트모템. The other images are references ONLY. Preserve target's single-panel landscape 1672x941 composition, framing, camera perspective, narrative action, people count, body poses, hands, props and setting unless an explicit correction below requires a local change. Match the early episodes' bold variable-width black ink contours, large flat ink shadows, restrained flat cel colors, crisp facial ink marks and sharp white hair highlights. Skin is very pale low-saturation peach-beige, with at most a small hard-edged shadow; no airbrushed shading, no orange/tan skin, no glossy webtoon face, no blurred foreground/depth-of-field, no photographic grain. Preserve the time of day. Retain cool blue-gray environments, neutral walnut wood, and small local amber lamps. Do not brighten night into day. No lettering, numbers, captions, logos or watermark. Do not add jewelry. Adapt reference facial geometry to the target head angles and expressions; do not copy reference poses. Correct MINA seated left to same woman LEFT in image 2: identical adult narrow angular jaw and profile nose, sharp eyes, chin-length side-parted bob with white ink highlights, pale low-saturation peach skin. Keep her calm reflective profile looking RIGHT toward the door, do not turn her toward camera or make her angry. Simplify excessive all-over photographic/grainy texture on coat, wall and wood into selective confident ink hatching and broad flat colors like reference. Keep black jacket, hands folded resting still, closed laptop bag on seat to left, green bottle and small glass untouched, same framing, TWO small people OUTSIDE on phones, cold rainy teal alley, warm hanging lamp only as small accent. No added earrings, no writing; preserve final episode's restraint and visual echo of episode 1.",
      "references": [
-      "ep16.webp",
+      "ep17.webp",
       "ep1.webp"
      ]
     },
@@ -877,7 +890,7 @@
      "purpose": "민아 얼굴형을 부드러운 볼선과 둥근 턱으로 보정",
      "prompt": "Use case: identity-preserve. Image 1 is EDIT TARGET, a single panel of Korean comic 포스트모템. Image 2 is user-supplied SHIN MIN-A portrait, FACIAL LIKENESS ONLY. Image 3 is NEW CORRECTED CANONICAL MINA (woman LEFT), whose chin has just been softened per user feedback. Edit ONLY MINA'S FACE. Her face must resemble Shin Min-a with softly full oval cheeks, natural almond dark eyes and rounded lower eyelids, gently curved brows, small round-tipped nose, cupid's-bow upper lip and curved fuller lower lip. CRITICAL USER CORRECTION: round the chin and lower cheeks noticeably more than target; no pointed V-line chin or long straight diagonal jaw edges. Slightly shorter lower face, modest width at chin tip, smoothly curved small U-shaped chin arc; continuous soft oval cheek-to-chin contour. Natural slim ADULT, not baby/chibi or artificially swollen cheeks. Match SAME rounder facial design as woman left of image 3, adapted to target head angle. Preserve target serious/calm/smiling expression and gaze; never import photo smile into serious scene. Keep CHIN-LENGTH side-parted BLACK BOB silhouette and white ink highlights. Preserve exact bold BLACK INK drawing and flat pale low-saturation peach CEL coloring; no photographic face, no airbrush makeup, no gradients. Other characters' faces/hair/bodies are LOCKED. All composition, camera, body poses, hands, clothes, people count, props, lighting/time-of-day, colors and environment are unchanged. No extra jewelry, text, logos or watermark. Mina = LARGE SEATED WOMAN LEFT, head in near PROFILE facing RIGHT toward glass door, calm contemplative closed-mouth expression. Preserve her adult profile and restrained mood while adding actress's rounded nose tip, softer oval cheek/jaw and curved lip profile. Keep her hands resting together, closed laptop bag, bottle/glass, TWO people outdoors on calls, warm lamp, cool alley exactly. Output landscape 1672x941.",
      "references": [
-      "ep16.webp",
+      "ep17.webp",
       "https://commons.wikimedia.org/wiki/File:Shin_Min_A.jpg",
       "ep1.webp"
      ]
@@ -1021,7 +1034,7 @@
    "ep13.webp",
    "ep14.webp",
    "ep15.webp",
-   "ep16.webp",
+   "ep17.webp",
    "share.jpg"
   ],
   "unchanged_assets": [
@@ -1063,7 +1076,7 @@
    "ep13.webp",
    "ep14.webp",
    "ep15.webp",
-   "ep16.webp",
+   "ep17.webp",
    "share.jpg"
   ],
   "modified_assets": [

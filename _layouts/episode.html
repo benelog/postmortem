@@ -17,6 +17,12 @@ layout: default
   {% if page.illustration %}<figure class="illustration"><img src="{{ '/assets/illustrations/' | append: page.illustration | relative_url }}" alt="{{ page.illustration_alt | escape }}" width="1672" height="941" decoding="async" fetchpriority="high"></figure>{% endif %}
   {{ content }}
 </article>
+{% assign note = nil %}{% for n in site.notes %}{% if n.number == page.number %}{% assign note = n %}{% endif %}{% endfor %}
+{% if note %}<a class="appendix-card note-card" href="{{ note.url | relative_url }}">
+  <span class="appendix-kicker">해설</span>
+  <span class="appendix-desc">{{ page.number }}화에 나온 개념과 교훈, 실제 회사들의 사례. 이 화를 다 읽은 뒤에 보세요.</span>
+  <span class="appendix-go">{{ page.number }}화 해설 읽기 →</span>
+</a>{% endif %}
 <nav class="episode-nav">
   {% if prev %}<a class="prev" href="{{ prev.url | relative_url }}">← {{ prev.number }}화 {{ prev.title }}</a>{% else %}<span></span>{% endif %}
   <a class="index" href="{{ '/' | relative_url }}">목차</a>

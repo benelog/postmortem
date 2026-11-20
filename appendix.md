@@ -7,7 +7,7 @@ permalink: /appendix/
 wide: true
 ---
 
-이 연작의 회사와 사람과 장애는 지어낸 것이지만, 인물들이 따르는 관행과 어휘는 지어낸 것이 아닙니다. 각 화의 소재가 된 문서와, 표현을 고를 때 참고한 국내 사례를 모았습니다.
+이 연작의 회사와 사람과 장애는 지어낸 것이지만, 인물들이 따르는 관행과 어휘는 지어낸 것이 아닙니다. 각 화의 소재가 된 문서와, 표현을 고를 때 참고한 국내 사례를 모았습니다. 화마다 개념과 교훈, 실제 회사들의 사고 사례를 풀어 쓴 글은 목차의 2부 해설에 따로 있습니다.
 
 ## 페이브릭의 대응 규정
 
@@ -21,10 +21,11 @@ wide: true
 | 서비스 팀 담당 개발자(결제팀 등) | 결제팀 | 온콜도 지휘 순번도 없음 | 부르면 들어감 | 자기 코드 설명, 필요하면 오퍼레이터 | |
 | 배포 게이트 승인자 | 결제팀 명단, 5화 이후 주 단위 교대표 두 명 | 별개 | 승인 요청이 오면 응답 | 플래그·배포 승인 | 혼자 승인 |
 | 동결 예외 승인 | 플랫폼 본부장과 결제팀 리드의 서면 | 별개 규정 | | 동결 중 배포 허가 | |
+| 운영 에이전트 | 16화에서 신뢰성 본부가 도입 | 없음(그 주 온콜이 위임) | 온콜이 고른 범위 안에서만. 기본값은 읽기 | 위임받은 런북 실행과 액션 아이템 정리, 요약과 제안 | 커맨더. 위임 밖의 변경 |
 
 본문에서 지시받은 변경을 실제로 실행하는 사람을 오퍼레이터라고 부릅니다. Google SRE Book이 인시던트 커맨더와 나눠 둔 운영 리드(Operations Lead)의 운영 작업(Operational Work), PagerDuty의 SME(Subject Matter Expert)와 리졸버, GitLab의 EOC(Engineer On Call)가 같은 자리입니다.
 
-역할표 밖의 조항은 셋입니다. 음주 상태로는 프로덕션 접근도 지휘도 하지 않는다(1화). 상중인 사람은 온콜과 시스템 접근에서 뺀다(10화). 이동이나 행사가 있으면 전날까지 교대를 올리고, 받아 주는 대체 순번을 따로 둔다(12화).
+역할표 밖의 조항은 넷입니다. 음주 상태로는 프로덕션 접근도 지휘도 하지 않는다(1화). 상중인 사람은 온콜과 시스템 접근에서 뺀다(10화). 이동이나 행사가 있으면 전날까지 교대를 올리고, 받아 주는 대체 순번을 따로 둔다(12화). 코딩 에이전트에게 코드는 맡겨도 프로덕션은 읽기까지만 맡긴다(1화). 이 마지막 조항은 16화에서 "온콜이 위임한 범위 안에서 오퍼레이터가 될 수 있다"로 바뀝니다.
 
 ### 구조가 비슷한 회사와 문서
 
@@ -195,6 +196,16 @@ wide: true
 - [Cache stampede · thundering herd](https://en.wikipedia.org/wiki/Cache_stampede): 캐시가 비면 같은 값을 여러 요청이 동시에 다시 계산하는 문제.
 - [Caching at Reddit: request coalescing / single-flight](https://www.rfc-editor.org/rfc/rfc5861): 하나만 계산하고 나머지는 그 결과를 기다리게 하는 단일 실행.
 - [Timeouts, retries, and backoff with jitter · Amazon Builders' Library](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/): 만료 시각에 흔들림을 줘서 한꺼번에 몰리는 것을 흩뜨리기.
+
+## 에이전트와 위임
+
+16화에서 운영 에이전트가 온콜의 이름으로 계정을 끄는 장면, 그리고 7화에서 임경호의 PC 휴지통에 남은 대화 파일의 배경입니다. 2화의 봇 코드, 3화의 개인 스크립트, 6화의 리뷰 요약, 11화의 포스트모템 초안에도 에이전트가 조금씩 나옵니다.
+
+- [LLM06:2025 Excessive Agency · OWASP](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/): 과도한 기능, 과도한 권한, 과도한 자율을 위험으로 꼽고 권한 최소화와 사람의 승인을 대책으로 제시합니다. 16화의 위임 범위와 건별 승인이 이 구분을 따릅니다.
+- [AI coding tool Replit wiped database · Fortune](https://fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure/): 2025년 7월, 변경을 멈추라는 지시가 있던 기간에 코딩 에이전트가 운영 데이터베이스를 지운 사건.
+- [Amazon denies Kiro agentic AI was behind outage · The Register](https://www.theregister.com/2026/02/20/amazon_denies_kiro_agentic_ai_behind_outage/): 2025년 12월의 AWS 장애를 두고 "에이전트가 관여했다"는 보도와 "사용자 오류이고 권한이 예상보다 넓었다"는 회사의 설명이 엇갈린 사례. 쟁점이 에이전트의 행동에서 위임한 권한으로 옮겨 갑니다.
+- [Palisades arson suspect allegedly used ChatGPT · Axios](https://www.axios.com/2025/10/08/jonathan-rinderknecht-palisades-fire-chatgpt): 챗봇에 입력한 내용이 수사 자료로 인용된 사례. 7화에서 은서가 임경호에게 대화 파일을 말하는 장면의 배경입니다.
+- [Being On-Call · Google SRE Book](https://sre.google/sre-book/being-on-call/): 에이전트가 온콜의 손이 되더라도, 페이지를 받고 판단하는 책임은 사람에게 남는다는 전제.
 
 ## 국내 회사의 장애 대응 사례
 
