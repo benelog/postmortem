@@ -28,5 +28,5 @@ layout: note
 ## 실제 사례
 
 - **카카오(2022년 10월 15일).** 판교 데이터센터 화재로 전원이 차단되면서 카카오의 서비스 대부분이 멈췄습니다. 카카오는 데이터센터 안에서만 이중화가 되어 있었고 데이터센터 사이의 이중화가 없었던 것을 복구 지연의 가장 큰 원인으로 꼽았고, 운영 도구까지 포함한 전체 이중화를 재발 방지책으로 발표했습니다. [우리의 재발 방지 계획](https://www.kakaocorp.com/page/detail/9900), [if(kakao)dev 2022 발표 안내](https://www.kakaocorp.com/page/detail/9843)
-- **Facebook(2021년 10월 4일).** 네트워크가 끊기자 복구에 쓸 내부 도구와 출입 시스템까지 같이 멈췄고, 엔지니어들이 데이터센터에 직접 들어가야 했습니다. 복구 수단이 장애 난 시스템에 기대고 있던 사례입니다. [More details about the October 4 outage](https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/)
+- **Facebook(2021년 10월 4일).** 네트워크가 끊기자 복구에 필요한 내부 도구와 출입 시스템까지 같이 멈췄고, 엔지니어들이 데이터센터에 직접 들어가야 했습니다. 복구 수단이 장애 난 시스템에 기대고 있던 사례입니다. [More details about the October 4 outage](https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/)
 - **카오스 엔지니어링의 원칙.** 실제로 꺼 보는 훈련의 배경입니다. [Principles of Chaos Engineering](https://principlesofchaos.org/)

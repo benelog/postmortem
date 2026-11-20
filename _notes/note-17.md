@@ -18,15 +18,15 @@ layout: note
 
 ## 교훈
 
-- 임시로 끄거나 켠 것에는 끝나는 날을 적습니다. 도경은 9화의 플래그에는 임시라고 적었고, 이 잡에는 적지 않았습니다.
+- 임시로 끄거나 켠 것에는 끝나는 날을 지정합니다. 도경은 9화의 플래그에는 임시라고 표시했고, 이 잡에는 표시하지 않았습니다.
 - 중복처럼 보이는 것을 끄기 전에, 남는 쪽이 정말 실행되는지 확인합니다.
 - 소유자는 "켤지 말지"를 정하는 사람입니다. 민아는 숨기지 않았지만 보지 않았고, 그것도 자기 몫이라고 말합니다.
 - 빨라진 것은 시스템이 아니라 사람들이 나눠 가진 기억입니다. 문서가 그 기억을 겪지 않은 사람에게 옮깁니다.
-- 에이전트가 세어 주는 것은 적힌 것입니다. 적히지 않은 것의 목록은 사람이 먼저 만듭니다.
-- 손을 쓰지 않고 지켜보는 것이 넘겨준 사람의 일입니다.
+- 에이전트가 세어 주는 것은 명시된 것입니다. 명시되지 않은 것의 목록은 사람이 먼저 만듭니다.
+- 손을 대지 않고 지켜보는 것이 넘겨준 사람의 일입니다.
 
 ## 실제 사례
 
 - **Cloudflare(2017년 1월 1일).** 새해 자정에 윤초가 들어가면서, 시간 차이가 음수가 될 수 없다고 가정한 DNS 서버 코드가 일부 서버에서 멈췄습니다. 몇 년 동안 문제없이 돌던 코드가 특정한 순간에 처음 틀린 사례입니다. [How and why the leap second affected Cloudflare DNS](https://blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns/)
-- **포스트모템을 읽히는 문화.** Google SRE Book은 포스트모템을 쓰는 데서 끝내지 않고 읽기 모임과 과거 사고를 재연하는 훈련으로 신입에게 옮기는 방법을 소개합니다. 페이브릭이 첫날 문서를 건네는 방식의 배경입니다. [Postmortem Culture: Learning from Failure](https://sre.google/sre-book/postmortem-culture/)
+- **포스트모템을 읽히는 문화.** Google SRE Book은 포스트모템을 작성하는 데서 끝내지 않고 읽기 모임과 과거 사고를 재연하는 훈련으로 신입에게 옮기는 방법을 소개합니다. 페이브릭이 첫날 문서를 건네는 방식의 배경입니다. [Postmortem Culture: Learning from Failure](https://sre.google/sre-book/postmortem-culture/)
 - **LINE의 장애 대응 프로세스.** 회고에서 나온 개선 항목을 재발 방지, 탐지, 대응의 세 관점으로 나누고 끝까지 추적하는 방식입니다. 페이브릭의 액션 아이템과 미완료 집계표가 이 구성을 따릅니다. [LINE 플랫폼 서버의 장애 대응 프로세스와 문화](https://engineering.linecorp.com/ko/blog/line-platform-server-outage-process-and-dev-culture)

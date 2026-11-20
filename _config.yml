@@ -24,6 +24,7 @@ defaults:
 exclude:
   - assets/illustrations/prompts.json
   - README.md
+  - CLAUDE.md
   - Gemfile
   - Gemfile.lock
   - vendor

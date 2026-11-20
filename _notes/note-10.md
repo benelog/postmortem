@@ -25,5 +25,5 @@ layout: note
 
 ## 실제 사례
 
-- **GitHub(2018년 10월 21일).** 고장 나던 100G 광 장비를 교체하는 정기 작업 중 두 지점 사이의 연결이 43초 동안 끊겼습니다. 그 사이 DB의 주 서버가 다른 지역으로 넘어가면서 양쪽에 서로 없는 쓰기가 생겼고, 데이터를 맞추느라 24시간 넘게 서비스가 저하됐습니다. 작은 네트워크 부품 하나가 데이터 계층의 긴 장애로 번진 사례입니다. [October 21 post-incident analysis](https://github.blog/2018-10-30-oct21-post-incident-analysis/)
+- **GitHub(2018년 10월 21일).** 고장 나던 100G 광 장비를 교체하는 정기 작업 중 두 지점 사이의 연결이 43초 동안 끊겼습니다. 그 사이 DB의 주 서버가 다른 지역으로 넘어가면서 양쪽에 서로 없는 변경이 생겼고, 데이터를 맞추느라 24시간 넘게 서비스가 저하됐습니다. 작은 네트워크 부품 하나가 데이터 계층의 긴 장애로 번진 사례입니다. [October 21 post-incident analysis](https://github.blog/2018-10-30-oct21-post-incident-analysis/)
 - **The Tail at Scale(2013).** 특정 부하에서만 나타나는 꼬리 지연이 왜 흔하고 왜 진단이 어려운지를 다룬 글입니다. [The Tail at Scale](https://research.google/pubs/pub40801/)

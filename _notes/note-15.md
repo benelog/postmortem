@@ -23,10 +23,10 @@ layout: note
 - 요청이 전부 같은 것을 묻고 있다면, 잘라 내기보다 묶는 편이 실패를 덜 만듭니다.
 - 페일오버로 올라오는 것은 빈 채로 두지 않습니다.
 - 넘겨준 사람은 콜에 있되 키보드를 잡지 않습니다. 틀리면 말하고, 다르기만 하면 말하지 않습니다.
-- 지휘하는 사람은 손을 쓰지 않습니다. 처음 지휘하는 사람에게도 같은 규정입니다.
+- 지휘하는 사람은 키보드를 잡지 않습니다. 처음 지휘하는 사람에게도 같은 규정입니다.
 
 ## 실제 사례
 
-- **Facebook(2010년 9월 23일).** 잘못된 설정값을 캐시에서 찾아 고치는 자동 시스템이, 원본 저장소의 값 자체가 잘못되자 모든 클라이언트가 DB에 동시에 질의하게 만들었습니다. DB가 오류를 내면 그 오류가 다시 캐시 삭제로 이어지는 되먹임이 생겼고, 사이트를 내렸다가 다시 올려야 했습니다. [More Details on Today's Outage](https://engineering.fb.com/2010/09/23/uncategorized/more-details-on-today-s-outage/)
+- **Facebook(2010년 9월 23일).** 잘못된 설정값을 캐시에서 찾아 고치는 자동 시스템이, 원본 저장소의 값 자체가 잘못되자 모든 클라이언트가 DB에 동시에 질의하게 만들었습니다. DB가 오류를 내면 그 오류가 다시 캐시 삭제로 이어지는 되먹임이 생겼고, 사이트를 닫았다가 다시 열어야 했습니다. [More Details on Today's Outage](https://engineering.fb.com/2010/09/23/uncategorized/more-details-on-today-s-outage/)
 - **Scaling Memcache at Facebook(2013).** 같은 키를 여러 요청이 동시에 다시 채우려는 문제를 '임대' 방식으로 줄인 설계를 설명한 논문입니다. [NSDI 2013](https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/nishtala)
 - **Go의 singleflight.** 같은 키에 대한 중복 호출을 하나로 합치는 표준 확장 패키지입니다. 15화의 단일 실행과 같은 발상입니다. [golang.org/x/sync/singleflight](https://pkg.go.dev/golang.org/x/sync/singleflight)

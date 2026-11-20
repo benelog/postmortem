@@ -26,4 +26,4 @@ layout: note
 ## 실제 사례
 
 - **Slack의 DNSSEC 적용(2021년 9월 30일).** slack.com에 DNSSEC을 적용하다 문제가 생겨 되돌렸지만, 리졸버들이 이미 캐시한 기록의 수명이 끝날 때까지 약 24시간 동안 일부 사용자가 접속하지 못했습니다. 되돌려도 캐시는 되돌아오지 않는다는 점에서 8화와 같은 구조입니다. [What happened during Slack's DNSSEC rollout](https://slack.engineering/what-happened-during-slacks-dnssec-rollout/)
-- **사업자의 공개 보고서.** AWS, Google Cloud, Cloudflare는 큰 장애 뒤에 원인과 재발 방지책을 공개합니다. 원인은 기술과 절차로 적히고 사람 이름은 나오지 않습니다. 6화의 클라우드 보고서가 따르는 형식입니다. [AWS S3 사고 요약](https://aws.amazon.com/message/41926/), [Cloudflare 장애 보고 모음](https://blog.cloudflare.com/tag/outage/)
+- **사업자의 공개 보고서.** AWS, Google Cloud, Cloudflare는 큰 장애 뒤에 원인과 재발 방지책을 공개합니다. 원인은 기술과 절차로 서술되고 사람 이름은 나오지 않습니다. 6화의 클라우드 보고서가 따르는 형식입니다. [AWS S3 사고 요약](https://aws.amazon.com/message/41926/), [Cloudflare 장애 보고 모음](https://blog.cloudflare.com/tag/outage/)
